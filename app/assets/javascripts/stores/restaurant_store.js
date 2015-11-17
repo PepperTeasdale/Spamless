@@ -17,6 +17,14 @@
       this.on(CHANGE_EVENT, callback);
     },
 
+    find: function (id) {
+      _restaurants.forEach(function (restaurant) {
+        if (restaurant.id === id) {
+          return restaurant;
+        }
+      });
+    },
+
     removeChangeListener: function (callback) {
       this.removeListener(CHANGE_EVENT, callback);
     },

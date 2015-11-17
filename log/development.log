@@ -10618,3 +10618,1229 @@ Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d
 
 
 Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 17:11:14 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 17:43:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 814ms (Views: 811.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:13 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 17:43:13 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/components/spamless.self-fa7212c2b90397403d5e67ccfc3f034cb2bf4ec70937e9f318bc98d2932daa6d.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-faf3c55dd4c20cf9b10b6efeb4dc0bd2349a2614f94c6e4cc988ba267ebe8bcd.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 17:43:14 -0500
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 17:43:16 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[36mRestaurant Load (0.8ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.3ms)
+  Rendered api/restaurants/index.json.jbuilder (7.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms)
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/appacademy/Desktop/Spamless/app/views/api/restaurants/_restaurant.json.jbuilder:14: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/views/api/restaurants/_restaurant.json.jbuilder:12:in `'
+  actionview (4.2.4) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.4) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.4) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.4) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:21:in `render'
+  actionview (4.2.4) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:102:in `_render_partial'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:96:in `_render_partial_with_options'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:163:in `_render_explicit_partial'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:21:in `partial!'
+  app/views/api/restaurants/index.json.jbuilder:2:in `block in _app_views_api_restaurants_index_json_jbuilder___27053281790549641_70353773638920'
+  jbuilder (2.3.2) lib/jbuilder.rb:298:in `block (2 levels) in _map_collection'
+  jbuilder (2.3.2) lib/jbuilder.rb:305:in `_scope'
+  jbuilder (2.3.2) lib/jbuilder.rb:298:in `block in _map_collection'
+  activerecord (4.2.4) lib/active_record/relation/delegation.rb:46:in `map'
+  jbuilder (2.3.2) lib/jbuilder.rb:297:in `_map_collection'
+  jbuilder (2.3.2) lib/jbuilder.rb:188:in `array!'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:64:in `array!'
+  app/views/api/restaurants/index.json.jbuilder:1:in `_app_views_api_restaurants_index_json_jbuilder___27053281790549641_70353773638920'
+  actionview (4.2.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-11-17 17:43:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 471ms (Views: 470.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 17:43:43 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/components/spamless.self-fa7212c2b90397403d5e67ccfc3f034cb2bf4ec70937e9f318bc98d2932daa6d.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-faf3c55dd4c20cf9b10b6efeb4dc0bd2349a2614f94c6e4cc988ba267ebe8bcd.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 17:43:44 -0500
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 17:43:44 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[36mRestaurant Load (1.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  Rendered api/restaurants/index.json.jbuilder (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.2ms)
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/appacademy/Desktop/Spamless/app/views/api/restaurants/_restaurant.json.jbuilder:14: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/views/api/restaurants/_restaurant.json.jbuilder:12:in `'
+  actionview (4.2.4) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.4) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.4) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.4) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:21:in `render'
+  actionview (4.2.4) lib/action_view/helpers/rendering_helper.rb:32:in `render'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:102:in `_render_partial'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:96:in `_render_partial_with_options'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:163:in `_render_explicit_partial'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:21:in `partial!'
+  app/views/api/restaurants/index.json.jbuilder:2:in `block in _app_views_api_restaurants_index_json_jbuilder___27053281790549641_70353773638920'
+  jbuilder (2.3.2) lib/jbuilder.rb:298:in `block (2 levels) in _map_collection'
+  jbuilder (2.3.2) lib/jbuilder.rb:305:in `_scope'
+  jbuilder (2.3.2) lib/jbuilder.rb:298:in `block in _map_collection'
+  activerecord (4.2.4) lib/active_record/relation/delegation.rb:46:in `map'
+  jbuilder (2.3.2) lib/jbuilder.rb:297:in `_map_collection'
+  jbuilder (2.3.2) lib/jbuilder.rb:188:in `array!'
+  jbuilder (2.3.2) lib/jbuilder/jbuilder_template.rb:64:in `array!'
+  app/views/api/restaurants/index.json.jbuilder:1:in `_app_views_api_restaurants_index_json_jbuilder___27053281790549641_70353773638920'
+  actionview (4.2.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-11-17 17:45:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 346ms (Views: 344.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components/spamless.self-fa7212c2b90397403d5e67ccfc3f034cb2bf4ec70937e9f318bc98d2932daa6d.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-faf3c55dd4c20cf9b10b6efeb4dc0bd2349a2614f94c6e4cc988ba267ebe8bcd.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 17:45:15 -0500
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 17:45:15 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.9ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (5.9ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 17:45:39 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (3.8ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 17:59:58 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 2917ms (Views: 2914.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/components/restaurant_detail.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:00:01 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-faf3c55dd4c20cf9b10b6efeb4dc0bd2349a2614f94c6e4cc988ba267ebe8bcd.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:00:02 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 18:00:48 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 1787ms (Views: 1786.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-012fd9ca9f39c445c5c0da6e7cc3765ea4021bd752b11d99f87f1878ee73a96c.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-faf3c55dd4c20cf9b10b6efeb4dc0bd2349a2614f94c6e4cc988ba267ebe8bcd.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:00:50 -0500
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 18:00:54 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[36mRestaurant Load (0.9ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.2ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 18:06:22 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 1601ms (Views: 1599.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/components/restaurant_detail.self-f0fb7bb66b2faaa4d87b96058cb72de2047978a17c397522f2c4d3d6e392f83f.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:06:24 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 18:06:35 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 1494ms (Views: 1492.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-1fa4dc067e53d4a92a8cdbfa3e31729fa54935171256e23e5c8c0d8240527b1e.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:06:37 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 18:11:29 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 1966ms (Views: 1964.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-a6224a9d039a01c20bd6ce34751cd49f559467ba45137e5bc484313d27ed1ae7.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:11:31 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 18:11:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 1531ms (Views: 1529.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/application.self-39dff7446e7d034f1202bc0e8599e6a2274fa0c2dc386324e6724a89e55e13ef.css?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-a6864300dcaa2ccb5fe43bef5aa096bfedd629d0eeee2883373e6a868d83617e.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/landing_page.self-f29c00c82fbd89e87a9c0ddcb0cf75a816a9b7cd3abe99523af343dcd0e88a38.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-eb59c739c531831e88a7935a878cb4a11b782bc39058664ccfcae0a8704abcb6.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/search_form.self-700eb402d248663021876fcf091d8070764b3c7fae96f9946d33f3168d81147a.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components/spamless.self-3fd91b3b10375f4cbdf2724cc6612e3f01cba5c2bdd1b0056d79d818ee624f68.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/actions/api_actions.self-4e48734cec22624e2f4c352b0496e4eb383079fd6a665d1441aa2ec3ea68f2b9.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/util/api_util.self-8d2a1effe3a86e91df3fef1cd59bbc52a541ce6d6fce413cef44e89e388fc096.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 18:11:56 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 18:12:19 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 382ms (Views: 381.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 18:12:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 106ms (Views: 105.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 18:12:27 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.3ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (4.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 18:12:29 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[36mRestaurant Load (0.7ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (3.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants" for ::1 at 2015-11-17 18:12:31 -0500
+Processing by Api::RestaurantsController#index as JSON
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/_restaurant.json.jbuilder (0.1ms)
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-11-17 18:12:38 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bELJncS1P+GdsiaRYX+ROGUwvpwPIdg2dZCjQFKokP4ZHHs3ihkX529ogKvKKIFuZYRihiHtNdGk4YnvkOs0tg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 18:12:39 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 18:12:43 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 168ms (Views: 166.6ms | ActiveRecord: 0.0ms)

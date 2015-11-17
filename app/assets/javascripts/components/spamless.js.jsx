@@ -19,6 +19,10 @@ $(function () {
     <Route path="/" component={App}>
       <IndexRoute component={LandingPage} />
       <Route path="/api/restaurants" component={RestaurantIndex} />
+      <Route
+        path="/api/restaurants/:restaurantId"
+        component={RestaurantDetail}
+      />
     </Route>
   );
 
