@@ -5689,3 +5689,815 @@ ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
   Rendered /usr/local/var/rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
   Rendered /usr/local/var/rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
   Rendered /usr/local/var/rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 12:12:34 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (43.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 265ms (Views: 220.9ms | ActiveRecord: 43.9ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/application.self-b47f158822343b327986fc2e2adebc46cab0c673982516b8026fa3af8b038e67.css?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:12:35 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 12:12:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 210ms (Views: 208.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-b47f158822343b327986fc2e2adebc46cab0c673982516b8026fa3af8b038e67.css?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:12:55 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 12:15:22 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 1201ms (Views: 1197.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-ee73f8c3d9ec208bb5ad776f0b7fd5a15e8d33fa42f87ee18e9196b2fa2fd7bf.css?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:15:24 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 12:15:47 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 204ms (Views: 202.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/application.self-28a858b59d4518d33664c38dbff67dfd7237b13307c01ca6c7ea81927b266478.css?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:15:48 -0500
+
+
+Started GET "/" for ::1 at 2015-11-17 12:16:02 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 150ms (Views: 147.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/application.self-ee1f846a51f00b0b954c24033eb6bc72112da3cbabfabac577ea5ba322f94c7f.css?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:16:02 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-11-17 12:16:05 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8Ylf5FB14V03hcxlg84dJMQOw1QZ/quWE/lgjC917ptlPYktj0Oy32CWWPfI3qVmyOHT5Vv3ON5T0tC33rwIBA=="}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 12:16:05 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 167ms (Views: 166.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:16:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 126ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-17 12:16:13 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:16:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2015-11-17 12:16:18 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 133ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2015-11-17 12:16:27 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"scgrtW12L9exLTi85zXBh4Mv4mqgCDPWq0O8ZWENPl8XHS9eT+nwS0ZIwdwOvMJ1BCXf6ukvP+sT24bv3+Z4IQ==", "user"=>{"email"=>"justin.schulz@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (42.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "justin.schulz@gmail.com"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["reset_password_token", "c676f6979fe1fa00e5e41c27621a131294af900a2bee18450997e9b942435df9"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["reset_password_token", "c676f6979fe1fa00e5e41c27621a131294af900a2bee18450997e9b942435df9"], ["reset_password_sent_at", "2015-11-17 17:16:28.008259"], ["updated_at", "2015-11-17 17:16:28.008888"], ["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered devise/mailer/reset_password_instructions.html.erb (2.3ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 310.7ms
+
+Sent mail to justin.schulz@gmail.com (100.1ms)
+Date: Tue, 17 Nov 2015 12:16:28 -0500
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: justin.schulz@gmail.com
+Message-ID: <564b60ec75405_def33ffc8303d56c66ac@Apps-Mac-mini-28.local.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello justin.schulz@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=f__Aa28zKP1b3WNNmyqT">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 847ms (ActiveRecord: 44.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:16:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:18:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 532ms (Views: 518.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a625d2da631869f1919a577cbe831ea3d3fd28dd36d60d3f2713c4f5120e0da3.css?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:18:56 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:19:06 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/application.self-fc97806c48256630ba06a9d75037456ab45ae33fe10effbfc82ece7274e09d32.css?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:19:07 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:19:31 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 183ms (Views: 181.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-08560b38dcc898e88fe59beff4fbeb2b1ae43ebc0c14cbe7bc96c73170f9bc10.css?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:19:31 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 473ms (Views: 471.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-26bb1f0d39bff7282a327c4968c9529ccb424e1b479841ca78648c62f86edbc1.css?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:20:11 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:17 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/application.self-90ed33181bdd9f216b89c4e321a594969a5987f54d672fea469a9518ea7c100d.css?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:20:17 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a5e64c02b448485a550cfd3a4e5e6ab0f42db8c0b269ab9437785f85626b6978.css?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:20:21 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/application.self-67556237b8e4b7fcf280a3fcf6c0ea158267a191c32cd730a94b5a42de02d326.css?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:20:28 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-07614dda9a7a13c6d1cf852a7c0b1660bbc169016004bf591a30212fec9e3f92.css?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/components/spamless.self-25022e0f92f2fe8876ddf1572030c83a9b0b3f2a3b8b0c400a432437b52b0b45.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-17 12:20:34 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:38 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-11-17 12:20:48 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NwqkEvUdMp/2TeEDoLk395UKHl1331AUrgMXJRC8nvOR36D514LtAwEoGGNJMDQFEgAj3T74XCkWmy2vrlfYjQ==", "user"=>{"email"=>"justin.schulz@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "justin.schulz@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (12.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-11-17 14:54:05.604700"], ["current_sign_in_at", "2015-11-17 17:20:48.896848"], ["sign_in_count", 3], ["updated_at", "2015-11-17 17:20:48.899122"], ["id", 4]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 12:20:48 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-11-17 12:20:53 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kZqIBaOVSOXcGAfR1h5jDdrcVwrxBg3CAcyAxrjbrnN5ZPAGw3TPO0uIJFjv1K/9te3X5nyJb891DcQpNKKquA=="}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 12:20:53 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 80ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-17 12:20:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.0ms)
