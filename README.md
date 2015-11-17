@@ -1,9 +1,9 @@
 Spamless
 ========
 
-[Heroku link][heroku] **production site goes here**
+[Heroku link][heroku] Live Demo
 
-[heroku]: http://www.herokuapp.com
+[heroku]: http://www.serene-hamlet-4726.herokuapp.com
 
 Minimum Viable Product
 ----------------------
