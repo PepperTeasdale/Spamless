@@ -18,7 +18,6 @@ their 100% spam-free menus. Spamless allows users to:
 
 ### Design Docs
 
-
   * [View Wireframes][view]
   * [DB schema][schema]
 
@@ -27,7 +26,7 @@ their 100% spam-free menus. Spamless allows users to:
 
 Implementation Timeline
 -----------------------
-### Phase One- Authentication, User/ Restaurant Models CRUD (2 days)
+### Phase One- Authentication, User/ Restaurant Models CRUD (1 day)
 In phase one, I will start with creating the User model with authentication.
 I will be using devise so that I can later use OmniAuth if there is time. I will
 create the landing page, with a navbar that links to the sign up/ in modal.

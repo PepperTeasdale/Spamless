@@ -59,6 +59,20 @@ h2 {
   background: #051459;
 }
 
+.search-form {
+  height: 300px;
+  width: 500px;
+  margin: 100px auto;
+  top: 100px;
+  border: 5px solid #051459;
+}
+
+.search-form a {
+  display: block;
+  border: 5px solid #051459;
+  padding: 10px;
+}
+
 .login-logout {
   top: 400px;
   display: block;
@@ -97,6 +111,10 @@ h2 {
   text-align: center;
 }
 
+a {
+  font-family: Nobile;
+}
+
 .sign-in-form {
   font-family: Nobile;
 }
@@ -105,6 +123,15 @@ input {
   display: block;
   background: white;
   margin: auto;
+}
+
+.restaurant-list {
+  display: block;
+  margin: 100px auto;
+}
+
+.restaurant-card a {
+  display: block;
 }
 
 .field input {

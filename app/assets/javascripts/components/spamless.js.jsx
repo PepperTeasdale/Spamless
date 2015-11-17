@@ -8,7 +8,7 @@ $(function () {
     render: function () {
       return (
         <div>
-          <header><h1>Spamless</h1></header>
+          <Navbar />
           {this.props.children}
         </div>
       );
@@ -17,7 +17,8 @@ $(function () {
 
   var routes = (
     <Route path="/" component={App}>
-      <IndexRoute component={Navbar} />
+      <IndexRoute component={LandingPage} />
+      <Route path="/api/restaurants" component={RestaurantIndex} />
     </Route>
   );
 
