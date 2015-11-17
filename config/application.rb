@@ -17,6 +17,7 @@ Bundler.require(*Rails.groups)
 
 module Spamless
   class Application < Rails::Application
+    config.assets.enabled = false
     config.assets.initialize_on_precompile = false
     config.active_record.raise_in_transactional_callbacks = true
   end
