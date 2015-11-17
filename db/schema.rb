@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20151117190054) do
     t.datetime "updated_at",    null: false
   end
 
+  add_index "restaurant_details", ["restaurant_id"], name: "index_restaurant_details_on_restaurant_id", using: :btree
+
   create_table "restaurants", force: :cascade do |t|
     t.string   "name",       null: false
     t.datetime "created_at", null: false

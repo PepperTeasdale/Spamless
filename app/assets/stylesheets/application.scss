@@ -69,16 +69,19 @@ h2 {
 
 .search-form a {
   display: block;
+  margin: 20px auto;
+  width: 100px;
   border: 5px solid #051459;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .login-logout {
-  top: 400px;
+  top: 300px;
   display: block;
   position: absolute;
   margin: auto;
-  left: calc(50% - 35px);
+  left: calc(50% - 50px);
   font-size: 24px;
   border: 3px solid black;
   border-radius: 5px;
@@ -126,12 +129,16 @@ input {
 }
 
 .restaurant-list {
-  display: block;
+  float: right;
   margin: 100px auto;
 }
 
 .restaurant-card a {
   display: block;
+  width: 600px;
+  border-left: 2px solid #FBEF02;
+  border-bottom: 2px solid #FBEF02;
+  margin: 10px;
 }
 
 .field input {

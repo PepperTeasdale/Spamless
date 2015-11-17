@@ -15,7 +15,6 @@ RestaurantIndex = React.createClass({
   render: function () {
     var restaurants = this.state.restaurants.map(function (restaurant) {
       var Link = ReactRouter.Link;
-      debugger
       return (
         <li className="restaurant-card" key={restaurant.id}>
           <Link to="#">{restaurant.name}</Link>

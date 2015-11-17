@@ -7,5 +7,7 @@ class CreateRestaurantDetails < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+
+    add_index :restaurant_details, :restaurant_id
   end
 end
