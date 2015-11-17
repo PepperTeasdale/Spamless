@@ -21,6 +21,7 @@ gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'react-rails', '~> 1.3.0'
 gem 'flux-rails-assets'
+gem 'react-router-rails', '~>0.13.3.1'
 gem 'figaro'
 
 group :development, :test do
