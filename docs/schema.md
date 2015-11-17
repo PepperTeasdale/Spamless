@@ -72,7 +72,12 @@ Schema
       <td>not null</td>
     </tr>
     <tr>
-      <td>name</td>
+      <td>fname</td>
+      <td>string</td>
+      <td>not null</td>
+    </tr>
+    <tr>
+      <td>lname</td>
       <td>string</td>
       <td>not null</td>
     </tr>
