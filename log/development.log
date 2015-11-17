@@ -6501,3 +6501,9 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (0.5ms)
   Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
 Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-17 13:10:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 427ms (Views: 424.6ms | ActiveRecord: 0.0ms)

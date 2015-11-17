@@ -27,12 +27,11 @@ their 100% spam-free menus. Spamless allows users to:
 
 Implementation Timeline
 -----------------------
-### Phase One- Authentication, User/ Restaurant Models Address CRUD (2 days)
+### Phase One- Authentication, User/ Restaurant Models CRUD (2 days)
 In phase one, I will start with creating the User model with authentication.
 I will be using devise so that I can later use OmniAuth if there is time. I will
 create the landing page, with a navbar that links to the sign up/ in modal.
-From there, I will create the address model/ api to perform CRUD operations on
-addresses. Then, I will create the restaurant model and associated JSON api.
+Then, I will create the restaurant model and associated JSON api.
 
 [Details][phase-one]
 
@@ -74,7 +73,15 @@ be able to create orders and view them.
 
 [Details][phase-four]
 
-### Phase Five- Clean up CSS with complex styling/ email confirmations (1 day)
+### Phase Five- Addresses
+In phase five, I will create the address model/ api to perform CRUD operations on
+addresses. I will allow users to save addresses for future use, so they don't have
+to reenter every time they make an order. In the user's account page, they will now
+be able to manage addresses alongside their previous orders.
+
+[Details][phase-five]
+
+### Phase Six- Clean up CSS with complex styling/ email confirmations (1 day)
 In this phase, I will make the site prettier. This is the phase that I will add
 animations, such as the shopping cart popping out from the side of the screen and
 giving user immediate feedback when they click a component. I will also send users
@@ -83,7 +90,7 @@ e-mail confirmation that their orders were received using Sendgrid.
 At the end of this phase, I will have a complete app, where users can perform
 CRUD operations on their account and create and read orders.
 
-[Details][phase-five]
+[Details][phase-six]
 
 Bonus/ Todos
 ------------
@@ -98,3 +105,4 @@ Bonus/ Todos
   [phase-three]: ./docs/phases/phase3.md
   [phase-four]: ./docs/phases/phase4.md
   [phase-five]: ./docs/phases/phase5.md
+  [phase-six]: ./docs/phases/phase6.md

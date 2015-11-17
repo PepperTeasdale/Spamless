@@ -14,12 +14,8 @@
 
 ### Views
 * static_pages/root.html.erb
-* users/new.json.jbuilder
-* session/new.json.jbuilder
 * restaurants/index.json.jbuilder
 * restaurants/show.json.jbuilder
-* addresses/new.json.jbuilder
-* addresses/index.json.jbuilder
 
 ## Flux
 ### Views (React Components)

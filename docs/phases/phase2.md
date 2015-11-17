@@ -21,7 +21,10 @@
 
 ### Actions
 * ApiActions.receiveNearbyRestaurants
-* ApiActions.receiveSingleRestaurant
+* FilterActions
+  * updateCuisine
+  * updateBounds
+  * updatePriceRange
 
 ### ApiUtil
 
