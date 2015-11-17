@@ -16,7 +16,9 @@ $(function () {
   });
 
   var routes = (
-    <Route path="/" component={App} />
+    <Route path="/" component={App}>
+      <IndexRoute component={Navbar} />
+    </Route>
   );
 
   React.render(<Router>{routes}</Router>, root);

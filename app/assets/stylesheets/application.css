@@ -13,3 +13,118 @@
  *= require_tree .
  *= require_self
  */
+
+html, body, a, nav, div, ul, li, p, header,
+footer, h1, h2, button, input, textarea, label,
+span, article, img, form {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+h2 {
+  font-family: Corben;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #051459;
+}
+
+.navbar-link-list {
+  float: right;
+  padding:  10px;
+}
+
+.navbar-link {
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Nobile;
+  padding:  10px;
+}
+
+.new_user {
+  display: block;
+  width: 900px;
+  padding: 20px;
+  border: 5px solid #FBEF02;
+  border-radius: 5px;
+  background: #051459;
+  color: white;
+  font-family: Nobile;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.sign-in-form {
+  font-family: Nobile;
+}
+
+input {
+  display: block;
+  background: white;
+  margin: auto;
+}
+
+.field input {
+  border: 2px solid #FBEF02;
+  border-radius: 5px;
+}
+
+.field label {
+  display: block;
+}
+
+.field {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.actions input {
+  border: 2px solid #FBEF02;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar a {
+  color: #FBEF02;
+  padding: 10px;
+}
+
+.logo {
+  font-family: Corben;
+  font-weight: bold;
+  float: left;
+  font-size: 24px;
+}
