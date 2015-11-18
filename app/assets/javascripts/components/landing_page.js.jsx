@@ -1,7 +1,9 @@
 LandingPage = React.createClass({
   render: function () {
     return (
-      <SearchForm />
-  );
+      <div className="landing-page group">
+        <SearchForm />
+      </div>
+    );
   }
 });
