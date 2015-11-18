@@ -8,7 +8,7 @@ SearchForm = React.createClass({
   },
 
   submitSearch: function () {
-    ApiUtil.fetchRestaurants(this.state.address);
+    ApiUtil.fetchRestaurants(this.state.address, this.props.redirect);
     this.props.redirect();
   },
 

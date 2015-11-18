@@ -5,7 +5,6 @@ RestaurantIndex = React.createClass({
 
   componentDidMount: function () {
     RestaurantStore.addChangeListener(this._onChange);
-    ApiUtil.fetchRestaurants();
   },
 
   _onChange: function () {

@@ -1,8 +1,8 @@
 ApiActions = {
-  receiveAllRestaurants: function (restaurants) {
+  receiveAllRestaurants: function (restaurants, callback) {
     AppDispatcher.dispatch({
       actionType: RestaurantConstants.RESTAURANTS_RECEIVED,
-      restaurants: restaurants
+      restaurants: restaurants,
     });
   }
 };

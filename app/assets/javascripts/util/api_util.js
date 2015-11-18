@@ -7,7 +7,6 @@ ApiUtil = {
       data: { address: address },
       success: function (restaurants) {
         ApiActions.receiveAllRestaurants(restaurants);
-        
       }
     });
   }
