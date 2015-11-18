@@ -27,6 +27,7 @@ span, article, img, form {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
+  font-family: Nobile;
 }
 
 .landing-page {
@@ -46,7 +47,8 @@ ul {
 }
 
 h2 {
-  font-family: Corben;
+  margin-top: 20px;
+  padding: 10px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
@@ -66,23 +68,32 @@ h2 {
 }
 
 .search-form {
-  height: 250px;
+  color: white;
+  height: 200px;
   width: 450px;
-  margin: 100px ;
-  top: 100px;
-  background: black;
-  float: left;
-  opacity: 0.6;
+  margin: 175px 200px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  float: right;
 }
 
-.search-form a {
-  display: block;
-  margin: 20px auto;
-  width: 100px;
-  border: 5px solid #051459;
+.search-form input {
+  float: left;
+  width: 310px;
+  margin: 20px 0 0 20px;
   padding: 10px;
-  border-radius: 5px;
-  background: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-form button {
+  color: white;
+  float: left;
+  margin: 20px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  background: #051459;
 }
 
 .login-logout {
@@ -106,7 +117,6 @@ h2 {
   float: left;
   font-size: 16px;
   font-weight: normal;
-  font-family: Nobile;
   padding:  10px;
 }
 
@@ -118,17 +128,8 @@ h2 {
   border-radius: 5px;
   background: #051459;
   color: white;
-  font-family: Nobile;
   margin: 20px auto;
   text-align: center;
-}
-
-a {
-  font-family: Nobile;
-}
-
-.sign-in-form {
-  font-family: Nobile;
 }
 
 input {
@@ -173,13 +174,14 @@ input {
 }
 
 .navbar a {
-  color: #FBEF02;
   padding: 10px;
+  color: white;
 }
 
 .logo {
+  float: left;
   font-family: Corben;
   font-weight: bold;
-  float: left;
+  color: #FBEF02;
   font-size: 24px;
 }
