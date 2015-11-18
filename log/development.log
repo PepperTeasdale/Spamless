@@ -27707,3 +27707,1799 @@ Processing by Api::RestaurantsController#index as JSON
   Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
   Rendered api/restaurants/index.json.jbuilder (43.1ms)
 Completed 200 OK in 259ms (Views: 37.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 13:57:04 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 528ms (Views: 527.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/application.self-9cddd8f7ac35e786b1cd8c6f5240aebe0ea94be721a61b8cf83d6903565fb2a0.css?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/search_form.self-53d147cb2ecf216b7692d95e83db22778db238961acfe7dd6265985369a82bfd.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 13:57:05 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 13:57:08 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway" for ::1 at 2015-11-18 13:57:19 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway"}
+  [1m[36mRestaurant Load (2.1ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.6ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.2ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.6ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  Rendered api/restaurants/index.json.jbuilder (15.5ms)
+Completed 200 OK in 203ms (Views: 14.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 13:57:53 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 291ms (Views: 290.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/application.self-6f48aa8d226bcd7340391b151d0275b71c411e7068736669c38b7aec52a2f29f.css?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/search_form.self-53d147cb2ecf216b7692d95e83db22778db238961acfe7dd6265985369a82bfd.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 13:57:53 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 13:57:54 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 13:57:57 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway" for ::1 at 2015-11-18 13:58:08 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway"}
+  [1m[35mRestaurant Load (1.9ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (0.3ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 2]]
+  [1m[35mAddress Load (0.3ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.5ms)
+  [1m[36mRestaurantDetail Load (0.3ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 1]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.7ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 4]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 3]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.2ms)
+  Rendered api/restaurants/index.json.jbuilder (15.0ms)
+Completed 200 OK in 125ms (Views: 14.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 13:59:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 457ms (Views: 456.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/application.self-59c9fa718cabb20c89d1b6a828cdc56c95c8968eae517bec1ff0ca5eb28f7a9b.css?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/search_form.self-53d147cb2ecf216b7692d95e83db22778db238961acfe7dd6265985369a82bfd.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 13:59:37 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 13:59:38 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 13:59:42 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway" for ::1 at 2015-11-18 13:59:49 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway"}
+  [1m[36mRestaurant Load (1.8ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.6ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.6ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.6ms)
+  Rendered api/restaurants/index.json.jbuilder (12.1ms)
+Completed 200 OK in 132ms (Views: 11.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 14:01:19 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 569ms (Views: 569.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/application.self-160eccb113d5381724848f92d02f84dc3815256965f39677f5f95fbb5f7cb83f.css?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/search_form.self-53d147cb2ecf216b7692d95e83db22778db238961acfe7dd6265985369a82bfd.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 14:01:19 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 14:01:20 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 15:38:25 -0500
+
+
+Started GET "/api/restaurants?address=" for ::1 at 2015-11-18 15:38:33 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>""}
+  [1m[35mRestaurant Load (30.9ms)[0m  SELECT restaurants.*, NULL::text AS distance, NULL::text AS bearing FROM "restaurants" WHERE (false)
+  Rendered api/restaurants/index.json.jbuilder (31.8ms)
+Completed 200 OK in 40ms (Views: 7.3ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 15:39:41 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 425ms (Views: 414.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/application.self-160eccb113d5381724848f92d02f84dc3815256965f39677f5f95fbb5f7cb83f.css?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/search_form.self-ab06a8350c041563753745f92975e4aa547d5babafd10a9056e7ae551058853e.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 15:39:43 -0500
+
+
+Started GET "/api/restaurants?address=600+broadway" for ::1 at 2015-11-18 15:40:01 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 broadway"}
+  [1m[36mRestaurant Load (3.2ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (204.9ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.2ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.8ms)
+  Rendered api/restaurants/index.json.jbuilder (645.2ms)
+Completed 200 OK in 913ms (Views: 474.3ms | ActiveRecord: 173.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 15:56:39 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 507ms (Views: 503.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/application.self-160eccb113d5381724848f92d02f84dc3815256965f39677f5f95fbb5f7cb83f.css?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/search_form.self-c4de05004f48fc6f2a84bf79e6cedf33ea937e29a9eb6e169a4c95a43e6e8909.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 15:56:42 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 15:59:03 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 369ms (Views: 365.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/application.self-160eccb113d5381724848f92d02f84dc3815256965f39677f5f95fbb5f7cb83f.css?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/search_form.self-15507d9e9e0c8446c2c6761f893db9ba2a4bf7e08efc77a16690bb4acbe10b02.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 15:59:05 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 15:59:06 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:01:39 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 555ms (Views: 551.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/application.self-160eccb113d5381724848f92d02f84dc3815256965f39677f5f95fbb5f7cb83f.css?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/search_form.self-6d10fa107c98eb91346017a9f50681dc8df7d28d70d746f12a65ad63b02a8ba0.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:01:42 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:06:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 705ms (Views: 700.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:06:34 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components/search_form.self-fb39b29c020f0a8ba58a1d96e67251d4b789aee2537080765bc2a2f93e0d2501.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:06:35 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:08:21 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 527ms (Views: 524.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/search_form.self-da71cb9deb8724ea88f2e6ada2e9470b3d7ace27d952abf24f3f85fd5fac0886.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:08:23 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:08:40 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 338ms (Views: 335.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/search_form.self-01983141ffcb387161b570049fcd9682a2b42c924eeae33b39c27ba827b6392d.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:41 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:08:42 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:09:14 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 585ms (Views: 579.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components/search_form.self-73fa9ec2eb1a3c11f0ab35db7a6dbff6df79484189f36942957e51748de15bd4.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:09:17 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:09:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 381ms (Views: 377.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/search_form.self-321cd1b1399d2ce22c487180480de777b876434469d9ec473aa62179e82e5af7.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/util/api_util.self-1342cbe5545703dde3892e72fb60797e2eae4f64b97e1e32e2ed68209d8d0cd8.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:09:45 -0500
+
+
+Started GET "/" for ::1 at 2015-11-18 16:13:29 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 713ms (Views: 710.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-54111fb27ea584ed59fca307117fb87063207a068a36b19f9af4c69fb9e5be86.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/search_form.self-e7cfe934f2174dac576de2f70fed333d75f39eb7fdee0ea657db35fbffc68067.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/util/api_util.self-771dda813aa67adb18b574e1533325344f624777f8ffe1c2e9dbb7fd914749b0.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:13:32 -0500
+
+
+Started GET "/api/restaurants?address=1108+Madison+Street%2C+Brooklyn&orderMethod=pickup" for ::1 at 2015-11-18 16:13:43 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison Street, Brooklyn", "orderMethod"=>"pickup"}
+  [1m[35mRestaurant Load (2.9ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((38.659331 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(38.659331 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-90.1645143 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -90.1645143) / 57.2957795), ((restaurants.latitude - 38.659331) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 38.51459921688915 AND 38.80406278311085 AND restaurants.longitude BETWEEN -90.34986018258537 AND -89.97916841741461 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((38.659331 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(38.659331 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-90.1645143 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC
+  Rendered api/restaurants/index.json.jbuilder (7.7ms)
+Completed 200 OK in 271ms (Views: 21.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/restaurants?address=600+Broadway%2C+NY&orderMethod=delivery" for ::1 at 2015-11-18 16:14:08 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway, NY", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (2.0ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (58.0ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  Rendered api/restaurants/index.json.jbuilder (90.8ms)
+Completed 200 OK in 277ms (Views: 87.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/restaurants?address=Union+Square&orderMethod=delivery" for ::1 at 2015-11-18 16:18:32 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"Union Square", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (2.2ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((42.8357393 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(42.8357393 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-71.6498508 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -71.6498508) / 57.2957795), ((restaurants.latitude - 42.8357393) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 42.79231976506674 AND 42.87915883493326 AND restaurants.longitude BETWEEN -71.70906147112011 AND -71.59064012887988 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((42.8357393 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(42.8357393 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-71.6498508 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  Rendered api/restaurants/index.json.jbuilder (3.1ms)
+Completed 200 OK in 243ms (Views: 35.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 16:21:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 473ms (Views: 470.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-1ef3e1ce78d0b857e39d2f05181fda72637060fc867cbdc2a00d9a6bf3bf1dc7.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/search_form.self-e7cfe934f2174dac576de2f70fed333d75f39eb7fdee0ea657db35fbffc68067.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:21:22 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/util/api_util.self-771dda813aa67adb18b574e1533325344f624777f8ffe1c2e9dbb7fd914749b0.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:21:23 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:21:24 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway&orderMethod=delivery" for ::1 at 2015-11-18 16:21:32 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (2.5ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (38.8ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.4ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.1ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.2ms)
+  Rendered api/restaurants/index.json.jbuilder (69.4ms)
+Completed 200 OK in 303ms (Views: 53.4ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 16:25:46 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 383ms (Views: 379.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/application.self-707539a40b8a96e68466e747d3aca1aa82cd3a1162072110d643b33c099a8ed2.css?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/navbar.self-2a45b900396ed4fa7da8a3ad7a064f2d621b236456ba589dd27015ae9b5b8d8b.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-b6e1228fbee170e1240a37aba42fafb41616e5325d9a972b7f5aa64f9f4d04de.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/search_form.self-ad3b650b3f75ec4063d55ebcdd6e367edacc7d0c7f50b450289a4604f75b1d4d.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/components/spamless.self-1cc7acfbb7648934f14e2208c1c669ec41d24b0c7be7e48aaf802159b1f52aa9.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/util/api_util.self-771dda813aa67adb18b574e1533325344f624777f8ffe1c2e9dbb7fd914749b0.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 16:25:49 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 16:25:50 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway&orderMethod=delivery" for ::1 at 2015-11-18 16:25:57 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (2.4ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 2]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (34.6ms)
+  [1m[36mRestaurantDetail Load (0.3ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 1]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.1ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 4]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 3]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  Rendered api/restaurants/index.json.jbuilder (118.3ms)
+Completed 200 OK in 374ms (Views: 47.0ms | ActiveRecord: 74.6ms)
+
+
+Started GET "/api/restaurants?address=1108+Madison+St%2C+NY&orderMethod=pickup" for ::1 at 2015-11-18 16:26:13 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison St, NY", "orderMethod"=>"pickup"}
+  [1m[36mRestaurant Load (1.7ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.915874) / 57.2957795), ((restaurants.latitude - 40.691829) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.54709721688915 AND 40.83656078311085 AND restaurants.longitude BETWEEN -74.10675578225373 AND -73.72499221774628 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  Rendered api/restaurants/index.json.jbuilder (12.4ms)
+Completed 200 OK in 213ms (Views: 12.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/restaurants?address=1108+Madison%2C+NY&orderMethod=delivery" for ::1 at 2015-11-18 16:26:44 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison, NY", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (1.5ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7787818 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7787818 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9603345 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9603345) / 57.2957795), ((restaurants.latitude - 40.7787818) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.73536226506674 AND 40.822201334933254 AND restaurants.longitude BETWEEN -74.01767392727228 AND -73.90299507272772 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7787818 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7787818 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9603345 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 190ms (Views: 3.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/restaurants?address=598+Broadway&orderMethod=delivery" for ::1 at 2015-11-18 16:26:55 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"598 Broadway", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (1.8ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.724948 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.724948 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9967097 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9967097) / 57.2957795), ((restaurants.latitude - 40.724948) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.68152846506674 AND 40.768367534933255 AND restaurants.longitude BETWEEN -74.05400272149281 AND -73.93941667850719 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.724948 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.724948 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9967097 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  Rendered api/restaurants/index.json.jbuilder (12.4ms)
+Completed 200 OK in 250ms (Views: 12.2ms | ActiveRecord: 3.4ms)

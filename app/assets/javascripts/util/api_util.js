@@ -1,10 +1,10 @@
 ApiUtil = {
-  fetchRestaurants: function (address) {
+  fetchRestaurants: function (searchParams) {
     $.ajax({
       url: "/api/restaurants",
       type: "GET",
       dataType: "json",
-      data: { address: address },
+      data: searchParams,
       success: function (restaurants) {
         ApiActions.receiveAllRestaurants(restaurants);
       }

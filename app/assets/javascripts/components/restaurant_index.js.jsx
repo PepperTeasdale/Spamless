@@ -11,6 +11,10 @@ RestaurantIndex = React.createClass({
     this.setState({ restaurants: RestaurantStore.all() });
   },
 
+  componentWillUnmount: function () {
+    RestaurantStore.removeChangeListener(this._onChange);
+  },
+
   render: function () {
     var restaurants = this.state.restaurants.map(function (restaurant) {
       var Link = ReactRouter.Link;

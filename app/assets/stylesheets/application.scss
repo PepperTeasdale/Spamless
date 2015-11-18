@@ -77,6 +77,10 @@ h2 {
   float: right;
 }
 
+.search-form label {
+  float: left;
+}
+
 .search-form input {
   float: left;
   width: 310px;
@@ -140,15 +144,15 @@ input {
 
 .restaurant-list {
   float: right;
+  width: 75%;
   margin: 100px auto;
 }
 
 .restaurant-card {
+  margin: 10px auto;
   display: block;
-  width: 600px;
   padding: 10px;
-  border-left: 2px solid #FBEF02;
-  border-bottom: 2px solid #FBEF02;
+  border-bottom: 2px dotted #051459
 }
 
 .field input {

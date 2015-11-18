@@ -1,6 +1,7 @@
 class Api::RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.near(params[:address], 3)
+    distance = (params[:orderMethod] == "delivery" ? 3 : 10)
+    @restaurants = Restaurant.near(params[:address], distance)
   end
 
   def show
