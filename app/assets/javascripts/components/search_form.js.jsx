@@ -30,8 +30,8 @@ SearchForm = React.createClass({
     return (
       <div className="search-form group">
         <h2>Check Out Restaurants Near You!</h2>
-        <div>
-          <label htmlFor="delivery">
+        <fieldset className="group">
+          <label className="radio-label">
             <input
               id="delivery"
               type="radio"
@@ -39,10 +39,10 @@ SearchForm = React.createClass({
               checked={ this.state.orderMethod === "delivery" }
               onChange={ this.orderMethodChanged }
             />
-            Delivery
+            <span>Delivery</span>
           </label>
-          -or-
-          <label htmlFor="pickup">
+          <span>-or-</span>
+          <label className="radio-label">
             <input
               id="pickup"
               type="radio"
@@ -50,9 +50,9 @@ SearchForm = React.createClass({
               checked={ this.state.orderMethod === "pickup" }
               onChange={ this.orderMethodChanged }
             />
-            Pickup
+            <span>Pickup</span>
           </label>
-        </div>
+        </fieldset>
         <input
           type="text"
           className="address-input"

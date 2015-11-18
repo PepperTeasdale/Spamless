@@ -16,7 +16,7 @@
 
 html, body, a, nav, div, ul, li, p, header,
 footer, h1, h2, button, input, textarea, label,
-span, article, img, form {
+span, article, img, form, fieldset {
   margin: 0;
   border: 0;
   padding: 0;
@@ -72,13 +72,42 @@ h2 {
   height: 200px;
   width: 450px;
   margin: 175px 200px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(51, 51, 51, 0.78);
   border-radius: 5px;
   float: right;
 }
 
-.search-form label {
-  float: left;
+.search-form input[type="radio"] {
+  display: none;
+}
+
+.search-form span {
+  margin: 0 10px;
+}
+
+.search-form fieldset {
+  margin: 10px 70px;
+  font-size: 18px;
+}
+
+[type="radio"] + span::before {
+  cursor: pointer;
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;
+  margin: 0 20px 0 0;
+  transition: 0.5s;
+}
+
+
+[type="radio"]:checked + span::before {
+  background: yellow;
+  box-shadow: 0 0 0 0.25em #000;
 }
 
 .search-form input {
@@ -140,6 +169,13 @@ input {
   display: block;
   background: white;
   margin: auto;
+}
+
+.filter-field {
+  display: block;
+  background: gray;
+  float: left;
+  width: 25%;
 }
 
 .restaurant-list {
