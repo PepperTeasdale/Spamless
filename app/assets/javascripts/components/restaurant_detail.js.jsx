@@ -6,7 +6,6 @@ RestaurantDetail = React.createClass({
   },
 
   componentDidMount: function () {
-    debugger
     this.setState({
       restaurant: RestaurantStore.find(this.props.params.restaurantId)
     });

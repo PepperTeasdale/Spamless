@@ -4,9 +4,11 @@ SearchForm = React.createClass({
 
     return (
       <div className="search-form group">
-        <Link to="/api/restaurants">
-          Find Restaurants Near You!
-        </Link>
+        <div className="button-wrapper">
+          <Link to="/restaurants">
+            Find Restaurants Near You!
+          </Link>
+        </div>
       </div>
     );
   }

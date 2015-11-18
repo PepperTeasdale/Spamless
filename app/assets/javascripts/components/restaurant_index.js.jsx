@@ -17,7 +17,8 @@ RestaurantIndex = React.createClass({
       var Link = ReactRouter.Link;
       return (
         <li className="restaurant-card" key={restaurant.id}>
-          <Link to="#">{restaurant.name}</Link>
+          <Link to={"/restaurants/" + restaurant.id}>{restaurant.name}</Link>
+          <p>{restaurant.restaurant_detail.cuisine_type}</p>
         </li>
       );
     });
