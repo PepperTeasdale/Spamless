@@ -17,8 +17,7 @@ SearchForm = React.createClass({
         orderMethod: this.state.orderMethod
       };
 
-      ApiUtil.fetchRestaurants(searchParams);
-      this.props.redirect();
+      ApiUtil.fetchRestaurants(searchParams, this.props.redirect);
     }
   },
 

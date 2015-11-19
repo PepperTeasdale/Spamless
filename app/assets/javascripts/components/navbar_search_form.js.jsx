@@ -1,7 +1,7 @@
 NavbarSearchForm = React.createClass({
   getInitialState: function () {
     return {
-      address: "",
+      address: this.props.address,
       orderMethod: "delivery"
     };
   },
@@ -54,7 +54,7 @@ NavbarSearchForm = React.createClass({
         <input
           type="text"
           className="nav-bar-address-input"
-          placeholder="Where are you? (Required)"
+          placeholder={ this.props.address }
           onChange={ this.changeAddress }
         />
         <button onClick={ this.submitSearch }>

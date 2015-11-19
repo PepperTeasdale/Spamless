@@ -1,6 +1,6 @@
 LandingPage = React.createClass({
-  redirect: function () {
-    this.props.history.pushState(null, "/restaurants", {});
+  redirect: function (address) {
+    this.props.history.pushState(null, "/restaurants", address);
   },
 
   render: function () {

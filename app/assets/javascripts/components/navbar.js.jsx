@@ -21,7 +21,7 @@ Navbar = React.createClass({
   render: function () {
     var searchForm;
     if (!this.props.landingPage) {
-      searchForm = <NavbarSearchForm />;
+      searchForm = <NavbarSearchForm address={ this.props.address } />;
     }
     return (
       <div className="navbar-container">
