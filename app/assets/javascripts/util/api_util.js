@@ -5,8 +5,8 @@ ApiUtil = {
       type: "GET",
       dataType: "json",
       data: searchParams,
-      success: function (restaurants) {
-        ApiActions.receiveAllRestaurants(restaurants);
+      success: function (data) {
+        ApiActions.receiveAllRestaurants(data.restaurants);
       }
     });
   }

@@ -26,7 +26,7 @@ NavbarSearchForm = React.createClass({
     return (
       <div className="navbar-search-form group">
         <fieldset className="navbar-radios group">
-          <label className="radio-label">
+          <label className="navbar-radio-label">
             <input
               id="delivery"
               type="radio"
@@ -36,8 +36,8 @@ NavbarSearchForm = React.createClass({
             />
             <span>Delivery</span>
           </label>
-          <span>-or-</span>
-          <label className="radio-label">
+          <span className="navbar-span">-or-</span>
+          <label className="navbar-radio-label">
             <input
               id="pickup"
               type="radio"
