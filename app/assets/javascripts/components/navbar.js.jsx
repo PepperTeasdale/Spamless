@@ -19,10 +19,15 @@ Navbar = React.createClass({
   },
 
   render: function () {
+    var searchForm;
+    if (!this.props.landingPage) {
+      searchForm = <NavbarSearchForm />;
+    }
     return (
       <div className="navbar-container">
         <nav className="navbar group">
           <ReactRouter.Link to="/" className="logo" />
+          {searchForm}
           <NavBarLinkList />
         </nav>
       </div>
