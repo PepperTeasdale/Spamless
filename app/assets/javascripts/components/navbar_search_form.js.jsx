@@ -18,8 +18,11 @@ NavbarSearchForm = React.createClass({
       };
 
       ApiUtil.fetchRestaurants(searchParams);
-      this.props.redirect();
     }
+  },
+
+  orderMethodChanged: function (e) {
+    this.setState({ orderMethod: e.target.name });
   },
 
   render: function () {
