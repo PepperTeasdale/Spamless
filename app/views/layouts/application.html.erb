@@ -8,13 +8,13 @@
   <link href='https://fonts.googleapis.com/css?family=Corben:700|Nobile' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="login-logout">
+  <!-- <div class="login-logout">
     <% if user_signed_in? %>
       <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
     <% else %>
       <a href="<%= new_user_session_url %>">Login</a>
     <% end %>
-  </div>
+  </div> -->
 
 <%= yield %>
 

@@ -1,9 +1,22 @@
 Navbar = React.createClass({
+  componentDidMount: function () {
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 25) {
+        $(".navbar").addClass("not-transparent");
+        $(".navbar a").addClass("small-logo")
+      }
+      else {
+        $(".navbar").removeClass("not-transparent");
+        $(".logo").removeClass("small-logo")
+      }
+    });
+  },
+
   render: function () {
     return (
       <div className="navbar-container">
         <nav className="navbar group">
-          <ReactRouter.Link to="/" className="logo">Spamless</ReactRouter.Link>
+          <ReactRouter.Link to="/" className="logo" />
           <NavBarLinkList />
         </nav>
       </div>
