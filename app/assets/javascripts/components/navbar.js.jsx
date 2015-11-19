@@ -1,15 +1,21 @@
 Navbar = React.createClass({
   componentDidMount: function () {
-    $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 25) {
-        $(".navbar").addClass("not-transparent");
-        $(".navbar a").addClass("small-logo")
-      }
-      else {
-        $(".navbar").removeClass("not-transparent");
-        $(".logo").removeClass("small-logo")
-      }
-    });
+    if (this.props.landingPage) {
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 25) {
+          $(".navbar").addClass("not-transparent");
+          $(".navbar a").addClass("small-logo");
+        }
+        else {
+          $(".navbar").removeClass("not-transparent");
+          $(".logo").removeClass("small-logo");
+        }
+      });
+    }
+    else {
+      $(".navbar").addClass("not-transparent");
+      $(".navbar a").addClass("small-logo");
+    }
   },
 
   render: function () {
