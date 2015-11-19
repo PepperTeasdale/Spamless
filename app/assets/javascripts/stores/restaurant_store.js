@@ -17,6 +17,18 @@
       this.on(CHANGE_EVENT, callback);
     },
 
+    cuisineTypes: function () {
+      var cuisines = [];
+      _restaurants.forEach(function (restaurant) {
+        if (cuisines.indexOf(restaurant.restaurant_detail.cuisine_type) === -1 &&
+            (typeof restaurant.restaurant_detail.cuisine_type !== "undefined")) {
+          cuisines.push(restaurant.restaurant_detail.cuisine_type);
+        }
+      });
+
+      return cuisines;
+    },
+
     find: function (id) {
       _restaurants.forEach(function (restaurant) {
         if (restaurant.id === id) {

@@ -177,22 +177,28 @@ input {
 }
 
 .filter-field {
+  margin-top: 80px;
   display: block;
-  background: gray;
+  background: #ccc;
   float: left;
   width: 25%;
+}
+
+.search-index {
+  background: #ccc;
 }
 
 .restaurant-list {
   float: right;
   width: 75%;
-  margin: 100px auto;
+  margin: 80px auto;
+  background: white;
 }
 
 .restaurant-card a {
   display: block;
   font-weight: bold;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .restaurant-card p {
@@ -201,9 +207,9 @@ input {
 }
 
 .restaurant-card {
-  margin: 10px auto;
+  margin: 10px auto 0;
   display: block;
-  padding: 10px;
+  padding: 10px 10px 0;
   border-bottom: 2px dotted #1E2F81
 }
 
