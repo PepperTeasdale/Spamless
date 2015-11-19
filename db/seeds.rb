@@ -10,7 +10,8 @@ addresses = [
   ["622 Broadway", "New York", "NY", "10012", "555-555-5555"],
   ["600 Broadway", "New York", "NY", "10012", "555-555-5555"],
   ["274 Lafayette St", "New York", "NY", "10012", "555-555-5555"],
-  ["295 Lafayette St", "New York", "NY", "10012", "555-555-5555"]
+  ["295 Lafayette St", "New York", "NY", "10012", "555-555-5555"],
+  ["1045 Flushing Ave", "Brooklyn", "NY", "11237", "555-555-5555"]
 ]
 
 addresses.each do |address|
@@ -27,7 +28,8 @@ restaurants = [
   ["Jamón Especiado", "Spanish", "Tapas, wine and spam"],
   ["Gewürzschinken", "German", "Fantastisch bier und spam!"],
   ["Onomea", "Hawaiian", "Wonderful tropical ambiance"],
-  ["Fawlty Towers", "English", "Cozy BnB with an eccentric owner"]
+  ["Fawlty Towers", "English", "Cozy BnB with an eccentric owner"],
+  ["King Noodle", "Southeast Asian", "Flavor, spam"]
 ]
 
 restaurants.each_with_index do |restaurant, idx|

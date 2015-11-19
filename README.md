@@ -14,7 +14,8 @@ their 100% spam-free menus. Spamless allows users to:
   * Search and filter restaurants by cuisine, price, etc
   * Create and read orders
   * Order delicious spam
-  * Create, edit, read and delete addresses
+  * Create, edit, read and destroy restaurants and menus
+  * Create, edit, read and destroy addresses
 
 ### Design Docs
 
@@ -41,11 +42,11 @@ for restaurant card components. There will be a filter form component to allow
 customers to search and filter by distance, type of cuisine. I will add styling
 for the search index page and seed the database with a few restaurants and users.
 At the end of phase two, users can enter an address and see a list of restaurants
-within n-miles that address with filters applied. I will use the google maps api
-to compute distance.
+within n-miles that address with filters applied. I will use the Geocoder gem to
+calculate the distance and convert addresses into lat/ lng in the database.
 
 The search form component will allow users to use a saved address or enter a new
-one and enter search terms. At this point, they can only search restaurant or
+one and enter search terms. At this point, they can only search restaurant name or
 cuisine type, but phase three adds menu item search.
 
 [Details][phase-two]

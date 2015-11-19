@@ -43904,3 +43904,785 @@ Started GET "/assets/logo-6ffb0d005f9269363017941c9a01d8554ad0b61711038865f883d3
 
 
 Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 22:16:02 -0500
+
+
+Started GET "/api/restaurants?address=600+Broadway&orderMethod=delivery" for ::1 at 2015-11-18 22:21:49 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 Broadway", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (17.1ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (62.8ms)
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.5ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  Rendered api/restaurants/index.json.jbuilder (559.3ms)
+Completed 200 OK in 868ms (Views: 159.0ms | ActiveRecord: 420.5ms)
+
+
+Started GET "/api/restaurants?address=600+broadway&orderMethod=delivery" for ::1 at 2015-11-18 22:25:04 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 broadway", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (1.9ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (0.3ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 2]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.6ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 1]]
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.1ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 4]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.2ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 3]]
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.0ms)
+  Rendered api/restaurants/index.json.jbuilder (34.8ms)
+Completed 200 OK in 200ms (Views: 52.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/restaurants?address=600+broadway&orderMethod=delivery" for ::1 at 2015-11-18 22:25:14 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 broadway", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (1.7ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.6ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (2.3ms)
+  Rendered api/restaurants/index.json.jbuilder (14.3ms)
+Completed 200 OK in 118ms (Views: 14.1ms | ActiveRecord: 3.2ms)
+  [1m[36m (5050.8ms)[0m  [1mDROP DATABASE IF EXISTS "Spamless_development"[0m
+PG::ObjectInUse: ERROR:  database "Spamless_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "Spamless_development"
+  [1m[35m (202.9ms)[0m  DROP DATABASE IF EXISTS "Spamless_test"
+  [1m[36m (1.2ms)[0m  [1mCREATE DATABASE "Spamless_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "Spamless_development" already exists
+: CREATE DATABASE "Spamless_development" ENCODING = 'unicode'
+  [1m[35m (895.2ms)[0m  CREATE DATABASE "Spamless_test" ENCODING = 'unicode'
+  [1m[36mSQL (65.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (94.4ms)[0m  DROP TABLE "addresses" CASCADE
+  [1m[36m (102.5ms)[0m  [1mCREATE TABLE "addresses" ("id" serial primary key, "latitude" float, "longitude" float, "address" text, "city" character varying, "state" character varying, "zipcode" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (20.2ms)[0m  DROP TABLE "restaurant_details" CASCADE
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "restaurant_details" ("id" serial primary key, "restaurant_id" integer NOT NULL, "description" text, "cuisine_type" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE  INDEX  "index_restaurant_details_on_restaurant_id" ON "restaurant_details" USING btree ("restaurant_id")
+  [1m[36m (2.8ms)[0m  [1mDROP TABLE "restaurants" CASCADE[0m
+  [1m[35m (4.6ms)[0m  CREATE TABLE "restaurants" ("id" serial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "address_id" integer NOT NULL, "latitude" float, "longitude" float) 
+  [1m[36m (1.6ms)[0m  [1mCREATE  INDEX  "index_restaurants_on_name" ON "restaurants" USING btree ("name")[0m
+  [1m[35m (3.8ms)[0m  DROP TABLE "users" CASCADE
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.4ms)[0m  CREATE TABLE "addresses" ("id" serial primary key, "latitude" float, "longitude" float, "address" text, "city" character varying, "state" character varying, "zipcode" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "restaurant_details" ("id" serial primary key, "restaurant_id" integer NOT NULL, "description" text, "cuisine_type" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_restaurant_details_on_restaurant_id" ON "restaurant_details" USING btree ("restaurant_id")
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "address_id" integer NOT NULL, "latitude" float, "longitude" float) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_restaurants_on_name" ON "restaurants" USING btree ("name")
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (5.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (34.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151118165627')[0m
+  [1m[35m (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117134944')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151117183958')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117190054')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151118143815')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (14.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'fake@email.com' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("fname", "lname", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["fname", "Bobby"], ["lname", "Digital"], ["email", "fake@email.com"], ["encrypted_password", "$2a$10$M/T4GAmaNsQmUux5k3S1AeAorcy0XWfkjlLKd0FOy2vMATLfVQPmy"], ["created_at", "2015-11-19 03:34:45.211880"], ["updated_at", "2015-11-19 03:34:45.211880"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "622 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:34:45.431199"], ["updated_at", "2015-11-19 03:34:45.431199"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "600 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:34:45.557764"], ["updated_at", "2015-11-19 03:34:45.557764"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "274 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:34:45.682988"], ["updated_at", "2015-11-19 03:34:45.682988"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "295 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:34:45.795269"], ["updated_at", "2015-11-19 03:34:45.795269"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "1045 Flushing Ave"], ["city", "Brooklyn"], ["state", "NY"], ["zipcode", "11237"], ["phone", "555-555-5555"], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:34:45.906587"], ["updated_at", "2015-11-19 03:34:45.906587"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (23.8ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Jamón Especiado' LIMIT 1[0m
+  [1m[35mAddress Load (0.4ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jamón Especiado"], ["address_id", 1], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:34:46.022483"], ["updated_at", "2015-11-19 03:34:46.022483"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mRestaurant Load (0.7ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurantDetail Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["restaurant_id", 1], ["cuisine_type", "Spanish"], ["description", "Tapas, wine and spam"], ["created_at", "2015-11-19 03:34:46.056983"], ["updated_at", "2015-11-19 03:34:46.056983"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Gewürzschinken' LIMIT 1[0m
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gewürzschinken"], ["address_id", 2], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:34:46.131622"], ["updated_at", "2015-11-19 03:34:46.131622"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurantDetail Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 2 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["restaurant_id", 2], ["cuisine_type", "German"], ["description", "Fantastisch bier und spam!"], ["created_at", "2015-11-19 03:34:46.136128"], ["updated_at", "2015-11-19 03:34:46.136128"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Onomea' LIMIT 1[0m
+  [1m[35mAddress Load (0.3ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Onomea"], ["address_id", 3], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:34:46.205818"], ["updated_at", "2015-11-19 03:34:46.205818"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurantDetail Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["restaurant_id", 3], ["cuisine_type", "Hawaiian"], ["description", "Wonderful tropical ambiance"], ["created_at", "2015-11-19 03:34:46.209763"], ["updated_at", "2015-11-19 03:34:46.209763"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Fawlty Towers' LIMIT 1[0m
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Fawlty Towers"], ["address_id", 4], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:34:46.278403"], ["updated_at", "2015-11-19 03:34:46.278403"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurantDetail Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 4 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["restaurant_id", 4], ["cuisine_type", "English"], ["description", "Cozy BnB with an eccentric owner"], ["created_at", "2015-11-19 03:34:46.282130"], ["updated_at", "2015-11-19 03:34:46.282130"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurant Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'King Noodle' LIMIT 1[0m
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "King Noodle"], ["address_id", 5], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:34:46.360519"], ["updated_at", "2015-11-19 03:34:46.360519"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurantDetail Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 5 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["restaurant_id", 5], ["cuisine_type", "Southeast Asian"], ["description", "Flavor, spam"], ["created_at", "2015-11-19 03:34:46.364216"], ["updated_at", "2015-11-19 03:34:46.364216"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[36m (139.2ms)[0m  [1mDROP DATABASE IF EXISTS "Spamless_development"[0m
+  [1m[35m (114.2ms)[0m  DROP DATABASE IF EXISTS "Spamless_test"
+  [1m[36m (553.6ms)[0m  [1mCREATE DATABASE "Spamless_development" ENCODING = 'unicode'[0m
+  [1m[35m (282.7ms)[0m  CREATE DATABASE "Spamless_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.1ms)[0m  CREATE TABLE "addresses" ("id" serial primary key, "latitude" float, "longitude" float, "address" text, "city" character varying, "state" character varying, "zipcode" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "restaurant_details" ("id" serial primary key, "restaurant_id" integer NOT NULL, "description" text, "cuisine_type" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (37.0ms)[0m  CREATE  INDEX  "index_restaurant_details_on_restaurant_id" ON "restaurant_details" USING btree ("restaurant_id")
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "address_id" integer NOT NULL, "latitude" float, "longitude" float) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_restaurants_on_name" ON "restaurants" USING btree ("name")
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151118165627')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117134944')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151117183958')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117190054')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151118143815')[0m
+  [1m[35mSQL (0.4ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "addresses" ("id" serial primary key, "latitude" float, "longitude" float, "address" text, "city" character varying, "state" character varying, "zipcode" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (6.6ms)[0m  CREATE TABLE "restaurant_details" ("id" serial primary key, "restaurant_id" integer NOT NULL, "description" text, "cuisine_type" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX  "index_restaurant_details_on_restaurant_id" ON "restaurant_details" USING btree ("restaurant_id")[0m
+  [1m[35m (5.7ms)[0m  CREATE TABLE "restaurants" ("id" serial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "address_id" integer NOT NULL, "latitude" float, "longitude" float) 
+  [1m[36m (2.4ms)[0m  [1mCREATE  INDEX  "index_restaurants_on_name" ON "restaurants" USING btree ("name")[0m
+  [1m[35m (5.2ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151118165627')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151117134944')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117183958')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151117190054')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151118143815')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fake@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("fname", "lname", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["fname", "Bobby"], ["lname", "Digital"], ["email", "fake@email.com"], ["encrypted_password", "$2a$10$.t3V3Sa2zHamYe//bizlV.1KqrfR8.a6XekUv/5TXHzn6tjAeVBNO"], ["created_at", "2015-11-19 03:35:16.939189"], ["updated_at", "2015-11-19 03:35:16.939189"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "622 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:35:17.036009"], ["updated_at", "2015-11-19 03:35:17.036009"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "600 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:35:17.104449"], ["updated_at", "2015-11-19 03:35:17.104449"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "274 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:35:17.174796"], ["updated_at", "2015-11-19 03:35:17.174796"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "295 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:35:17.248991"], ["updated_at", "2015-11-19 03:35:17.248991"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "1045 Flushing Ave"], ["city", "Brooklyn"], ["state", "NY"], ["zipcode", "11237"], ["phone", "555-555-5555"], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:35:17.326572"], ["updated_at", "2015-11-19 03:35:17.326572"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.5ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Jamón Especiado' LIMIT 1
+  [1m[36mAddress Load (0.4ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Jamón Especiado"], ["address_id", 1], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:35:17.419451"], ["updated_at", "2015-11-19 03:35:17.419451"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.5ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 1], ["cuisine_type", "Spanish"], ["description", "Tapas, wine and spam"], ["created_at", "2015-11-19 03:35:17.430710"], ["updated_at", "2015-11-19 03:35:17.430710"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Gewürzschinken' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Gewürzschinken"], ["address_id", 2], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:35:17.536610"], ["updated_at", "2015-11-19 03:35:17.536610"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 2 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 2], ["cuisine_type", "German"], ["description", "Fantastisch bier und spam!"], ["created_at", "2015-11-19 03:35:17.540377"], ["updated_at", "2015-11-19 03:35:17.540377"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Onomea' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Onomea"], ["address_id", 3], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:35:17.609492"], ["updated_at", "2015-11-19 03:35:17.609492"]]
+  [1m[36m (58.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 3], ["cuisine_type", "Hawaiian"], ["description", "Wonderful tropical ambiance"], ["created_at", "2015-11-19 03:35:17.671315"], ["updated_at", "2015-11-19 03:35:17.671315"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Fawlty Towers' LIMIT 1
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Fawlty Towers"], ["address_id", 4], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:35:17.739498"], ["updated_at", "2015-11-19 03:35:17.739498"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 4 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 4], ["cuisine_type", "English"], ["description", "Cozy BnB with an eccentric owner"], ["created_at", "2015-11-19 03:35:17.743289"], ["updated_at", "2015-11-19 03:35:17.743289"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'King Noodle' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "King Noodle"], ["address_id", 5], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:35:17.819286"], ["updated_at", "2015-11-19 03:35:17.819286"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 5 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 5], ["cuisine_type", "Southeast Asian"], ["description", "Flavor, spam"], ["created_at", "2015-11-19 03:35:17.822920"], ["updated_at", "2015-11-19 03:35:17.822920"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fake@email.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20151117134944)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151117134944"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRestaurants (20151117183958)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX  "index_restaurants_on_name" ON "restaurants"  ("name")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151117183958"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to CreateRestaurantDetails (20151117190054)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "restaurant_details" ("id" serial primary key, "restaurant_id" integer NOT NULL, "description" text, "cuisine_type" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX  "index_restaurant_details_on_restaurant_id" ON "restaurant_details"  ("restaurant_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151117190054"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAddresses (20151118143815)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "addresses" ("id" serial primary key, "latitude" float, "longitude" float, "address" text, "city" character varying, "state" character varying, "zipcode" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (36.5ms)[0m  ALTER TABLE "restaurants" ADD "address_id" integer NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151118143815"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to AddLatitudeAndLongitudeToRestaurant (20151118165627)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "restaurants" ADD "latitude" float
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "restaurants" ADD "longitude" float[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151118165627"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'addresses'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurant_details'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fake@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("fname", "lname", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["fname", "Bobby"], ["lname", "Digital"], ["email", "fake@email.com"], ["encrypted_password", "$2a$10$rQ70jAb/TaTfEbvCNXQLf.YlQUw0p/5QckMTJpNNApPfR.SqHS8.2"], ["created_at", "2015-11-19 03:36:08.524680"], ["updated_at", "2015-11-19 03:36:08.524680"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "622 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:36:08.657275"], ["updated_at", "2015-11-19 03:36:08.657275"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "600 Broadway"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:36:08.729024"], ["updated_at", "2015-11-19 03:36:08.729024"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "274 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:36:08.844997"], ["updated_at", "2015-11-19 03:36:08.844997"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address", "295 Lafayette St"], ["city", "New York"], ["state", "NY"], ["zipcode", "10012"], ["phone", "555-555-5555"], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:36:08.918127"], ["updated_at", "2015-11-19 03:36:08.918127"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("address", "city", "state", "zipcode", "phone", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["address", "1045 Flushing Ave"], ["city", "Brooklyn"], ["state", "NY"], ["zipcode", "11237"], ["phone", "555-555-5555"], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:36:08.984966"], ["updated_at", "2015-11-19 03:36:08.984966"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.5ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Jamón Especiado' LIMIT 1
+  [1m[36mAddress Load (0.5ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Jamón Especiado"], ["address_id", 1], ["latitude", 40.7258052], ["longitude", -73.9961892], ["created_at", "2015-11-19 03:36:09.074652"], ["updated_at", "2015-11-19 03:36:09.074652"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.5ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 1], ["cuisine_type", "Spanish"], ["description", "Tapas, wine and spam"], ["created_at", "2015-11-19 03:36:09.104015"], ["updated_at", "2015-11-19 03:36:09.104015"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Gewürzschinken' LIMIT 1
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Gewürzschinken"], ["address_id", 2], ["latitude", 40.7250231], ["longitude", -73.9965204], ["created_at", "2015-11-19 03:36:09.175587"], ["updated_at", "2015-11-19 03:36:09.175587"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 2 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 2], ["cuisine_type", "German"], ["description", "Fantastisch bier und spam!"], ["created_at", "2015-11-19 03:36:09.179159"], ["updated_at", "2015-11-19 03:36:09.179159"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Onomea' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Onomea"], ["address_id", 3], ["latitude", 40.7239948], ["longitude", -73.99622409999999], ["created_at", "2015-11-19 03:36:09.246580"], ["updated_at", "2015-11-19 03:36:09.246580"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 3], ["cuisine_type", "Hawaiian"], ["description", "Wonderful tropical ambiance"], ["created_at", "2015-11-19 03:36:09.250483"], ["updated_at", "2015-11-19 03:36:09.250483"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'Fawlty Towers' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Fawlty Towers"], ["address_id", 4], ["latitude", 40.7245311], ["longitude", -73.9954123], ["created_at", "2015-11-19 03:36:09.328723"], ["updated_at", "2015-11-19 03:36:09.328723"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.3ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 4 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 4], ["cuisine_type", "English"], ["description", "Cozy BnB with an eccentric owner"], ["created_at", "2015-11-19 03:36:09.332665"], ["updated_at", "2015-11-19 03:36:09.332665"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurant Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurants" WHERE "restaurants"."name" = 'King Noodle' LIMIT 1
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("name", "address_id", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "King Noodle"], ["address_id", 5], ["latitude", 40.7042075], ["longitude", -73.9304942], ["created_at", "2015-11-19 03:36:09.407831"], ["updated_at", "2015-11-19 03:36:09.407831"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  ORDER BY "restaurants"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurantDetail Exists (0.2ms)[0m  SELECT  1 AS one FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = 5 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurant_details" ("restaurant_id", "cuisine_type", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["restaurant_id", 5], ["cuisine_type", "Southeast Asian"], ["description", "Flavor, spam"], ["created_at", "2015-11-19 03:36:09.411441"], ["updated_at", "2015-11-19 03:36:09.411441"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-11-18 22:36:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 664ms (Views: 646.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/application.self-0da4d883cf87b37b411f1a7682db6be80a4e56ff75450278d6113c032b347ce0.css?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/filter_form.self-e7862ae7e540a4b076725e3d76f2402f28355a873b61b95e7bffe838de0056d0.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/navbar.self-db7b14a9f5634be080023122bc5def7725567f43711a0d47194f9c2b9bdc3888.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-b6e1228fbee170e1240a37aba42fafb41616e5325d9a972b7f5aa64f9f4d04de.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/search_form.self-29dbbbba82be8156cfbef6403b56b55ae6836a2d2fb02279b3bb630d0cd9d1a7.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components/spamless.self-ab40edee7e89f08ce2b8440964cadab61132b3f482107ba72ebbc3775e6ba067.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/util/api_util.self-771dda813aa67adb18b574e1533325344f624777f8ffe1c2e9dbb7fd914749b0.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/assets/logo-6ffb0d005f9269363017941c9a01d8554ad0b61711038865f883d3893c79a5c2.png" for ::1 at 2015-11-18 22:36:48 -0500
+
+
+Started GET "/api/restaurants?address=1108+Madison+St%2C+Brooklyn+NY&orderMethod=delivery" for ::1 at 2015-11-18 22:37:07 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison St, Brooklyn NY", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (120.2ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.915874) / 57.2957795), ((restaurants.latitude - 40.691829) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.64840946506674 AND 40.735248534933255 AND restaurants.longitude BETWEEN -73.97313853467612 AND -73.85860946532388 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (0.6ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 5]]
+  [1m[35mAddress Load (0.4ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (303.1ms)
+  Rendered api/restaurants/index.json.jbuilder (681.8ms)
+Completed 200 OK in 1320ms (Views: 726.1ms | ActiveRecord: 130.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-18 22:37:40 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 397ms (Views: 396.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/restaurants?address=1108+Madison+St%2C+Brooklyn&orderMethod=delivery" for ::1 at 2015-11-19 00:21:25 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison St, Brooklyn", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (83.7ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((38.659331 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(38.659331 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-90.1645143 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -90.1645143) / 57.2957795), ((restaurants.latitude - 38.659331) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 38.615911465066745 AND 38.70275053493326 AND restaurants.longitude BETWEEN -90.2201180647756 AND -90.10891053522438 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((38.659331 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(38.659331 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-90.1645143 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  Rendered api/restaurants/index.json.jbuilder (91.3ms)
+Completed 200 OK in 307ms (Views: 26.2ms | ActiveRecord: 83.7ms)
+
+
+Started GET "/api/restaurants?address=1108+Madison+St%2C+Brooklyn%2C+NY&orderMethod=delivery" for ::1 at 2015-11-19 00:21:42 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"1108 Madison St, Brooklyn, NY", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (24.9ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.915874) / 57.2957795), ((restaurants.latitude - 40.691829) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.64840946506674 AND 40.735248534933255 AND restaurants.longitude BETWEEN -73.97313853467612 AND -73.85860946532388 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.691829 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.691829 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.915874 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (0.6ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 5]]
+  [1m[35mAddress Load (0.4ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (7.6ms)
+  Rendered api/restaurants/index.json.jbuilder (54.1ms)
+Completed 200 OK in 198ms (Views: 30.5ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-19 00:24:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 589ms (Views: 548.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/restaurant_details.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/application.self-0da4d883cf87b37b411f1a7682db6be80a4e56ff75450278d6113c032b347ce0.css?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/react_ujs.self-c42e5ee44bcda6910afca6fb40f99d9963074b3aefe72365ce90c24312e73b2b.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/components/NavBarLinkList.self-0bcfb3bb24497099a62e34c58aebb6821d4c3c0284380989f213f882f3468dc5.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/components/filter_form.self-e7862ae7e540a4b076725e3d76f2402f28355a873b61b95e7bffe838de0056d0.js?body=1" for ::1 at 2015-11-19 00:24:38 -0500
+
+
+Started GET "/assets/components/landing_page.self-acce893a07bc504099a10d9d92d1869e957178e1e8b76d7036b8a3103d2c3a69.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components/navbar.self-db7b14a9f5634be080023122bc5def7725567f43711a0d47194f9c2b9bdc3888.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components/restaurant_detail.self-10f07c43c226dece0f27cf7ec3ca87e72ed6b146e252b7cc6bcf0c3e9e9901f6.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components/spamless.self-ab40edee7e89f08ce2b8440964cadab61132b3f482107ba72ebbc3775e6ba067.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-b6e1228fbee170e1240a37aba42fafb41616e5325d9a972b7f5aa64f9f4d04de.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components/search_form.self-29dbbbba82be8156cfbef6403b56b55ae6836a2d2fb02279b3bb630d0cd9d1a7.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/flux.self-c2206dc953bbad23c0ee331879560545a4ec58709c89fe78db57a156ec19c08f.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/react_router.self-bca68c7d0dbe4d7b12f499d26c3e874ca3aadc4b18034cf9040149ea817f4d33.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/actions/api_actions.self-efeb83dc0e2bcb640628a76090b790034d7fb38729914b8a5d79041748461961.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/constants/restaurant_constants.self-6a20285a87d3274a46f87c2f0601fbc9d1045ffb347bdc2317bc63537feb0c95.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/dispatcher/app_dispatcher.self-df4b2118c83e53bfcd046d9391e85547aa2f41e5a424adaa5c8d907b9675777f.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-5c864917ecbef6f422aa18f8ff78d320bb7aa530139657e97fe94b31ae5821be.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/util/api_util.self-771dda813aa67adb18b574e1533325344f624777f8ffe1c2e9dbb7fd914749b0.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/restaurant_details.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/musugi-7876ba99b0266b16eabd331574a1dcd2ac806f32cfc3a7b87ce528a85acbdb6e.jpg" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/assets/logo-6ffb0d005f9269363017941c9a01d8554ad0b61711038865f883d3893c79a5c2.png" for ::1 at 2015-11-19 00:24:39 -0500
+
+
+Started GET "/api/restaurants?address=110+2993+street&orderMethod=delivery" for ::1 at 2015-11-19 00:24:58 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"110 2993 street", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (9.5ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.7945836 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(39.7945836 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-94.66380649999999 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -94.66380649999999) / 57.2957795), ((restaurants.latitude - 39.7945836) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 39.7945836 AND 39.7945836 AND restaurants.longitude BETWEEN -94.66380649999999 AND -94.66380649999999 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.7945836 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(39.7945836 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-94.66380649999999 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND NULL)  ORDER BY distance ASC[0m
+Completed 500 Internal Server Error in 465680ms (ActiveRecord: 99.9ms)
+
+SystemExit - exit:
+  (byebug):1:in `index'
+  byebug (8.2.0) lib/byebug/helpers/eval.rb:59:in `safe_eval'
+  byebug (8.2.0) lib/byebug/helpers/eval.rb:53:in `warning_eval'
+  byebug (8.2.0) lib/byebug/helpers/eval.rb:29:in `block in multiple_thread_eval'
+  byebug (8.2.0) lib/byebug/helpers/eval.rb:92:in `allowing_other_threads'
+  byebug (8.2.0) lib/byebug/helpers/eval.rb:29:in `multiple_thread_eval'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:164:in `block in run_cmd'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:169:in `safely'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:160:in `run_cmd'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:149:in `repl'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:98:in `process_commands'
+  byebug (8.2.0) lib/byebug/processors/command_processor.rb:56:in `at_line'
+  byebug (8.2.0) lib/byebug/context.rb:96:in `at_line'
+  app/controllers/api/restaurants_controller.rb:4:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/alisakostrichkina/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/alisakostrichkina/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/alisakostrichkina/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
