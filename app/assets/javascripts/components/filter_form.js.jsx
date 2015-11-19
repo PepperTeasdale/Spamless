@@ -25,6 +25,7 @@ var FilterForm = React.createClass({
     } else {
       newCuisines.splice(newCuisines.indexOf(e.target.value), 1);
     }
+
     this.setState({ cuisines: newCuisines });
     FilterActions.updateCuisines(newCuisines);
   },

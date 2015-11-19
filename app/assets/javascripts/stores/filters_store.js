@@ -2,7 +2,9 @@
   'use strict';
 
   var CHANGE_EVENT = "change";
-  var _filters = {};
+  var _filters = {
+    cuisines: []
+  };
 
   var FilterStore = root.FilterStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
