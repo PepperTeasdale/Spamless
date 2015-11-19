@@ -1,7 +1,8 @@
 var FilterForm = React.createClass({
   getInitialState: function () {
     return ({
-      filterOptions: RestaurantStore.cuisineTypes()
+      filterOptions: RestaurantStore.cuisineTypes(),
+      cuisines: []
     });
   },
 
@@ -17,14 +18,25 @@ var FilterForm = React.createClass({
     this.setState({ filterOptions: RestaurantStore.cuisineTypes() });
   },
 
+  toggleFilter: function (e) {
+    var newCuisines = this.state.cuisines.slice(0);
+    if (newCuisines.indexOf(e.target.value) === -1) {
+      newCuisines.push(e.target.value);
+    } else {
+      newCuisines.splice(newCuisines.indexOf(e.target.value), 1);
+    }
+    this.setState({ cuisines: newCuisines });
+    FilterActions.updateCuisines(newCuisines);
+  },
+
   render: function () {
     var cuisineTypes = this.state.filterOptions.map(function (cuisine) {
       return (
         <li key={cuisine}>
-          <input type="checkbox" value={cuisine}>{cuisine}</input>
+          <CuisineFilter toggleFilter={ this.toggleFilter } value={ cuisine } />
         </li>
       );
-    });
+    }.bind(this));
 
     return (
       <div>
