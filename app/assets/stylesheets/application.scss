@@ -22,6 +22,7 @@ span, article, img, form, fieldset {
   padding: 0;
 
   font: inherit;
+  color:inherit;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
@@ -160,6 +161,7 @@ input[type="radio"] {
 
 .search-form input {
   float: left;
+  color: black;
   width: 310px;
   margin: 20px 0 0 20px;
   padding: 10px;
@@ -307,6 +309,24 @@ input {
 
 .restaurant-header {
   display: block;
-  background: #ccc;
-  margin-top: 80px;
+  background: #B3B3B3;
+  margin-top: 78px;
+}
+
+.restaurant-header a {
+  display: block;
+}
+
+.restaurant-info {
+  float: left;
+  background: #3C3636;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 40px 100px 0;
+}
+
+.restaurant-info * {
+  display: block;
+  padding: 10px;
 }

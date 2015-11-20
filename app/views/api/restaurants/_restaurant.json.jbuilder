@@ -11,13 +11,15 @@ if restaurant_show_page
       json.partial! 'api/menu_items/menu_item', menu_item: menu_item
     end
   end
-
+  json.address do
+    json.extract! restaurant.address, :latitude, :longitude, :full_street_address
+  end
 else
   json.restaurant_detail do
     json.extract! restaurant.restaurant_detail, :cuisine_type
   end
 
   json.address do
-    json.extract! restaurant.address, :latitude, :longitude
+    json.extract! restaurant.address, :latitude, :longitude, :full_street_address
   end
 end

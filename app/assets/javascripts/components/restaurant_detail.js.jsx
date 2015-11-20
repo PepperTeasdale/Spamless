@@ -39,14 +39,18 @@ RestaurantDetail = React.createClass({
         />
       );
     });
-
+    debugger
     return (
       <div>
         <Navbar />
-        <header className="restaurant-header">
-          <h2>{this.state.restaurant.name}</h2>
-          <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
-          <p>{this.state.restaurant.restaurant_detail.description}</p>
+        <header className="restaurant-header group">
+          <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
+          <div className="restaurant-info">
+            <h2>{this.state.restaurant.name}</h2>
+            <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
+            <p>{this.state.restaurant.restaurant_detail.description}</p>
+            <p>{this.state.restaurant.address.full_street_address}</p>
+          </div>
         </header>
         <section className="menu-section">
           {categories}
