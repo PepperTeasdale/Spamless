@@ -59,6 +59,16 @@
       return categories;
     },
 
+    itemsByCategory: function (category) {
+      var items = [];
+      _currentRestaurant.menu_items.forEach(function (menuItem) {
+        if (menuItem.menu_category === category) {
+          items.push(menuItem);
+        }
+      });
+      return items;
+    },
+
     find: function (id) {
       for (var i = 0; i < _restaurants.length; i++) {
         if (_restaurants[i].id === id) {

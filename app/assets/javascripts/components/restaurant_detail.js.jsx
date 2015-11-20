@@ -22,23 +22,34 @@ RestaurantDetail = React.createClass({
     });
   },
 
+  handleItemClick: function (e) {
+    debugger
+    console.log(e);
+  },
+
   render: function () {
     if (this.state.restaurant === undefined) { return <div></div>; }
 
     var categories = this.state.menuCategories.map(function (category) {
-      return <h3 key={category}>{category}</h3>;
+      return (
+        <MenuSection
+          category={ category }
+          handleItemClick={ this.handleItemClick }
+          key={ category }
+        />
+      );
     });
 
     return (
       <div>
+        <Navbar />
         <header className="restaurant-header">
-          <h2>{this.state.restaurant.restaurant_detail.cuisine_type}</h2>
+          <h2>{this.state.restaurant.name}</h2>
+          <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
           <p>{this.state.restaurant.restaurant_detail.description}</p>
         </header>
         <section className="menu-section">
-          <div className="category-title">
-            {categories}
-          </div>
+          {categories}
         </section>
       </div>
     );

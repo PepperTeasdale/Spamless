@@ -8,7 +8,6 @@ Navbar = React.createClass({
   },
 
   handleScroll: function () {
-    console.log("scrolling");
     if (this.props.landingPage) {
       if ($(window).scrollTop() > 25) {
         this.setState({ visible: true });
