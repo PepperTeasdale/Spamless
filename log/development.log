@@ -67375,3 +67375,101 @@ Processing by Api::RestaurantsController#index as JSON
   Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
   Rendered api/restaurants/index.json.jbuilder (13.5ms)
 Completed 200 OK in 548ms (Views: 20.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/restaurants?address=600+broadway&orderMethod=delivery" for ::1 at 2015-11-20 06:02:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 broadway", "orderMethod"=>"delivery"}
+  [1m[35mRestaurant Load (15.4ms)[0m  SELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC
+  [1m[36mRestaurantDetail Load (17.6ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 2]]
+  [1m[35mAddress Load (0.4ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (75.7ms)
+  [1m[36mRestaurantDetail Load (0.3ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 1]]
+  [1m[35mAddress Load (0.3ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.8ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 4]]
+  [1m[35mAddress Load (0.3ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.6ms)
+  [1m[36mRestaurantDetail Load (0.2ms)[0m  [1mSELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1[0m  [["restaurant_id", 3]]
+  [1m[35mAddress Load (0.3ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.7ms)
+  Rendered api/restaurants/index.json.jbuilder (161.1ms)
+Completed 200 OK in 684ms (Views: 153.1ms | ActiveRecord: 57.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-20 06:02:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1632ms (Views: 1632.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-35b1b7ca5047b22da606cbca6a49e6f86fb5a6e6ffb4d089ff5cc2cba181ade3.css?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/cuisine_filter.self-d18e06010321949b0eca0e373ce99c18c4a93b1cb26c4cb5a57fc886eb3965d6.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/filter_form.self-6cef0e7a1b2295f74eaaba035347f777566ef14c424ac7ba80cb67d7e242e7e3.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/landing_page.self-12547adebbafcd85688a012696bd096196ca8edd0017f105b2df23d1daae140d.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/navbar.self-91e3dba5d38c506b01eb460fe7eda8946450a87f29fbbadc9ec2063c0e972b84.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/navbar_search_form.self-d13a2e3559d06184fcad9f1925cc699da735907463f574159748b05c9d0de14a.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/restaurant_index.self-55ac0c458d62816b2e316531360e6b88ff6ed128b55265db6715a3886eb260a6.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/search_form.self-eb4d5084808224e2ee81f8b8693d96f0a2f3970537df2ac4bcc87dc681be2f42.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/search_index.self-96345fc5ffa59d0c66d4e3776dcfa84192cddfbb5f142e9e6ca72e7b3b603715.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/components/spamless.self-e0d83f0bd7544626e353d36c0fc9e2c5fd7a58e6b44c068fbd5bab53f5c8fb59.js?body=1" for ::1 at 2015-11-20 06:02:57 -0500
+
+
+Started GET "/assets/actions/filter_actions.self-293ca9391df117ae84165f33312ed94c52dfb3938678fcdb77b55297c2543183.js?body=1" for ::1 at 2015-11-20 06:02:58 -0500
+
+
+Started GET "/assets/constants/filter_constants.self-96cedd6c70732bcfa7484edaf667dad978ce3af028d53542e561463e61b79215.js?body=1" for ::1 at 2015-11-20 06:02:58 -0500
+
+
+Started GET "/assets/stores/filters_store.self-823a54281365358a611052443145a616729e7295ccbcc7a0580023b0021fb189.js?body=1" for ::1 at 2015-11-20 06:02:58 -0500
+
+
+Started GET "/assets/stores/restaurant_store.self-515fa6d8a1a5b409cf5ccb3383d2f7319d5ff12b3b66571c5f7b1f8abbbf1bc0.js?body=1" for ::1 at 2015-11-20 06:02:58 -0500
+
+
+Started GET "/assets/util/api_util.self-275f0ee0ee261fced44c3a420f72fb7544a0133b15dfba2f64e7cdc91d680528.js?body=1" for ::1 at 2015-11-20 06:02:58 -0500
+
+
+Started GET "/" for ::1 at 2015-11-20 06:02:59 -0500
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/restaurants?address=600+broadway&orderMethod=delivery" for ::1 at 2015-11-20 06:03:05 -0500
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"address"=>"600 broadway", "orderMethod"=>"delivery"}
+  [1m[36mRestaurant Load (1.7ms)[0m  [1mSELECT restaurants.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - -73.9965204) / 57.2957795), ((restaurants.latitude - 40.7250231) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 40.681603565066744 AND 40.76844263493326 AND restaurants.longitude BETWEEN -74.05381348614291 AND -73.93922731385707 AND (3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((40.7250231 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(40.7250231 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((-73.9965204 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 3)  ORDER BY distance ASC[0m
+  [1m[35mRestaurantDetail Load (0.3ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 2]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.9ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 1]]
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.5ms)
+  [1m[35mRestaurantDetail Load (0.1ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 4]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.4ms)
+  [1m[35mRestaurantDetail Load (0.2ms)[0m  SELECT  "restaurant_details".* FROM "restaurant_details" WHERE "restaurant_details"."restaurant_id" = $1 LIMIT 1  [["restaurant_id", 3]]
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/restaurants/_restaurant.json.jbuilder (1.4ms)
+  Rendered api/restaurants/index.json.jbuilder (10.8ms)
+Completed 200 OK in 275ms (Views: 9.8ms | ActiveRecord: 3.4ms)
