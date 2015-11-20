@@ -2,10 +2,25 @@
   'use strict';
 
   var CHANGE_EVENT = "change";
+
   var _restaurants = [];
+  var _currentRestaurant;
 
   var resetRestaurants = function (restaurants) {
     _restaurants = restaurants;
+  };
+
+  var updateRestaurant = function (restaurant) {
+    var updated = false;
+    _restaurants.forEach(function (r) {
+      if (r.id === restaurant.id) {
+        _restaurants[_restaurants.indexOf(r)] = restaurant;
+        updated = true;
+      }
+    });
+
+    if (!updated) { _restaurants.push(restaurant); }
+    _currentRestaurant = restaurant;
   };
 
   var RestaurantStore = root.RestaurantStore = $.extend({}, EventEmitter.prototype, {
@@ -15,6 +30,10 @@
 
     addChangeListener: function (callback) {
       this.on(CHANGE_EVENT, callback);
+    },
+
+    removeChangeListener: function (callback) {
+      this.removeListener(CHANGE_EVENT, callback);
     },
 
     cuisineTypes: function () {
@@ -29,16 +48,23 @@
       return cuisines;
     },
 
-    find: function (id) {
-      _restaurants.forEach(function (restaurant) {
-        if (restaurant.id === id) {
-          return restaurant;
+    menuCategories: function () {
+      var categories = [];
+      _currentRestaurant.menu_items.forEach(function(menuItem) {
+        if (categories.indexOf(menuItem.menu_category) == -1) {
+          categories.push(menuItem.menu_category);
         }
       });
+
+      return categories;
     },
 
-    removeChangeListener: function (callback) {
-      this.removeListener(CHANGE_EVENT, callback);
+    find: function (id) {
+      for (var i = 0; i < _restaurants.length; i++) {
+        if (_restaurants[i].id === id) {
+          return _restaurants[i];
+        }
+      }
     },
 
     dispatcherID: AppDispatcher.register(function (payload) {
@@ -47,6 +73,12 @@
           resetRestaurants(payload.restaurants);
           RestaurantStore.emit(CHANGE_EVENT);
           break;
+
+        case RestaurantConstants.RESTAURANT_RECEIVED:
+          updateRestaurant(payload.restaurant);
+          RestaurantStore.emit(CHANGE_EVENT);
+          break;
+
       }
     })
   });

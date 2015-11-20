@@ -1,33 +1,45 @@
 Navbar = React.createClass({
+  getInitialState: function () {
+    return ({ visible: !this.props.landingPage });
+  },
+
   componentDidMount: function () {
+    $(window).on("scroll", this.handleScroll);
+  },
+
+  handleScroll: function () {
+    console.log("scrolling");
     if (this.props.landingPage) {
-      $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 25) {
-          $(".navbar").addClass("not-transparent");
-          $(".navbar a").addClass("small-logo");
-        }
-        else {
-          $(".navbar").removeClass("not-transparent");
-          $(".logo").removeClass("small-logo");
-        }
-      });
+      if ($(window).scrollTop() > 25) {
+        this.setState({ visible: true });
+      } else {
+        this.setState({ visible: false });
+      }
     }
-    else {
-      $(".navbar").addClass("not-transparent");
-      $(".navbar a").addClass("small-logo");
-    }
+  },
+
+  componentWillUnmount: function () {
+    $(window).off("scroll", this.handleScroll);
   },
 
   render: function () {
     var searchForm;
+    var navClass = "";
+    var logoClass = "";
     if (!this.props.landingPage) {
       searchForm = <NavbarSearchForm address={ this.props.address } />;
     }
+
+    if (this.state.visible) {
+      navClass = " not-transparent";
+      logoClass = " small-logo";
+    }
+
     return (
       <div className="navbar-container">
-        <nav className="navbar group">
-          <ReactRouter.Link to="/" className="logo" />
-          {searchForm}
+        <nav className={ "navbar group" + navClass }>
+          <ReactRouter.Link to="/" className={ "logo" + logoClass } />
+          { searchForm }
           <NavBarLinkList />
         </nav>
       </div>

@@ -5,7 +5,6 @@ User.create!(
   password: "password"
 )
 
-# 622 Broadway, New York, NY 10012
 addresses = [
   ["622 Broadway", "New York", "NY", "10012", "555-555-5555"],
   ["600 Broadway", "New York", "NY", "10012", "555-555-5555"],
@@ -39,4 +38,22 @@ restaurants.each_with_index do |restaurant, idx|
     cuisine_type: restaurant[1],
     description: restaurant[2]
   )
+end
+
+menu_items = [
+  ["Spam, eggs and spam", 3.5, "Breakfast", "Yums!"],
+  ["Spam, eggs sausage and spam", 4.5, "Breakfast", "Yum yums!"],
+  ["Spam-ghetti", 9.0, "Lunch", "Yums!"],
+  ["Spam on Rye", 7.0, "Lunch", "Yums!"],
+  ["Spam latte", 4.5, "Beverage", "Yums!"],
+  ["Spam soda", 1.5, "Beverage", "Yums!"]
+]
+
+5.times do |idx|
+  menu_items.each do |item|
+    MenuItem.create!(
+      name: item[0], price: item[1], restaurant_id: idx + 1,
+      menu_category: item[2], description: item.last
+    )
+  end
 end

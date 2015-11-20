@@ -10,5 +10,16 @@ ApiUtil = {
         callback && callback({ address: data.address});
       }
     });
+  },
+
+  fetchSingleRestaurant: function (id) {
+    $.ajax({
+      url: "/api/restaurants/" + id,
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        ApiActions.receiveSingleRestaurant(data);
+      }
+    });
   }
 };

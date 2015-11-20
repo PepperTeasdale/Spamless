@@ -1,5 +1,5 @@
 json.partial!(
-  'restaurant',
-  restaurant: restaurant,
-  show_restaurant_detail: true
+  'api/restaurants/restaurant',
+  restaurant: @restaurant,
+  restaurant_show_page: true
 )

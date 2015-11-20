@@ -3,7 +3,7 @@ json.restaurants do
     json.partial!(
       'restaurant',
       restaurant: restaurant,
-      show_restaurant_detail: false
+      restaurant_show_page: false
     )
   end
 end

@@ -5,6 +5,7 @@ class Restaurant < ActiveRecord::Base
   geocoded_by :full_street_address
   after_validation :geocode
 
+  has_many :menu_items
   has_one :restaurant_detail
   belongs_to :address
 
