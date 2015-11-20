@@ -23,7 +23,6 @@ RestaurantDetail = React.createClass({
   },
 
   handleItemClick: function (e) {
-    debugger
     console.log(e);
   },
 
@@ -39,7 +38,7 @@ RestaurantDetail = React.createClass({
         />
       );
     });
-    debugger
+
     return (
       <div>
         <Navbar />
@@ -52,7 +51,7 @@ RestaurantDetail = React.createClass({
             <p>{this.state.restaurant.address.full_street_address}</p>
           </div>
         </header>
-        <section className="menu-section">
+        <section className="menu-section group">
           {categories}
         </section>
       </div>

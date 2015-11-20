@@ -11,21 +11,25 @@ MenuSection = React.createClass({
     var categoryItems = this.state.menuItems.map(function (item) {
       return (
         <div
-          className="menu-item group"
+          className="menu-item"
           onClick={ this.handleItemClick }
           key={ item.id }
         >
           <h4>{ item.name }</h4>
-          <div className="item-price">{ item.price }</div>
+          <div className="item-price">{ "$" + item.price }</div>
           <p>{ item.description }</p>
         </div>
       );
-    });
-
+    }.bind(this));
+    if (categoryItems.length % 2 !== 0) {
+      categoryItems.push(<div className="menu-item"></div>);
+    }
     return (
-      <div>
+      <div className="menu-category-section">
         <h3>{this.props.category}</h3>
-        { categoryItems }
+        <div className="menu-items-container group">
+          { categoryItems }
+        </div>
       </div>
     );
   }

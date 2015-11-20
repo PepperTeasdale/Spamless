@@ -15,7 +15,7 @@
  */
 
 html, body, a, nav, div, ul, li, p, header,
-footer, h1, h2, button, input, textarea, label,
+footer, h1, h2, h3, h4, h5, button, input, textarea, label,
 span, article, img, form, fieldset {
   margin: 0;
   border: 0;
@@ -311,6 +311,7 @@ input {
   display: block;
   background: #B3B3B3;
   margin-top: 78px;
+  width: 75%;
 }
 
 .restaurant-header a {
@@ -329,4 +330,47 @@ input {
 .restaurant-info * {
   display: block;
   padding: 10px;
+}
+
+.menu-section {
+  border-top: 20px solid black;
+  background: #ccc;
+  width: 75%;
+}
+
+.menu-category-section {
+  display: block;
+  width: 700px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.menu-category-section h3 {
+  color: white;
+  padding: 15px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  clear: both;
+  border: 1px solid black;
+  background: #3C3636;
+  border-bottom: 2px dotted black;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item {
+  width: calc(44% - 1px);
+  padding: 20px;
+  float: left;
+  background: white;
+  border-bottom: 2px dotted black;
+  border-right: 2px dotted black;
+}
+
+.menu-items-container {
+  border-left: 2px dotted black;
+  margin-bottom: 20px;
 }
