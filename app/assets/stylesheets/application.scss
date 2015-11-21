@@ -100,17 +100,18 @@ input[type="radio"] {
   float: left;
   padding: 10px;
   width: 600px;
-  color: white;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
 .navbar-radios {
+  color: white;
   float: left;
   padding-left: 15px;
 }
 
 .navbar-search-form input {
+  color: black;
   float: left;
   margin: 10px 0 0 10px;
   padding: 5px;
@@ -120,6 +121,7 @@ input[type="radio"] {
 
 .navbar-search-form button {
   float: left;
+  color: black;
   border-left: 1px solid black;
   margin-right: 5px;
   background: white;
