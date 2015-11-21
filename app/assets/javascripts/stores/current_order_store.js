@@ -18,7 +18,12 @@
     },
 
     addToCart: function (orderItem) {
-      _currentOrder.push(orderItem);
+      if (_currentOrder.indexOf(orderItem) === -1) {
+        orderItem.qty = 1;
+        _currentOrder.push(orderItem);
+      } else {
+        _currentOrder[_currentOrder.indexOf(orderItem)].qty += 1;
+      }
     },
 
     removeFromCart: function (orderItem) {

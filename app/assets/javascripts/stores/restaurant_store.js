@@ -36,6 +36,10 @@
       this.removeListener(CHANGE_EVENT, callback);
     },
 
+    currentRestaurant: function () {
+      return $.extend({}, _currentRestaurant)
+    },
+
     cuisineTypes: function () {
       var cuisines = [];
       _restaurants.forEach(function (restaurant) {

@@ -2,7 +2,8 @@ window.ShoppingCart = React.createClass({
   getInitialState: function () {
     return ({
       orderItems: CurrentOrderStore.currentOrder(),
-      total: CurrentOrderStore.currentTotal()
+      total: CurrentOrderStore.currentTotal(),
+      restaurant: RestaurantStore.currentRestaurant()
     });
   },
 
@@ -22,7 +23,7 @@ window.ShoppingCart = React.createClass({
     CurrentOrderStore.removeChangeListener(this._onChange);
   },
 
-  deleterOrderItem: function (e) {
+  deleteOrderItem: function (e) {
     debugger
   },
 
@@ -51,14 +52,14 @@ window.ShoppingCart = React.createClass({
 
     var orderItems = this.state.orderItems.map(function (item) {
       return (
-        <div className="order-item" key={item.id}>
+        <div className="order-item" key={ item.id }>
           <button onClick={ this.deleteOrderItem }>X</button>
-          <span>item.qty</span>
-          <h5>{item.name}</h5>
-          <span>item.price</span>
+          <span>{ item.qty }</span>
+          <h5>{ item.name }</h5>
+          <span>{ item.price * item.qty }</span>
         </div>
       )
-    });
+    }.bind(this));
 
     return (
       <div className={"shopping-cart" + hiddenClass}>
