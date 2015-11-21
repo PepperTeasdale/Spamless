@@ -33,7 +33,7 @@
     currentTotal: function () {
       var sum = 0;
       _currentOrder.forEach(function (orderItem) {
-        sum += orderItem.price;
+        sum += orderItem.price * orderItem.qty;
       });
 
       return sum;
