@@ -8,7 +8,7 @@
 
   var FilterStore = root.FilterStore = $.extend({}, EventEmitter.prototype, {
     all: function () {
-      return _filters;
+      return $.extend({}, _filters);
     },
 
     addChangeListener: function (callback) {

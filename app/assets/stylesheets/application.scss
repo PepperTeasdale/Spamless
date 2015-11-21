@@ -70,7 +70,7 @@ h2 {
 }
 
 .navbar.not-transparent {
-  background: #1E2F81;
+  background: #05164C;
 }
 
 .search-form {
@@ -178,7 +178,7 @@ input[type="radio"] {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 10px;
-  background: #1E2F81;
+  background: #05164C;
 }
 
 .login-logout {
@@ -211,7 +211,7 @@ input[type="radio"] {
   padding: 20px;
   border: 5px solid #FBEF02;
   border-radius: 5px;
-  background: #1E2F81;
+  background: #05164C;
   color: white;
   margin: 20px auto;
   text-align: center;
@@ -257,7 +257,7 @@ input {
   margin: 10px auto 0;
   display: block;
   padding: 10px 10px 0;
-  border-bottom: 2px dotted #1E2F81
+  border-bottom: 2px dotted #05164C;
 }
 
 .field input {
@@ -311,7 +311,8 @@ input {
 
 .restaurant-header {
   display: block;
-  background: #B3B3B3;
+  background-image: image-url("blurred_background.jpg");
+  background-size: cover;
   margin-top: 78px;
   width: 75%;
 }
