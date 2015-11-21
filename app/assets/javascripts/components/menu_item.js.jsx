@@ -1,6 +1,6 @@
 window.MenuItem = React.createClass({
   handleItemClick: function () {
-    OrderItemActions.receiveMenuItem(this.props.item);
+    OrderItemActions.receiveItem(this.props.item);
   },
 
   render: function () {

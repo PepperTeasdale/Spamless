@@ -51,15 +51,8 @@ window.ShoppingCart = React.createClass({
     }
 
     var orderItems = this.state.orderItems.map(function (item) {
-      return (
-        <div className="order-item" key={ item.id }>
-          <button onClick={ this.deleteOrderItem }>X</button>
-          <span>{ item.qty }</span>
-          <h5>{ item.name }</h5>
-          <span>{ item.price * item.qty }</span>
-        </div>
-      )
-    }.bind(this));
+      return <OrderItem item={ item } key={ item.id } />;
+    });
 
     return (
       <div className={"shopping-cart" + hiddenClass}>
