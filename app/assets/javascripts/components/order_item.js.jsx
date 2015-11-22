@@ -1,6 +1,6 @@
 window.OrderItem = React.createClass({
   deleteOrderItem: function () {
-    OrderItemActions.removeItem()
+    OrderItemActions.removeItem(this.props.item)
   },
 
   render: function () {

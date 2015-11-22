@@ -7,6 +7,7 @@ RestaurantDetail = React.createClass({
   },
 
   componentDidMount: function () {
+    $(document).find(".shopping-cart").removeClass("hidden");
     RestaurantStore.addChangeListener(this._onChange);
     ApiUtil.fetchSingleRestaurant(this.props.params.restaurantId);
   },

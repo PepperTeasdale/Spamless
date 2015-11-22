@@ -23,10 +23,6 @@ window.ShoppingCart = React.createClass({
     CurrentOrderStore.removeChangeListener(this._onChange);
   },
 
-  deleteOrderItem: function (e) {
-    debugger
-  },
-
   render: function () {
     var hiddenClass, orderHeader;
 
