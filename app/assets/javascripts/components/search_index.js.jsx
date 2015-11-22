@@ -1,9 +1,16 @@
 SearchIndex = React.createClass({
-  render: function () {
+  componentDidMount: function () {
+    CurrentAddressActions.receiveCurrentAddress(this.props.location.query.address);
+  },
 
+  redirect: function (address) {
+    this.props.history.pushState(null, "/restaurants", address);
+  },
+
+  render: function () {
     return (
       <div className="search-index group">
-        <Navbar address={this.props.location.query.address} />
+        <Navbar redirect={ this.redirect } />
         <FilterForm />
         <RestaurantIndex />
       </div>

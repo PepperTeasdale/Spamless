@@ -10,11 +10,14 @@ RegistrationApiUtil = {
           $('meta[name="csrf-token"]').attr('content'))
       },
       data: registrationParams,
-      success: function (data) {
-        debugger
+      success: function (currentUser) {
+        AppDispatcher.dispatch({
+          actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
+          currentUser: currentUser
+        })
       },
       error: function (data) {
-        debugger
+        console.log(data);
       }
     });
   }

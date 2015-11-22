@@ -1,9 +1,21 @@
 NavbarSearchForm = React.createClass({
   getInitialState: function () {
     return {
-      address: this.props.address,
+      address: CurrentAddressStore.currentAddress(),
       orderMethod: "delivery"
     };
+  },
+
+  componentDidMount: function () {
+    CurrentAddressStore.addChangeHandler(this._onChange);
+  },
+
+  componentWillUnmount: function () {
+    CurrentAddressStore.removeChangeHandler(this._onChange);
+  },
+
+  _onChange: function () {
+    this.setState({ address: CurrentAddressStore.currentAddress() });
   },
 
   changeAddress: function (e) {
@@ -17,7 +29,7 @@ NavbarSearchForm = React.createClass({
         orderMethod: this.state.orderMethod
       };
 
-      ApiUtil.fetchRestaurants(searchParams);
+      ApiUtil.fetchRestaurants(searchParams, this.props.redirect);
     }
   },
 
@@ -54,7 +66,7 @@ NavbarSearchForm = React.createClass({
         <input
           type="text"
           className="nav-bar-address-input"
-          placeholder={ this.props.address }
+          value={ this.state.address }
           onChange={ this.changeAddress }
         />
         <button onClick={ this.submitSearch }>

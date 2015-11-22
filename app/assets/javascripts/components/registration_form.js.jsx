@@ -13,7 +13,6 @@ RegistrationForm = React.createClass({
 
   submit: function (e) {
     e.preventDefault();
-    debugger
 
     var registrationParams = {
       user: {
