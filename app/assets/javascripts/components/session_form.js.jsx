@@ -1,11 +1,9 @@
 window.SessionForm = React.createClass({
-  // mixins: [React.addOns.LinkedStateMixIn],
-
   getInitialState: function () {
-    return (
+    return ({
       email: "",
       password: ""
-    );
+    });
   },
 
   signIn: function (e) {
@@ -18,17 +16,25 @@ window.SessionForm = React.createClass({
     });
   },
 
+  emailChanged: function (e) {
+    this.setState({ email: e.target.value });
+  },
+
+  passwordChanged: function (e) {
+    this.setState({ password: e.target.value });
+  },
+
   render: function () {
     return (
       <form>
         <label>
           Email
-          <input type="text" valueLink={ this.state.email } />
+          <input type="text" onChange={ this.emailChanged } />
         </label>
 
         <label>
           Password
-          <input type="password" valueLink={ this.state.password } />
+          <input type="password" onChange={ this.passwordChanged } />
         </label>
 
         <button onClick={ this.signIn }>Sign In</button>

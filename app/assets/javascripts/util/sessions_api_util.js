@@ -10,9 +10,11 @@ window.SessionsApiUtil = {
       },
       data: credentials,
       dataType: "json",
-      success: function (data) {
-      },
-      error: function (data) {
+      success: function (currentUser) {
+        AppDispatcher.dispatch({
+          actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
+          currentUser: currentUser
+        });
       }
     });
   },

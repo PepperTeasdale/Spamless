@@ -5,7 +5,7 @@
 
   var CurrentUserStore = root.CurrentUserStore = $.extend({}, EventEmitter.prototype, {
     currentUser: function () {
-      return $.extend({}, currentUser);
+      return $.extend({}, _currentUser);
     },
 
     addChangeHandler: function (callback) {
@@ -23,6 +23,7 @@
     dispatcherId: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {
         case CurrentUserConstants.RECEIVE_CURRENT_USER:
+          debugger
           _currentUser = payload.currentUser;
           CurrentUserStore.emit(CHANGE_EVENT);
           break;
