@@ -39,7 +39,7 @@
       return sum;
     },
 
-    dispatcherID: AppDispatcher.register(function (payload) {
+    dispatcherId: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {
         case CurrentOrderConstants.ORDER_ITEM_RECEIVED:
           CurrentOrderStore.addToCart(payload.orderItem);

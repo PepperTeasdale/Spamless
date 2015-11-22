@@ -11,3 +11,5 @@ RegistrationApiUtil = {
     });
   }
 };
+
+// { user : { email : "justin@fakemail.com", fname: "justin", lname: "s", password: "12345678", password_confirmation: "12345678" } }
