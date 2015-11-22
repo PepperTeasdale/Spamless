@@ -309,16 +309,32 @@ input {
   width: 115px;
 }
 
+.restaurant-detail {
+  float: left;
+  width: 75%;
+}
+
 .restaurant-header {
   display: block;
   background-image: image-url("blurred_background.jpg");
   background-size: cover;
   margin-top: 78px;
-  width: 75%;
+}
+
+.restaurant-header img {
+  float: right;
+  margin: 50px 50px 0;
 }
 
 .restaurant-header a {
-  display: block;
+  float: left;
+  width: 35px;
+  margin: 50px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .restaurant-info {
@@ -327,7 +343,7 @@ input {
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 40px 100px 0;
+  margin: 120px 100px 0;
 }
 
 .restaurant-info h2 {
@@ -342,7 +358,6 @@ input {
 .menu-section {
   border-top: 20px solid black;
   background: #ccc;
-  width: 75%;
 }
 
 .menu-category-section {
@@ -380,4 +395,22 @@ input {
 .menu-items-container {
   border-left: 2px dotted black;
   margin-bottom: 20px;
+}
+
+.shopping-cart {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 78px;
+  right: 0px;
+  transition: right .5s;
+}
+
+.shopping-cart.hidden {
+  right: -25%;
+}
+
+.shopping-cart * {
+  padding: 10px;
+  background: white;
 }

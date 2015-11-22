@@ -42,17 +42,24 @@ RestaurantDetail = React.createClass({
     return (
       <div>
         <Navbar />
-        <header className="restaurant-header group">
-          <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
-          <div className="restaurant-info">
-            <h2>{this.state.restaurant.name}</h2>
-            <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
-            <p>{this.state.restaurant.restaurant_detail.description}</p>
-            <p>{this.state.restaurant.address.full_street_address}</p>
-          </div>
-        </header>
-        <section className="menu-section group">
-          {categories}
+        <section className="restaurant-detail">
+          <header className="restaurant-header group">
+            <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
+              <img
+                className="restaurant-photo"
+                src="http://lorempixel.com/175/125/food"
+              />
+            <div className="restaurant-info">
+              <h2>{this.state.restaurant.name}</h2>
+              <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
+              <p>{this.state.restaurant.restaurant_detail.description}</p>
+              <p>{this.state.restaurant.address.full_street_address}</p>
+            </div>
+          </header>
+
+          <section className="menu-section group">
+            {categories}
+          </section>
         </section>
       </div>
     );
