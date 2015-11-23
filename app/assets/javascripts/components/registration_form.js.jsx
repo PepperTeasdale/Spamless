@@ -50,57 +50,58 @@ RegistrationForm = React.createClass({
   render: function () {
 
     return (
-      <form onSubmit={ this.submit }>
-
+      <div className="auth-form">
         <h1>Create Your Account</h1>
 
-        <label>
-          Your name
+        <form onSubmit={ this.submit }>
+          <label>
+            Your name
+            <input
+              type="text"
+              name="fname"
+              placeholder="First"
+              onChange={ this.fnameChanged }
+           />
+          </label>
+
           <input
             type="text"
-            name="fname"
-            placeholder="First"
-            onChange={ this.fnameChanged }
-         />
-        </label>
-
-        <input
-          type="text"
-          name="lname"
-          placeholder="Last"
-          onChange={ this.lnameChanged }
-        />
-
-        <label>
-          Email
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            onChange={ this.emailChanged }
+            name="lname"
+            placeholder="Last"
+            onChange={ this.lnameChanged }
           />
-        </label>
 
-        <label>
-          Password
+          <label>
+            Email
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              onChange={ this.emailChanged }
+            />
+          </label>
+
+          <label>
+            Password
+            <input
+              type="password"
+              name="password"
+              placeholder="Password (8 character minimum)"
+              onChange={ this.passwordChanged }
+            />
+          </label>
+
           <input
             type="password"
-            name="password"
-            placeholder="Password (8 character minimum)"
-            onChange={ this.passwordChanged }
+            name="password_confirmation"
+            placeholder="Confirm your password"
+            onChange={ this.passwordConfirmationChanged }
           />
-        </label>
-
-        <input
-          type="password"
-          name="password_confirmation"
-          placeholder="Confirm your password"
-          onChange={ this.passwordConfirmationChanged }
-        />
 
 
-        <button>Create Your Account</button>
-      </form>
+          <button>Create Your Account</button>
+        </form>
+      </div>
     );
   }
 });

@@ -26,7 +26,7 @@ Navbar = React.createClass({
     var navClass = "";
     var logoClass = "";
     if (!this.props.landingPage) {
-      searchForm = <NavbarSearchForm address={ this.props.address } />;
+      searchForm = <NavbarSearchForm address={ CurrentAddressStore.currentAddress() } redirect={ this.props.redirect } />;
     }
 
     if (this.state.visible) {

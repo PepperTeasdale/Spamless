@@ -11,7 +11,7 @@ window.AuthModal = React.createClass({
     var form = (this.state.signIn ? <SessionForm /> : <RegistrationForm />);
 
     return (
-      <div className="auth-modal">
+      <div className="auth-modal group">
         <fieldset className="group">
           <label className="radio-label">
             <input

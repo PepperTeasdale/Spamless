@@ -4,7 +4,6 @@ var MenuSection = React.createClass({
   },
 
   handleItemClick: function (e) {
-    debugger
     this.props.handleItemClick(e);
   },
 

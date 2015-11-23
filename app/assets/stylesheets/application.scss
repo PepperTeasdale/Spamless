@@ -181,17 +181,6 @@ input[type="radio"] {
   background: #05164C;
 }
 
-.login-logout {
-  top: 300px;
-  display: block;
-  position: absolute;
-  margin: auto;
-  left: calc(50% - 50px);
-  font-size: 24px;
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
 
 .navbar-link-list {
   float: right;
@@ -205,17 +194,6 @@ input[type="radio"] {
   padding:  10px;
 }
 
-.new_user {
-  display: block;
-  width: 900px;
-  padding: 20px;
-  border: 5px solid #FBEF02;
-  border-radius: 5px;
-  background: #05164C;
-  color: white;
-  margin: 20px auto;
-  text-align: center;
-}
 
 input {
   display: block;
@@ -258,28 +236,6 @@ input {
   display: block;
   padding: 10px 10px 0;
   border-bottom: 2px dotted #05164C;
-}
-
-.field input {
-  border: 2px solid #FBEF02;
-  border-radius: 5px;
-}
-
-.field label {
-  display: block;
-}
-
-.field {
-  display: block;
-  text-align: center;
-  margin: 10px;
-}
-
-
-.actions input {
-  border: 2px solid #FBEF02;
-  border-radius: 5px;
-  padding: 5px;
 }
 
 .navbar a {
@@ -413,4 +369,75 @@ input {
 .shopping-cart * {
   padding: 10px;
   background: white;
+}
+
+
+.login-logout {
+  top: 300px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: calc(50% - 50px);
+  font-size: 24px;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.new_user {
+  display: block;
+  width: 900px;
+  padding: 20px;
+  border: 5px solid #FBEF02;
+  border-radius: 5px;
+  background: #05164C;
+  color: white;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.field input {
+  border: 2px solid #FBEF02;
+  border-radius: 5px;
+}
+
+.field label {
+  display: block;
+}
+
+.field {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.actions input {
+  border: 2px solid #FBEF02;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.auth-modal {
+  position: absolute;
+  margin: -300px calc(50% - 250px);
+  width: 500px;
+  background: gray;
+}
+
+.auth-modal * {
+  float: left;
+  margin: 10px 0 0 50px;
+}
+
+.input-label {
+  margin-right: 300px;
+}
+
+.auth-modal h1 {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 20px auto;
 }

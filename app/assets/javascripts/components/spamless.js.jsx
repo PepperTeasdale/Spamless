@@ -10,7 +10,9 @@ $(function () {
         <div>
           {this.props.children}
           <ShoppingCart hidden={ true } />
-          <AuthModal />
+          <div className="modal-wrapper">
+            <AuthModal />
+          </div>
         </div>
       );
     }

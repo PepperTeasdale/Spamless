@@ -23,6 +23,10 @@ RestaurantDetail = React.createClass({
     });
   },
 
+  redirect: function (address) {
+    this.props.history.pushState(null, "/restaurants", address);
+  },
+
   handleItemClick: function (e) {
     console.log(e);
   },
@@ -42,7 +46,7 @@ RestaurantDetail = React.createClass({
 
     return (
       <div>
-        <Navbar />
+        <Navbar redirect={ this.redirect } />
         <section className="restaurant-detail">
           <header className="restaurant-header group">
             <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>

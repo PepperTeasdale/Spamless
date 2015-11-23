@@ -26,19 +26,22 @@ window.SessionForm = React.createClass({
 
   render: function () {
     return (
-      <form>
-        <label>
-          Email
-          <input type="text" onChange={ this.emailChanged } />
-        </label>
+      <div className="auth-form">
+        <h1>Sign In</h1>
+        <form>
+          <label className="input-label">
+            Email
+            <input type="text" onChange={ this.emailChanged } />
+          </label>
 
-        <label>
-          Password
-          <input type="password" onChange={ this.passwordChanged } />
-        </label>
+          <label className="input-label">
+            Password
+            <input type="password" onChange={ this.passwordChanged } />
+          </label>
 
-        <button onClick={ this.signIn }>Sign In</button>
-      </form>
+          <button onClick={ this.signIn }>Sign In</button>
+        </form>
+      </div>
     );
   }
 });
