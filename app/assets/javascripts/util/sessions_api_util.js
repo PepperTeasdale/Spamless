@@ -10,6 +10,7 @@ window.SessionsApiUtil = {
           actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
           currentUser: currentUser
         });
+        UiActions.toggleAuthModal();
       }
     });
   },

@@ -12,6 +12,10 @@ $(function () {
       });
     },
 
+    componentDidMount: function () {
+      SessionsApiUtil.signOut();
+    },
+
     render: function () {
       return (
         <div>
@@ -22,7 +26,7 @@ $(function () {
           </div>
         </div>
       );
-    }
+    } 
   });
 
   var routes = (

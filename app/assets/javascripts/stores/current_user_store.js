@@ -16,7 +16,7 @@
       this.removeListener(CHANGE_EVENT, callback);
     },
 
-    isLoggedIn: function () {
+    isSignedIn: function () {
       return (typeof _currentUser.id !== "undefined");
     },
 

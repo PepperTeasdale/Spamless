@@ -14,7 +14,8 @@ RegistrationApiUtil = {
         AppDispatcher.dispatch({
           actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
           currentUser: currentUser
-        })
+        });
+        UiActions.toggleAuthModal();
       },
       error: function (data) {
         console.log(data);
