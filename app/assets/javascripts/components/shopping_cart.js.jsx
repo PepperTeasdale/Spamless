@@ -13,10 +13,9 @@ window.ShoppingCart = React.createClass({
 
   _onChange: function () {
     this.setState({
-      restaurant: "",
       orderItems: CurrentOrderStore.currentOrder(),
       total: CurrentOrderStore.currentTotal()
-    })
+    });
   },
 
   componentWillUnmount: function () {

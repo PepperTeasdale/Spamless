@@ -5,13 +5,20 @@ $(function () {
   var IndexRoute = ReactRouter.IndexRoute;
 
   var App = React.createClass({
+    getInitialState: function () {
+      return ({
+        cartHidden: true,
+        authHidden: true
+      });
+    },
+
     render: function () {
       return (
         <div>
           {this.props.children}
-          <ShoppingCart hidden={ true } />
+          <ShoppingCart hidden={ this.state.cartHidden } />
           <div className="modal-wrapper">
-            <AuthModal />
+            <AuthModal hidden={ this.state.authHidden } />
           </div>
         </div>
       );

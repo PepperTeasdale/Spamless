@@ -3,11 +3,6 @@ window.SessionsApiUtil = {
     $.ajax({
       url: "/users/sign_in",
       type: "POST",
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader(
-          'X-CSRF-Token',
-          $('meta[name="csrf-token"]').attr('content'))
-      },
       data: credentials,
       dataType: "json",
       success: function (currentUser) {
@@ -23,11 +18,12 @@ window.SessionsApiUtil = {
     $.ajax({
       url: "/users/sign_out",
       type: "DELETE",
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader(
-          'X-CSRF-Token',
-          $('meta[name="csrf-token"]').attr('content'))
-      },
-      success: function () { console.log("signed out!") } })
+      success: function (data) {
+        AppDispatcher.dispatch({
+          actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
+          currentUser: {}
+        });
+      }
+    });
   }
-}
+};

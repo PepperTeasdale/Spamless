@@ -4,17 +4,19 @@ NavBarLinkList = React.createClass({
     $(document).find(".shopping-cart").toggleClass("hidden");
   },
 
+  showAuth: function (e) {
+    UiActions.toggleAuthModal();
+  },
+
   render: function () {
     var Link = ReactRouter.Link;
 
     return (
       <ul className="navbar-link-list">
         <li className="navbar-link">
-          <Link to="/users/sign_in">Sign In</Link>
+          <Link to="" onClick={ this.showAuth }>Sign In</Link>
         </li>
-        <li className="navbar-link">
-          <Link to="/users/sign_up">Sign Up</Link>
-        </li>
+
         <li className="navbar-link">
           <Link to="" onClick={ this.toggleShoppingCart }>Shopping Cart</Link>
         </li>
