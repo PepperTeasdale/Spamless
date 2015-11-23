@@ -8,6 +8,10 @@ class Restaurant < ActiveRecord::Base
   has_many :menu_items
   has_one :restaurant_detail
   belongs_to :address
+  has_many :orders
+  has_many :customers,
+    through: :orders,
+    source: :user
 
   def latitude
     address.latitude

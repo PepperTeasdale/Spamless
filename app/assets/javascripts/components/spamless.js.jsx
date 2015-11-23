@@ -33,6 +33,7 @@ $(function () {
         path="/restaurants/:restaurantId"
         component={RestaurantDetail}
       />
+    <Route path="/orders/new" component={Checkout} />
     </Route>
   );
 

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :restaurants
     resources :registrations
     resources :menu_items, only: :show
+    resources :orders, only: [:create, :show, :index]
   end
 
   devise_for :users, :controllers => {

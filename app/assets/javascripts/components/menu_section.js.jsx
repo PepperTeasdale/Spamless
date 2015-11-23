@@ -3,10 +3,6 @@ var MenuSection = React.createClass({
     return ({ menuItems: RestaurantStore.itemsByCategory(this.props.category) });
   },
 
-  handleItemClick: function (e) {
-    this.props.handleItemClick(e);
-  },
-
   render: function () {
     var categoryItems = this.state.menuItems.map(function (item) {
       return <MenuItem item={ item } key={ item.id } />;

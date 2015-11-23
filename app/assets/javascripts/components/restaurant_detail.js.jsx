@@ -27,10 +27,6 @@ RestaurantDetail = React.createClass({
     this.props.history.pushState(null, "/restaurants", address);
   },
 
-  handleItemClick: function (e) {
-    console.log(e);
-  },
-
   render: function () {
     if (this.state.restaurant === undefined) { return <div></div>; }
 
@@ -38,7 +34,6 @@ RestaurantDetail = React.createClass({
       return (
         <MenuSection
           category={ category }
-          handleItemClick={ this.handleItemClick }
           key={ category }
         />
       );

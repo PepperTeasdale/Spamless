@@ -40,7 +40,7 @@ window.ShoppingCart = React.createClass({
       orderHeader = (
         <div>
           <h3>Order From {this.state.restaurant}</h3>
-          <ReactRouter.Link to="#">Proceed To Checkout</ReactRouter.Link>
+          <ReactRouter.Link to="/orders/new">Proceed To Checkout</ReactRouter.Link>
         </div>
       );
     }
@@ -59,13 +59,13 @@ window.ShoppingCart = React.createClass({
           <p>Items subtotal:</p>
           <span>{ CurrentOrderStore.currentTotal() }</span>
           <p>Sales tax:</p>
-          <span>{ CurrentOrderStore.currentTotal() * .08875 }</span>
+          <span>{ CurrentOrderStore.currentTotal() * 0.08875 }</span>
           <footer>
             <p>Total:</p>
             <span>{ CurrentOrderStore.currentTotal() * 1.08875 }</span>
           </footer>
         </div>
       </div>
-    )
+    );
   }
 });

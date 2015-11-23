@@ -314,6 +314,7 @@ input {
 .menu-section {
   border-top: 20px solid black;
   background: #ccc;
+  padding-bottom: 20px;
 }
 
 .menu-category-section {
@@ -444,4 +445,8 @@ input {
   font-weight: bold;
   font-size: 24px;
   margin: 20px auto;
+}
+
+.checkout-form {
+  margin-top: 70px;
 }
