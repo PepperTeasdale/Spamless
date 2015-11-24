@@ -9,10 +9,8 @@ window.SessionForm = React.createClass({
   signIn: function (e) {
     e.preventDefault();
     SessionsApiUtil.signIn({
-      user: {
-        email: this.state.email,
-        password: this.state.password
-      }
+      email: this.state.email,
+      password: this.state.password
     });
   },
 

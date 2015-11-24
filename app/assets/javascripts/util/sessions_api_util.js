@@ -1,5 +1,6 @@
 window.SessionsApiUtil = {
   signIn: function (credentials) {
+    debugger
     $.ajax({
       url: "api/session",
       type: "POST",
