@@ -2,6 +2,7 @@
   'use strict';
 
   var _currentOrder = [];
+  var _orderRestaurant;
   var CHANGE_EVENT = "change";
 
   var CurrentOrderStore = root.CurrentOrderStore = $.extend({},EventEmitter.prototype, {
@@ -17,7 +18,15 @@
       return _currentOrder.slice(0);
     },
 
+    orderRestaurant: function () {
+      return $.extend({}, _orderRestaurant);
+    },
+
     addToCart: function (orderItem) {
+      if (_currentOrder.length === 0) {
+        _orderRestaurant = RestaurantStore.currentRestaurant();
+      }
+
       if (_currentOrder.indexOf(orderItem) === -1) {
         orderItem.qty = 1;
         _currentOrder.push(orderItem);
@@ -28,6 +37,10 @@
 
     removeFromCart: function (orderItem) {
       _currentOrder.splice(_currentOrder.indexOf(orderItem), 1);
+
+      if (_currentOrder.length === 0) {
+        _orderRestaurant = {};
+      }
     },
 
     currentTotal: function () {

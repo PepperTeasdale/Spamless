@@ -3,7 +3,7 @@ window.ShoppingCart = React.createClass({
     return ({
       orderItems: CurrentOrderStore.currentOrder(),
       total: CurrentOrderStore.currentTotal(),
-      restaurant: RestaurantStore.currentRestaurant()
+      restaurant: CurrentOrderStore.orderRestaurant()
     });
   },
 
@@ -14,8 +14,9 @@ window.ShoppingCart = React.createClass({
   _onChange: function () {
     this.setState({
       orderItems: CurrentOrderStore.currentOrder(),
-      total: CurrentOrderStore.currentTotal()
-    });
+      total: CurrentOrderStore.currentTotal(),
+      restaurant: CurrentOrderStore.orderRestaurant()
+      });
   },
 
   componentWillUnmount: function () {
@@ -39,7 +40,7 @@ window.ShoppingCart = React.createClass({
     } else {
       orderHeader = (
         <div>
-          <h3>Order From {this.state.restaurant}</h3>
+          <h3>Order From { this.state.restaurant.name }</h3>
           <ReactRouter.Link to="/orders/new">Proceed To Checkout</ReactRouter.Link>
         </div>
       );
