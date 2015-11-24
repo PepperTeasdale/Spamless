@@ -373,6 +373,14 @@ input {
   transition: right .5s;
 }
 
+.shopping-cart a {
+  display: block;
+  color: #FAF13D;
+  background: #05164C;
+  padding: 5px;
+  width: 100px;
+}
+
 .shopping-cart.hidden {
   right: -25%;
 }
