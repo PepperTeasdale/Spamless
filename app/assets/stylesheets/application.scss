@@ -47,6 +47,11 @@ ul {
   clear: both;
 }
 
+input:focus {
+  outline: 2px solid #FAF13D;
+  -moz-outline-radius: 5px;
+}
+
 button, a {
   cursor: pointer;
 }
@@ -376,10 +381,13 @@ input {
 
 .shopping-cart a {
   display: block;
+  font-weight: bold;
   color: #FAF13D;
   background: #05164C;
-  padding: 5px;
-  width: 100px;
+  padding: 10px 80px;
+  text-align: center;
+  box-shadow: -3px 3px 10px black;
+  border-radius: 5px;
 }
 
 .shopping-cart.hidden {
@@ -578,9 +586,26 @@ input {
 .checkout-form button {
   display: block;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 100px;
   font-weight: bold;
   background: #05164C;
   color: #FAF13D;
   border-radius: 5px;
+}
+
+.flash-banner {
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  background: rgba(250, 241, 61, .9 );
+  text-align: center;
+  color: #05164C;
+  font-size: 24px;
+  font-weight: bold;
+  transition: top .7s ease-in-out;
+}
+
+.flash-banner.hidden {
+  top: -100px;
 }

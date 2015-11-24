@@ -14,6 +14,7 @@ $(function () {
     render: function () {
       return (
         <div>
+          <Flash />
           <ShoppingCart hidden={ this.state.cartHidden } />
           <div className="modal-wrapper">
             <AuthModal />

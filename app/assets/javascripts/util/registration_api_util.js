@@ -6,7 +6,6 @@ RegistrationApiUtil = {
       dataType: 'json',
       data: registrationParams,
       success: function (currentUser) {
-        debugger
         AppDispatcher.dispatch({
           actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
           currentUser: currentUser
@@ -14,8 +13,7 @@ RegistrationApiUtil = {
         UiActions.toggleAuthModal();
       },
       error: function (data) {
-        debugger
-        console.log(data);
+        UiActions.setFlash($.parseJSON(data.responseText).errors);
       }
     });
   }

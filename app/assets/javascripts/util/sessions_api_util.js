@@ -1,6 +1,5 @@
 window.SessionsApiUtil = {
   signIn: function (credentials) {
-    debugger
     $.ajax({
       url: "api/session",
       type: "POST",
@@ -12,6 +11,9 @@ window.SessionsApiUtil = {
           currentUser: currentUser
         });
         UiActions.toggleAuthModal();
+      },
+      error: function (data) {
+        UiActions.setFlash($.parseJSON(data.responseText).errors);
       }
     });
   },

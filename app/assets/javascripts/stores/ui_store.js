@@ -1,10 +1,12 @@
 (function(root) {
   'use strict';
 
+  var FLASH = "flash";
   var CHANGE_EVENT = "CHANGE_EVENT";
   var _uiStates = {
     shoppingCart: false,
-    authModalHidden: true
+    authModalHidden: true,
+    flash: []
   };
 
   var UiStore = window.UiStore = $.extend({}, EventEmitter.prototype, {
@@ -16,8 +18,20 @@
       this.removeListener(CHANGE_EVENT, callback);
     },
 
+    addFlashHandler: function (callback) {
+      this.on(FLASH, callback);
+    },
+
+    removeFlashHandler: function (callback) {
+      this.removeListener(FLASH, callback);
+    },
+
     authModalHidden: function () {
       return _uiStates.authModalHidden;
+    },
+
+    flash: function () {
+      return _uiStates.flash;
     },
 
     dispatcherId: AppDispatcher.register(function (payload) {
@@ -26,8 +40,10 @@
           _uiStates.authModalHidden = !_uiStates.authModalHidden;
           UiStore.emit(CHANGE_EVENT);
           break;
-        default:
-
+        case UiConstants.SET_FLASH:
+          _uiStates.flash = payload.messages;
+          UiStore.emit(FLASH);
+          break;
       }
     })
   });

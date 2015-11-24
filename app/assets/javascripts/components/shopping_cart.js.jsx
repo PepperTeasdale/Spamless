@@ -60,10 +60,10 @@ window.ShoppingCart = React.createClass({
           <p>Items subtotal:</p>
           <span>{ CurrentOrderStore.currentTotal() }</span>
           <p>Sales tax:</p>
-          <span>{ CurrentOrderStore.currentTotal() * 0.08875 }</span>
+          <span>${ (CurrentOrderStore.currentTotal() * 0.08875).toFixed(2) }</span>
           <footer>
             <p>Total:</p>
-            <span>{ CurrentOrderStore.currentTotal() * 1.08875 }</span>
+            <span>${ (CurrentOrderStore.currentTotal() * 1.08875).toFixed(2) }</span>
           </footer>
         </div>
       </div>
