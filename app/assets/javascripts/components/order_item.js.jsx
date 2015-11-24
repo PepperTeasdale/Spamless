@@ -6,10 +6,14 @@ window.OrderItem = React.createClass({
   render: function () {
     return (
       <li className="order-item">
-        <button onClick={ this.deleteOrderItem }>X</button>
-        <span>{ this.props.item.qty }</span>
-        <h5>{ this.props.item.name }</h5>
-        <span>${ (this.props.item.price * this.props.item.qty).toFixed(2) }</span>
+        <div className="group">
+          <button onClick={ this.deleteOrderItem }>X</button>
+          <span>{ this.props.item.qty }</span>
+        </div>
+        <dl className="group">
+          <dt>{ this.props.item.name }</dt>
+          <dd>{ "$" + (this.props.item.price * this.props.item.qty).toFixed(2) }</dd>
+        </dl>
       </li>
     );
   }

@@ -377,6 +377,7 @@ input {
 .shopping-cart {
   width: 25%;
   height: 100%;
+  background: white;
   position: fixed;
   margin-top: 68px;
   right: 0px;
@@ -420,9 +421,18 @@ input {
   right: -28%;
 }
 
-.shopping-cart * {
+.shopping-cart header {
+  padding: 20px;
+}
+
+.panel-heading * {
+  text-align: center;
   padding: 10px;
-  background: white;
+}
+
+.panel-heading h3 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .cart {
@@ -431,12 +441,35 @@ input {
 
 .order-item button {
   float: left;
+  margin: 10px;
   border: 1px solid black;
   padding: 2px 6px;
   border-radius: 50%;
   color: red;
   font-weight: bold;
   cursor: pointer;
+}
+
+.order-item dt {
+  float: left;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.order-item span {
+  float: right;
+  padding: 10px;
+}
+
+.order-item dd {
+  float: right;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.order-item {
+  border-top: 1px dotted #ccc;
+  padding: 5px;
 }
 
 .order-items-list {
