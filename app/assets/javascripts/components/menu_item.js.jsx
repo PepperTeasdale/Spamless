@@ -1,6 +1,11 @@
 window.MenuItem = React.createClass({
   handleItemClick: function () {
-    OrderItemActions.receiveItem(this.props.item);
+    var orderRestaurant = CurrentOrderStore.orderRestaurant();
+
+    if (RestaurantStore.currentRestaurant().id === orderRestaurant.id ||
+        CurrentOrderStore.currentOrder().length === 0) {
+      OrderItemActions.receiveItem(this.props.item);
+    }
   },
 
   render: function () {

@@ -37,7 +37,7 @@
     },
 
     currentRestaurant: function () {
-      return $.extend({}, _currentRestaurant)
+      return $.extend({}, _currentRestaurant);
     },
 
     cuisineTypes: function () {

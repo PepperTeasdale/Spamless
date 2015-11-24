@@ -39,7 +39,7 @@
       _currentOrder.splice(_currentOrder.indexOf(orderItem), 1);
 
       if (_currentOrder.length === 0) {
-        _orderRestaurant = {};
+        _orderRestaurant = undefined;
       }
     },
 
