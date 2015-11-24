@@ -1,6 +1,6 @@
 NavBarLinkList = React.createClass({
   getInitialState: function () {
-    return ({ signOutButton: false });
+    return ({ signOutButton: CurrentUserStore.isSignedIn() });
   },
 
   componentDidMount: function () {
