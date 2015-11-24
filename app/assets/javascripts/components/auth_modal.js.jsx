@@ -39,17 +39,19 @@ window.AuthModal = React.createClass({
     var hidden = (this.state.hidden ? " hidden" : "");
 
     return (
-      <div className={ "auth-modal group" + hidden }>
-        <button
-          className="toggle-form"
-          onClick={ this.formTypeChanged }
-        >
-          { buttonText }
-        </button>
-        <button className="hide-modal" onClick={ this.hide }>
-          X
-        </button>
-        { form }
+      <div className={ "auth-modal-wrapper" + hidden }>
+        <section className={ "auth-modal group" + hidden }>
+          <button
+            className="toggle-form"
+            onClick={ this.formTypeChanged }
+          >
+            { buttonText }
+          </button>
+          <button className="hide-modal" onClick={ this.hide }>
+            ✖
+          </button>
+          { form }
+        </section>
       </div>
     );
   }

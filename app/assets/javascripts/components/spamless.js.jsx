@@ -8,7 +8,6 @@ $(function () {
     getInitialState: function () {
       return ({
         cartHidden: true,
-        authHidden: true
       });
     },
 
@@ -19,14 +18,14 @@ $(function () {
     render: function () {
       return (
         <div>
-          {this.props.children}
           <ShoppingCart hidden={ this.state.cartHidden } />
           <div className="modal-wrapper">
-            <AuthModal hidden={ this.state.authHidden } />
+            <AuthModal />
           </div>
+          {this.props.children}
         </div>
       );
-    } 
+    }
   });
 
   var routes = (

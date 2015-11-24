@@ -50,46 +50,47 @@ RegistrationForm = React.createClass({
   render: function () {
 
     return (
-      <div className="auth-form">
+      <div>
         <h1>Create Your Account</h1>
 
-        <form onSubmit={ this.submit }>
-          <label>
-            Your name
+        <form className="auth-form group">
+          <section className="name-field">
+            <span>Your name</span>
+              <input
+                type="text"
+                name="fname"
+                className="registration-name"
+                placeholder="First"
+                onChange={ this.fnameChanged }
+             />
+
+
             <input
               type="text"
-              name="fname"
-              placeholder="First"
-              onChange={ this.fnameChanged }
-           />
-          </label>
+              name="lname"
+              className="registration-name"
+              placeholder="Last"
+              onChange={ this.lnameChanged }
+            />
+        </section>
 
-          <input
-            type="text"
-            name="lname"
-            placeholder="Last"
-            onChange={ this.lnameChanged }
-          />
-
-          <label>
-            Email
+          <span>Email</span>
             <input
               type="text"
               name="email"
               placeholder="Email"
               onChange={ this.emailChanged }
             />
-          </label>
 
-          <label>
-            Password
+
+          <span>Password</span>
             <input
               type="password"
               name="password"
               placeholder="Password (8 character minimum)"
               onChange={ this.passwordChanged }
             />
-          </label>
+
 
           <input
             type="password"
@@ -99,7 +100,7 @@ RegistrationForm = React.createClass({
           />
 
 
-          <button>Create Your Account</button>
+        <button onClick={ this.submit }>Create Your Account</button>
         </form>
       </div>
     );

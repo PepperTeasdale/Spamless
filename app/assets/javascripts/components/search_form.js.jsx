@@ -55,7 +55,7 @@ SearchForm = React.createClass({
         <input
           type="text"
           className="address-input"
-          placeholder="Where are you? (Required)"
+          placeholder="Where are you? (e.g. 598 Broadway, NY)"
           onChange={ this.changeAddress }
         />
         <button onClick={ this.submitSearch }>

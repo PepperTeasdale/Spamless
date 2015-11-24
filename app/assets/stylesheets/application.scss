@@ -47,12 +47,20 @@ ul {
   clear: both;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 h2 {
   margin-top: 20px;
   padding: 10px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+}
+
+html {
+  background: #aaa;
 }
 
 .navbar-container {
@@ -182,12 +190,14 @@ input[type="radio"] {
 }
 
 
-.navbar-link-list {
+.navbar-button-list {
+  color: white;
   float: right;
   padding:  5px;
 }
 
-.navbar-link {
+.navbar-button {
+  margin-top: 10px;
   float: left;
   font-size: 16px;
   font-weight: normal;
@@ -372,6 +382,10 @@ input {
   background: white;
 }
 
+.cart {
+  height: 100%;
+}
+
 .order-item button {
   float: left;
   border: 1px solid black;
@@ -429,33 +443,107 @@ input {
 }
 
 .auth-modal {
-  position: absolute;
-  margin: -300px calc(50% - 250px);
+  position: fixed;
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
   width: 500px;
-  background: gray;
+  background: white;
+  border: 1px solid black;
+}
+
+.auth-modal-wrapper {
+  display: block;
+  position: fixed;
+  background-color: rgba(51, 51, 51, 0.78);
+  height: 100%;
+  width: 100%;
+}
+
+.auth-modal-wrapper.hidden {
+  display: none;
 }
 
 .auth-modal.hidden {
   display: none;
 }
-
-.auth-modal * {
-  float: left;
-  margin: 10px 0 0 50px;
-}
-
-.input-label {
-  margin-right: 300px;
-}
-
-.auth-modal h1 {
-  display: block;
-  color: white;
+//
+.auth-modal button {
   font-weight: bold;
   font-size: 24px;
+  padding: 10px;
+}
+//
+// .input-label {
+//   margin-right: 300px;
+// }
+//
+.hide-modal {
+  float: right;
+  padding: 5px;
+}
+
+.toggle-form {
+  float: left;
+}
+//
+.auth-form {
+  display: block;
+}
+//
+// .auth-form input {
+//   display: block;
+//   width: 300px;
+//   padding: 5px 10px;
+//   border: 1px solid black;
+//   border-radius: 5px;
+// }
+// //
+.auth-modal h1 {
+  display: block;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
   margin: 20px auto;
 }
 
-.checkout-form {
-  margin-top: 70px;
+// .registration-name {
+//   float: left;
+//   width: 150px;
+//   margin: 0 10px;
+// }
+.auth-modal input {
+  display: inline-block;
+  box-sizing: content-box;
+  margin: 5px 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  font: inherit;
+  background: white;
+  color: inherit;
 }
+
+.name-field {
+  margin: 10px;
+}
+
+.auth-form span {
+  display: block;
+  margin: 10px;
+}
+
+.auth-form button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  font-weight: bold;
+  background: #05164C;
+  color: #FAF13D;
+}
+
+//
+// .checkout-form {
+//   margin-top: 70px;
+// }

@@ -26,9 +26,9 @@ window.SessionForm = React.createClass({
 
   render: function () {
     return (
-      <div className="auth-form">
+      <div>
         <h1>Sign In</h1>
-        <form>
+        <form className="auth-form group">
           <label className="input-label">
             Email
             <input type="text" onChange={ this.emailChanged } />

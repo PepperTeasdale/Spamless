@@ -16,7 +16,6 @@ NavBarLinkList = React.createClass({
   },
 
   toggleShoppingCart: function (e) {
-    e.preventDefault();
     $(document).find(".shopping-cart").toggleClass("hidden");
   },
 
@@ -29,30 +28,25 @@ NavBarLinkList = React.createClass({
     var authLink;
 
     if (this.state.signOutButton) {
-      authLink = (
-        <li className="navbar-link">
-          <Link to="" onClick={ SessionsApiUtil.signOut }>Sign Out</Link>
+      authButton = (
+        <li className="navbar-button">
+          <button  onClick={ SessionsApiUtil.signOut }>Sign Out</button>
         </li>
       );
     } else {
-      authLink = (
-        <li className="navbar-link">
-          <Link
-            to=""
-            onClick={ this.showAuth }
-          >
-            Sign In
-          </Link>
+      authButton = (
+        <li className="navbar-button">
+          <button onClick={ this.showAuth }>Sign In</button>
         </li>
       );
     }
 
 
     return (
-      <ul className="navbar-link-list">
-        { authLink }
-        <li className="navbar-link">
-          <Link to="" onClick={ this.toggleShoppingCart }>Shopping Cart</Link>
+      <ul className="navbar-button-list">
+        { authButton }
+        <li className="navbar-button">
+          <button onClick={ this.toggleShoppingCart }>Shopping Cart</button>
         </li>
       </ul>
     );
