@@ -1,7 +1,7 @@
 window.SessionsApiUtil = {
   signIn: function (credentials) {
     $.ajax({
-      url: "/users/sign_in",
+      url: "api/session",
       type: "POST",
       data: credentials,
       dataType: "json",
@@ -17,7 +17,7 @@ window.SessionsApiUtil = {
 
   signOut: function () {
     $.ajax({
-      url: "/users/sign_out",
+      url: "api/session",
       type: "DELETE",
       success: function (data) {
         AppDispatcher.dispatch({

@@ -11,10 +11,6 @@ $(function () {
       });
     },
 
-    componentDidMount: function () {
-      SessionsApiUtil.signOut();
-    },
-
     render: function () {
       return (
         <div>

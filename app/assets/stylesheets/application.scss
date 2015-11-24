@@ -371,6 +371,7 @@ input {
   margin-top: 68px;
   right: 0px;
   transition: right .5s;
+  box-shadow: -2px 0 20px black;
 }
 
 .shopping-cart a {
@@ -382,7 +383,7 @@ input {
 }
 
 .shopping-cart.hidden {
-  right: -25%;
+  right: -28%;
 }
 
 .shopping-cart * {
@@ -515,15 +516,10 @@ input {
   margin: 20px auto;
 }
 
-// .registration-name {
-//   float: left;
-//   width: 150px;
-//   margin: 0 10px;
-// }
 .auth-modal input {
-  display: inline-block;
+  display: block;
   box-sizing: content-box;
-  margin: 5px 20px;
+  margin: 5px auto;
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
@@ -545,13 +541,46 @@ input {
 .auth-form button {
   display: block;
   margin: 20px auto;
+  padding: 10px;
+  font-weight: bold;
+  background: #05164C;
+  color: #FAF13D;
+  border-radius: 5px;
+}
+
+
+.checkout-form {
+  margin-top: 70px;
+  width: 75%;
+  float: left;
+}
+
+.checkout-form input {
+  display: block;
+  box-sizing: content-box;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  font: inherit;
+  background: white;
+  color: inherit;
+}
+
+.checkout-form span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.checkout-form button {
+  display: block;
+  margin: 20px auto;
   padding: 20px;
   font-weight: bold;
   background: #05164C;
   color: #FAF13D;
+  border-radius: 5px;
 }
-
-//
-// .checkout-form {
-//   margin-top: 70px;
-// }

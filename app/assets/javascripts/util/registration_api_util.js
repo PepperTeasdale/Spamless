@@ -1,14 +1,9 @@
 RegistrationApiUtil = {
   signUp: function (registrationParams) {
     $.ajax({
-      url: '/users',
+      url: '/api/users',
       type: 'POST',
       dataType: 'json',
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader(
-          'X-CSRF-Token',
-          $('meta[name="csrf-token"]').attr('content'))
-      },
       data: registrationParams,
       success: function (currentUser) {
         AppDispatcher.dispatch({

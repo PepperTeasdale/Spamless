@@ -7,7 +7,6 @@ RegistrationForm = React.createClass({
       lname: "",
       email: "",
       password: "",
-      passwordConfirmation: ""
     });
   },
 
@@ -20,7 +19,6 @@ RegistrationForm = React.createClass({
         lname: this.state.lname,
         email: this.state.email,
         password: this.state.password,
-        password_confirmation: this.state.passwordConfirmation
       }
     };
 
@@ -28,24 +26,21 @@ RegistrationForm = React.createClass({
   },
 
   fnameChanged: function (e) {
-    this.setState({ fname: e.target.value })
+    this.setState({ fname: e.target.value });
   },
 
   lnameChanged: function (e) {
-    this.setState({ lname: e.target.value })
+    this.setState({ lname: e.target.value });
   },
 
   emailChanged: function (e) {
-    this.setState({ email: e.target.value })
+    this.setState({ email: e.target.value });
   },
 
   passwordChanged: function (e) {
-    this.setState({ password: e.target.value })
+    this.setState({ password: e.target.value });
   },
 
-  passwordConfirmationChanged: function (e) {
-    this.setState({ passwordConfirmation: e.target.value })
-  },
 
   render: function () {
 
@@ -90,15 +85,6 @@ RegistrationForm = React.createClass({
               placeholder="Password (8 character minimum)"
               onChange={ this.passwordChanged }
             />
-
-
-          <input
-            type="password"
-            name="password_confirmation"
-            placeholder="Confirm your password"
-            onChange={ this.passwordConfirmationChanged }
-          />
-
 
         <button onClick={ this.submit }>Create Your Account</button>
         </form>

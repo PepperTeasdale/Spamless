@@ -16,13 +16,13 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'react-rails', '~> 1.3.0'
 gem 'flux-rails-assets'
 gem 'react-router-rails', '~>0.13.3.1'
 gem 'geocoder'
 gem 'figaro'
+gem 'bcrypt-ruby', require: 'bcrypt'
 
 group :production do
   gem 'rails_12factor'
