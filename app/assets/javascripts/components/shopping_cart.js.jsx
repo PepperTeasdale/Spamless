@@ -55,17 +55,23 @@ window.ShoppingCart = React.createClass({
         <header className="panel-heading">
           {orderHeader}
         </header>
-        <div className={"cart"}>
-          {orderItems}
-          <p>Items subtotal:</p>
-          <span>{ CurrentOrderStore.currentTotal() }</span>
-          <p>Sales tax:</p>
-          <span>${ (CurrentOrderStore.currentTotal() * 0.08875).toFixed(2) }</span>
-          <footer>
-            <p>Total:</p>
-            <span>${ (CurrentOrderStore.currentTotal() * 1.08875).toFixed(2) }</span>
-          </footer>
-        </div>
+        <section className={"cart"}>
+          <ul className="order-items-list">
+            {orderItems}
+          </ul>
+          <dl className="group">
+            <dt>Items subtotal:</dt>
+            <dd>{ "$" + (CurrentOrderStore.currentTotal()).toFixed(2) }</dd>
+          </dl>
+          <dl className="group">
+            <dt>Sales tax:</dt>
+            <dd>{ "$" + (CurrentOrderStore.currentTotal() * 0.08875).toFixed(2) }</dd>
+          </dl>
+          <dl className="shopping-cart-total group">
+            <dt>Total:</dt>
+            <dd>{ "$" + (CurrentOrderStore.currentTotal() * 1.08875).toFixed(2) }</dd>
+          </dl>
+        </section>
       </div>
     );
   }
