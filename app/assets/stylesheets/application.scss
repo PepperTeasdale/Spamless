@@ -84,6 +84,7 @@ html {
 
 .navbar.not-transparent {
   background: #05164C;
+  box-shadow: 0 2px 10px black;
 }
 
 .search-form {
@@ -317,6 +318,10 @@ input {
   margin: 120px 100px 0;
 }
 
+.restaurant-photo {
+  box-shadow: -3px 3px 10px black;
+}
+
 .restaurant-info h2 {
   color: #FAF13D;
 }
@@ -376,7 +381,7 @@ input {
   margin-top: 68px;
   right: 0px;
   transition: right .5s;
-  box-shadow: -2px 0 20px black;
+  box-shadow: -3px 0 10px black;
 }
 
 .shopping-cart a {
@@ -598,14 +603,19 @@ input {
   position: absolute;
   width: 100%;
   top: 100px;
-  background: rgba(250, 241, 61, .9 );
+  background: #FAF13D;
   text-align: center;
   color: #05164C;
   font-size: 24px;
   font-weight: bold;
-  transition: top .7s ease-in-out;
+  opacity: 1;
+  transition: opacity .3s;
 }
 
 .flash-banner.hidden {
-  top: -100px;
+  opacity: 0;
+}
+
+.flash-banner span {
+  display: block;
 }

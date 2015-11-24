@@ -24,7 +24,7 @@ window.Flash = React.createClass({
         messages: [],
         visible: false
       });
-    }.bind(this), 5000);
+    }.bind(this), 3000);
   },
 
   render: function () {

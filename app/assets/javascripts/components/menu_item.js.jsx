@@ -5,6 +5,11 @@ window.MenuItem = React.createClass({
     if (RestaurantStore.currentRestaurant().id === orderRestaurant.id ||
         CurrentOrderStore.currentOrder().length === 0) {
       OrderItemActions.receiveItem(this.props.item);
+    } else {
+      UiActions.setFlash(
+        ["Order already started with " + orderRestaurant.name,
+         "Empty shopping cart before starting a new order."]
+    );
     }
   },
 

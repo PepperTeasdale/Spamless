@@ -8,6 +8,9 @@ ApiUtil = {
       success: function (data) {
         ApiActions.receiveAllRestaurants(data.restaurants);
         callback && callback({ address: data.address});
+      },
+      error: function (data) {
+        UiActions.setFlash($.parseJSON(data.responseText).errors);
       }
     });
   },
