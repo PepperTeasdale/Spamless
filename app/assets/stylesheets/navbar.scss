@@ -1,0 +1,122 @@
+.navbar-container {
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background: transparent;
+  transition: background .3s ease-in-out;
+}
+
+.navbar.not-transparent {
+  background: #05164C;
+  box-shadow: 0 2px 10px black;
+}
+
+
+.navbar-search-form {
+  float: left;
+  padding: 10px;
+  width: 600px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.navbar-radios {
+  color: white;
+  float: left;
+  padding-left: 15px;
+}
+
+.navbar-search-form input {
+  color: black;
+  float: left;
+  margin: 10px 0 0 10px;
+  padding: 5px;
+  height: 100%;
+  width: 240px;
+}
+
+.navbar-search-form button {
+  float: left;
+  color: black;
+  border-left: 1px solid black;
+  margin-right: 5px;
+  background: white;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.navbar-span {
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 5px;
+}
+
+.navbar-radio-label {
+  float: left;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.navbar-button-list {
+  color: white;
+  float: right;
+  padding:  5px;
+}
+
+.navbar-button {
+  margin-top: 10px;
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+  padding:  10px;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 5px;
+  color: white;
+}
+
+.logo {
+  display: block;
+  float: left;
+  margin: 20px 20px 15px;
+  background-image: image-url("logo.png");
+  height: 20px;
+  width: 150px;
+  font-family: Corben;
+  font-weight: bold;
+  color: #FBEF02;
+  font-size: 24px;
+  background-size: contain;
+  transition: background-size 0.9s;
+}
+
+.small-logo {
+  background-size: contain;
+  height: 10px;
+  width: 115px;
+}
+
+.drop-down-link {
+  color: black;
+}
+
+.profile-drop-down a button {
+  display: block;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin: 0;
+  color: black;
+}
+
+.profile-drop-down.hidden {
+  display: none;
+}

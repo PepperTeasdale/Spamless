@@ -1,0 +1,35 @@
+.checkout-form {
+  margin-top: 70px;
+  width: 75%;
+  float: left;
+}
+
+.checkout-form input {
+  display: block;
+  box-sizing: content-box;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  font: inherit;
+  background: white;
+  color: inherit;
+}
+
+.checkout-form span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.checkout-form button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 100px;
+  font-weight: bold;
+  background: #05164C;
+  color: #FAF13D;
+  border-radius: 5px;
+}

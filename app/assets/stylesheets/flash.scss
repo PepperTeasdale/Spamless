@@ -1,0 +1,21 @@
+.flash-banner {
+  z-index: 99999;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  background: #FAF13D;
+  text-align: center;
+  color: #05164C;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.flash-banner.hidden {
+  opacity: 0;
+}
+
+.flash-banner span {
+  display: block;
+}

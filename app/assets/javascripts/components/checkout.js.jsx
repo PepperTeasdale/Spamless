@@ -1,15 +1,14 @@
 window.Checkout = React.createClass({
-  mixins: [React.addons.LinkedStateMixin],
+  mixins: [React.addons.LinkedStateMixin, ReactRouter.History],
 
   getInitialState: function () {
     return ({
       streetAddress: CurrentAddressStore.parseAddress().streetAddress,
       city: CurrentAddressStore.parseAddress().city,
       state: CurrentAddressStore.parseAddress().state,
-      zip: CurrentAddressStore.parseAddress().zip,
+      zipcode: CurrentAddressStore.parseAddress().zipcode,
       fname: CurrentUserStore.currentUser().fname,
       lname: CurrentUserStore.currentUser().lname,
-      phone: "",
       saveAddress: false
     });
   },
@@ -27,7 +26,17 @@ window.Checkout = React.createClass({
   },
 
   address: function () {
-    // this will join the address form into a json object
+    return ({
+      street_address: this.state.streetAddress,
+      city: this.state.city,
+      state: this.state.state,
+      zipcode: this.state.zipcode,
+      user_id: CurrentUserStore.currentUser().id
+    });
+  },
+
+  redirect: function () {
+    this.history.pushState(null, "/");
   },
 
   placeOrder: function (e) {
@@ -36,19 +45,18 @@ window.Checkout = React.createClass({
     var contactInfo = {
       fname: this.state.fname,
       lname: this.state.lname,
-      phone: this.state.phone
     };
 
     OrdersApiUtil.submitOrder({
-      address: this.address,
+      address: this.address(),
       contact: contactInfo,
       order_items: CurrentOrderStore.currentOrder(),
       user_id: CurrentUserStore.currentUser().id,
       restaurant_id: RestaurantStore.currentRestaurant().id
-    });
+    }, this.redirect);
 
     if (this.state.saveAddress) {
-      AddressApiUtil.saveAddress(this.state.address);
+      AddressApiUtil.saveAddress(this.address());
     }
   },
 
@@ -68,11 +76,6 @@ window.Checkout = React.createClass({
               type="text"
               valueLink={ this.linkState('lname') }
               placeholder="Last name"
-            />
-            <input
-              type="text"
-              valueLink={ this.linkState('phone') }
-              placeholder="Phone number"
             />
 
           </label>
@@ -96,7 +99,7 @@ window.Checkout = React.createClass({
             />
             <input
               type="text"
-              valueLink={ this.linkState('zip') }
+              valueLink={ this.linkState('zipcode') }
               placeholder="Zipcode"
             />
           </label>

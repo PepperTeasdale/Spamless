@@ -1,5 +1,5 @@
 window.OrdersApiUtil = {
-  submitOrder: function (data) {
+  submitOrder: function (data, callback) {
     $.ajax({
       url: '/api/orders',
       type: 'POST',
@@ -8,6 +8,7 @@ window.OrdersApiUtil = {
       success: function (data) {
         var restaurantName = RestaurantStore.find(data.restaurant_id).name;
         UiActions.setFlash(["Successfully placed order with " + restaurantName]);
+        callback();
       },
       error: function (data) {
         UiActions.setFlash($.parseJSON(data.responseText));

@@ -1,0 +1,48 @@
+.landing-page {
+  background-image: image-url("musugi.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.search-form {
+  color: white;
+  height: 200px;
+  width: 450px;
+  margin: 175px 200px;
+  background-color: rgba(51, 51, 51, 0.78);
+  border-radius: 5px;
+  float: right;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.search-form span {
+  margin: 0 10px;
+}
+
+.search-form fieldset {
+  margin: 10px 70px;
+  font-size: 18px;
+}
+
+.search-form input {
+  float: left;
+  color: black;
+  width: 310px;
+  margin: 20px 0 0 20px;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-form button {
+  color: white;
+  float: left;
+  margin: 20px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  background: #05164C;
+}

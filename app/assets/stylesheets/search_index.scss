@@ -1,0 +1,37 @@
+
+.filter-field {
+  margin-top: 70px;
+  display: block;
+  background: #ccc;
+  float: left;
+  width: 25%;
+}
+
+.search-index {
+  background: #ccc;
+}
+
+.restaurant-list {
+  float: right;
+  width: 75%;
+  margin: 70px auto;
+  background: white;
+}
+
+.restaurant-card a {
+  display: block;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+.restaurant-card p {
+  display: block;
+  margin-left: 15px;
+}
+
+.restaurant-card {
+  margin: 10px auto 0;
+  display: block;
+  padding: 10px 10px 0;
+  border-bottom: 2px dotted #05164C;
+}

@@ -1,3 +1,92 @@
-// Place all the styles related to the RestaurantDetails controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.restaurant-detail {
+  float: left;
+  width: 75%;
+}
+
+.restaurant-header {
+  display: block;
+  background-image: image-url("blurred_background.jpg");
+  background-size: cover;
+  margin-top: 68px;
+}
+
+.restaurant-header img {
+  float: right;
+  margin: 50px 50px 0;
+}
+
+.restaurant-header a {
+  float: left;
+  width: 35px;
+  margin: 50px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.restaurant-info {
+  float: left;
+  background: #3C3636;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 120px 100px 0;
+}
+
+.restaurant-photo {
+  box-shadow: -3px 3px 10px black;
+}
+
+.restaurant-info h2 {
+  color: #FAF13D;
+}
+
+.restaurant-info * {
+  display: block;
+  padding: 10px;
+}
+
+.menu-section {
+  border-top: 20px solid black;
+  background: #ccc;
+  padding-bottom: 20px;
+}
+
+.menu-category-section {
+  display: block;
+  width: 700px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.menu-category-section h3 {
+  color: #FAF13D;
+  padding: 15px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  clear: both;
+  border: 1px solid black;
+  background: #3C3636;
+  border-bottom: 2px dotted black;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item {
+  width: calc(44% - 1px);
+  padding: 20px;
+  float: left;
+  background: white;
+  border-bottom: 2px dotted black;
+  border-right: 2px dotted black;
+}
+
+.menu-items-container {
+  border-left: 2px dotted black;
+  margin-bottom: 20px;
+}

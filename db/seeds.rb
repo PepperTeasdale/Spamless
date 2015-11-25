@@ -26,7 +26,7 @@ addresses = [
 
 addresses.each do |address|
   Address.create!(
-    address: address[0],
+    street_address: address[0],
     city: address[1],
     state: address[2],
     zipcode: address[3],

@@ -20,8 +20,13 @@ class Api::OrdersController < ApplicationController
   end
 
   def order_params
-    order_items = {order_items: [:id, :restaurant_id, :name, :menu_category, :price, :qty, :description]}
-    contact = {contact: [:fname, :lname, :phone]}
-    params.require(:order).permit(:user_id, :restaurant_id, :address, order_items, contact)
+    order_items = {
+      order_items: [:id, :restaurant_id, :name, :menu_category, :price, :qty, :description]
+    }
+    contact = {contact: [:fname, :lname]}
+    address = { address: [:street_address, :city, :state, :zipcode, :user_id]}
+    params
+      .require(:order)
+      .permit(:user_id, :restaurant_id, address, order_items, contact)
   end
 end
