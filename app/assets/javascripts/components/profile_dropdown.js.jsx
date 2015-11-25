@@ -1,0 +1,61 @@
+window.ProfileDropDown = React.createClass({
+  getInitialState: function () {
+    return ({
+      hidden: UiStore.profileDropDownHidden()
+    });
+  },
+
+  componentDidMount: function () {
+    UiStore.addChangeHandler(this._onChange);
+  },
+
+  componentWillUnmount: function () {
+    UiStore.removeChangeHandler(this._onChange);
+  },
+
+  _onChange: function () {
+    this.setState({ hidden: UiStore.profileDropDownHidden() });
+  },
+
+  render: function () {
+    var hidden;
+    var Link = ReactRouter.Link;
+
+    if (this.state.hidden) {
+      hidden = " hidden";
+    }
+
+
+    return (
+      <ul className={ "profile-drop-down group" + hidden }>
+        <li>
+          <Link
+            to={"/users/" + CurrentUserStore.currentUser().id }
+            className="drop-down-link"
+          >
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/users/" + CurrentUserStore.currentUser().id + "/addresses" }
+            className="drop-down-link"
+          >
+            Addresses
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/users/" + CurrentUserStore.currentUser().id + "/orders" }
+            className="drop-down-link"
+          >
+            Order History
+          </Link>
+        </li>
+        <li>
+          <button onClick={ SessionsApiUtil.signOut }>Sign Out</button>
+        </li>
+      </ul>
+    );
+  }
+});

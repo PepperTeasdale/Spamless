@@ -10,5 +10,11 @@ window.UiActions = {
       actionType: UiConstants.SET_FLASH,
       messages: messages
     });
+  },
+
+  showProfileDropDown: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.TOGGLE_PROFILE_DROP_DOWN
+    });
   }
 };

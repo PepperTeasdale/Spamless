@@ -28,13 +28,16 @@ NavBarLinkList = React.createClass({
     var authLink;
 
     if (this.state.signOutButton) {
-      authButton = (
-        <li className="navbar-button">
-          <button  onClick={ SessionsApiUtil.signOut }>Sign Out</button>
-        </li>
+      authButtons = (
+          <li className="navbar-button">
+            <button onClick={ UiActions.showProfileDropDown }>
+              { "Hi, " + CurrentUserStore.currentUser().fname + "! ∨" }
+            </button>
+            <ProfileDropDown />
+          </li>
       );
     } else {
-      authButton = (
+      authButtons = (
         <li className="navbar-button">
           <button onClick={ this.showAuth }>Sign In</button>
         </li>
@@ -44,7 +47,7 @@ NavBarLinkList = React.createClass({
 
     return (
       <ul className="navbar-button-list">
-        { authButton }
+        { authButtons }
         <li className="navbar-button">
           <button onClick={ this.toggleShoppingCart }>Shopping Cart</button>
         </li>

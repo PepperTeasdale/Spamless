@@ -20,7 +20,7 @@ window.Checkout = React.createClass({
       phone: this.state.phone
     };
 
-    OrderApiUtil.submitOrder({
+    OrdersApiUtil.submitOrder({
       address: this.state.address,
       contact: contactInfo,
       order_items: CurrentOrderStore.currentOrder(),

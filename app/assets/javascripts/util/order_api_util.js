@@ -1,4 +1,4 @@
-window.OrderApiUtil = {
+window.OrdersApiUtil = {
   submitOrder: function (data) {
     $.ajax({
       url: '/api/orders',

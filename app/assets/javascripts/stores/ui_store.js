@@ -6,7 +6,8 @@
   var _uiStates = {
     shoppingCart: false,
     authModalHidden: true,
-    flash: []
+    flash: [],
+    profileDropDownHidden: true
   };
 
   var UiStore = window.UiStore = $.extend({}, EventEmitter.prototype, {
@@ -34,12 +35,22 @@
       return _uiStates.flash;
     },
 
+    profileDropDownHidden: function () {
+      return _uiStates.profileDropDownHidden;
+    },
+
     dispatcherId: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {
         case UiConstants.TOGGLE_AUTH_MODAL:
           _uiStates.authModalHidden = !_uiStates.authModalHidden;
           UiStore.emit(CHANGE_EVENT);
           break;
+
+        case UiConstants.TOGGLE_PROFILE_DROP_DOWN:
+          _uiStates.profileDropDownHidden = !_uiStates.profileDropDownHidden;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
         case UiConstants.SET_FLASH:
           _uiStates.flash = payload.messages;
           UiStore.emit(FLASH);

@@ -16,7 +16,7 @@ class Api::OrdersController < ApplicationController
   end
 
   def index
-    @order = Order.where(user_id: params[:user_id])
+    @orders = Order.where(user_id: params[:user_id])
   end
 
   def order_params

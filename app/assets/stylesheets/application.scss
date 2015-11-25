@@ -678,3 +678,36 @@ input {
 .flash-banner span {
   display: block;
 }
+
+// .profile-drop-down li {
+//   background: white;
+// }
+
+.drop-down-link {
+  color: black;
+}
+
+.profile-drop-down a button {
+  display: block;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin: 0;
+  color: black;
+}
+
+.profile-drop-down.hidden {
+  display: none;
+}
+
+.user-profile-sidebar {
+  margin-top: 70px;
+  width: 25%;
+  float: left;
+}
+
+.orders-index {
+  margin-top: 70px;
+  width: 75%;
+  float: right;
+}
