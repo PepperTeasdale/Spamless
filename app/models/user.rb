@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
     through: :orders,
     source: :restaurant
 
+  has_many :addresses
+
   def self.generate_session_token
     SecureRandom::urlsafe_base64(16)
   end
