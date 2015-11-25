@@ -42,7 +42,7 @@ window.ShoppingCart = React.createClass({
     } else {
       orderHeader = (
         <header>
-          <h3>{ "Order From" + this.state.restaurant.name }</h3>
+          <h3>{ "Order From " + this.state.restaurant.name }</h3>
           <ReactRouter.Link to="/orders/new">Proceed To Checkout</ReactRouter.Link>
         </header>
       );

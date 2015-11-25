@@ -22,16 +22,26 @@
       return _currentAddress;
     },
 
+    parseAddress: function () {
+      var splitAddress = _currentAddress.split(", ");
+      return ({
+        streetAddress: splitAddress[0],
+        city: splitAddress[1],
+        state: splitAddress[2].split(" ")[0],
+        zip: splitAddress[2].split(" ")[1]
+      });
+    },
+
     dispatcherId: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {
         case CurrentAddressConstants.RECEIVE_CURRENT_ADDRESS:
           updateCurrentAddress(payload.currentAddress);
-          CurrentAddressStore.emit(CHANGE_EVENT)
+          CurrentAddressStore.emit(CHANGE_EVENT);
           break;
         default:
 
       }
     })
-  })
+  });
 
 }(this));
