@@ -7,13 +7,14 @@ RestaurantDetail = React.createClass({
   },
 
   componentDidMount: function () {
-    $(document).find(".shopping-cart").removeClass("hidden");
+    UiActions.openShoppingCart();
     RestaurantStore.addChangeListener(this._onChange);
     ApiUtil.fetchSingleRestaurant(this.props.params.restaurantId);
   },
 
   componentWillUnmount: function () {
     RestaurantStore.removeChangeListener(this._onChange);
+        UiActions.closeShoppingCart();
   },
 
   _onChange: function () {

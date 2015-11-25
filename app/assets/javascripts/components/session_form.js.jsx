@@ -14,6 +14,14 @@ window.SessionForm = React.createClass({
     });
   },
 
+  guestSignIn: function (e) {
+    e.preventDefault();
+    SessionsApiUtil.signIn({
+      email: "cleese@pythons.com",
+      password: "password"
+    });
+  },
+
   emailChanged: function (e) {
     this.setState({ email: e.target.value });
   },
@@ -38,6 +46,7 @@ window.SessionForm = React.createClass({
           </label>
 
           <button onClick={ this.signIn }>Sign In</button>
+          <button onClick={ this.guestSignIn }>Sign In As Guest</button>
         </form>
       </div>
     );

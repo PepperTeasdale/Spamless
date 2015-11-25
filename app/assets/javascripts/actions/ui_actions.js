@@ -12,9 +12,27 @@ window.UiActions = {
     });
   },
 
-  showProfileDropDown: function () {
+  toggleProfileDropdown: function () {
     AppDispatcher.dispatch({
       actionType: UiConstants.TOGGLE_PROFILE_DROP_DOWN
+    });
+  },
+
+  closeShoppingCart: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.CLOSE_SHOPPING_CART
+    });
+  },
+
+  openShoppingCart: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.OPEN_SHOPPING_CART
+    });
+  },
+
+  toggleShoppingCart: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.TOGGLE_SHOPPING_CART
     });
   }
 };

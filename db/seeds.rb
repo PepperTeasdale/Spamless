@@ -1,7 +1,7 @@
 User.create!(
-  fname: "Bobby",
-  lname: "Digital",
-  email: "fake@email.com",
+  fname: "John",
+  lname: "Cleese",
+  email: "cleese@pythons.com",
   password: "password"
 )
 
@@ -53,7 +53,7 @@ restaurants.each_with_index do |restaurant, idx|
     description: restaurant[2]
   )
   # To avoid going over google geocoding api query limit.
-  sleep(2)
+  sleep(1)
 end
 
 
@@ -64,7 +64,7 @@ restaurants.each_with_index do |restaurant, idx|
     cuisine_type: restaurant[1],
     description: restaurant[2]
   )
-  sleep(2)
+  sleep(1)
 end
 
 menu_items = [

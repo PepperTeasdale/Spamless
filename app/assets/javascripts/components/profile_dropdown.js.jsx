@@ -32,6 +32,7 @@ window.ProfileDropDown = React.createClass({
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id }
             className="drop-down-link"
+            onClick={ UiActions.toggleProfileDropdown }
           >
             Profile
           </Link>
@@ -40,6 +41,7 @@ window.ProfileDropDown = React.createClass({
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id + "/addresses" }
             className="drop-down-link"
+            onClick={ UiActions.toggleProfileDropdown }
           >
             Addresses
           </Link>
@@ -48,6 +50,7 @@ window.ProfileDropDown = React.createClass({
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id + "/orders" }
             className="drop-down-link"
+            onClick={ UiActions.toggleProfileDropdown }
           >
             Order History
           </Link>

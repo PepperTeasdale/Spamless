@@ -15,10 +15,6 @@ NavBarLinkList = React.createClass({
     this.setState({ signOutButton: CurrentUserStore.isSignedIn() });
   },
 
-  toggleShoppingCart: function (e) {
-    $(document).find(".shopping-cart").toggleClass("hidden");
-  },
-
   showAuth: function (e) {
     UiActions.toggleAuthModal();
   },
@@ -30,7 +26,7 @@ NavBarLinkList = React.createClass({
     if (this.state.signOutButton) {
       authButtons = (
           <li className="navbar-button">
-            <button onClick={ UiActions.showProfileDropDown }>
+            <button onClick={ UiActions.toggleProfileDropdown }>
               { "Hi, " + CurrentUserStore.currentUser().fname + "! ∨" }
             </button>
             <ProfileDropDown />
@@ -49,7 +45,9 @@ NavBarLinkList = React.createClass({
       <ul className="navbar-button-list">
         { authButtons }
         <li className="navbar-button">
-          <button onClick={ this.toggleShoppingCart }>Shopping Cart</button>
+          <button onClick={ UiActions.toggleShoppingCart }>
+            Shopping Cart
+          </button>
         </li>
       </ul>
     );

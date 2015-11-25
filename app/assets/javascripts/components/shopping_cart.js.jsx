@@ -3,32 +3,34 @@ window.ShoppingCart = React.createClass({
     return ({
       orderItems: CurrentOrderStore.currentOrder(),
       total: CurrentOrderStore.currentTotal(),
-      restaurant: CurrentOrderStore.orderRestaurant()
+      restaurant: CurrentOrderStore.orderRestaurant(),
+      hidden: UiStore.shoppingCartHidden()
     });
   },
 
   componentDidMount: function () {
     CurrentOrderStore.addChangeListener(this._onChange);
+    UiStore.addChangeHandler(this._onChange);
   },
 
   _onChange: function () {
     this.setState({
       orderItems: CurrentOrderStore.currentOrder(),
       total: CurrentOrderStore.currentTotal(),
-      restaurant: CurrentOrderStore.orderRestaurant()
-      });
+      restaurant: CurrentOrderStore.orderRestaurant(),
+      hidden: UiStore.shoppingCartHidden()
+    });
   },
 
   componentWillUnmount: function () {
     CurrentOrderStore.removeChangeListener(this._onChange);
+    UiStore.removeChangeListener(this._onChange);
   },
 
   render: function () {
     var hiddenClass, orderHeader;
 
-    if (this.props.hidden) {
-      hiddenClass = " hidden";
-    }
+    hiddenClass = (this.state.hidden ? " hidden" : "");
 
     if (this.state.orderItems.length === 0) {
       orderHeader = (

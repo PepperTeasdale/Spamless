@@ -21,11 +21,22 @@ window.OrdersIndex = React.createClass({
       var orderItems = mapOrderItems(order.order_items);
 
       return (
-        <li className="user-profile-index-item" key={order.id}>
-          {order.id}
-          <ul>
-            { orderItems }
-          </ul>
+        <li className="user-profile-index-item group" key={order.id}>
+          <img
+            className="restaurant-photo"
+            src="http://lorempixel.com/150/150/food"
+          />
+          <div className="order-item-info">
+            <ReactRouter.Link
+              to={"/restaurants/" + order.restaurant_id}
+              className="order-item-restaurant-link"
+            >
+              {order.restaurant.name}
+            </ReactRouter.Link>
+            <ul className="orders-index-order">
+              { orderItems }
+            </ul>
+          </div>
         </li>
       );
     });
@@ -45,12 +56,12 @@ var mapOrderItems = function (orderItems) {
   var mappedItems = [];
   for (var k in orderItems) {
     var orderItem = orderItems[k];
-    
+
     mappedItems.push(
       <li key={orderItem.id}>
         <span>{ orderItem.qty }</span>
         <strong>{ orderItem.name }</strong>
-        <span>{ parseInt(orderItem.price) * parseInt(orderItem.qty) }</span>
+        <span>{ "$" + parseInt(orderItem.price) * parseInt(orderItem.qty) }</span>
       </li>
     );
   }

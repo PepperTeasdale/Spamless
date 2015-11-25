@@ -4,7 +4,7 @@
   var FLASH = "flash";
   var CHANGE_EVENT = "CHANGE_EVENT";
   var _uiStates = {
-    shoppingCart: false,
+    shoppingCartHidden: true,
     authModalHidden: true,
     flash: [],
     profileDropDownHidden: true
@@ -31,6 +31,10 @@
       return _uiStates.authModalHidden;
     },
 
+    shoppingCartHidden: function () {
+      return _uiStates.shoppingCartHidden;
+    },
+
     flash: function () {
       return _uiStates.flash;
     },
@@ -54,6 +58,21 @@
         case UiConstants.SET_FLASH:
           _uiStates.flash = payload.messages;
           UiStore.emit(FLASH);
+          break;
+
+        case UiConstants.CLOSE_SHOPPING_CART:
+          _uiStates.shoppingCartHidden = true;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
+        case UiConstants.OPEN_SHOPPING_CART:
+          _uiStates.shoppingCartHidden = false;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
+        case UiConstants.TOGGLE_SHOPPING_CART:
+          _uiStates.shoppingCartHidden = !_uiStates.shoppingCartHidden;
+          UiStore.emit(CHANGE_EVENT);
           break;
       }
     })

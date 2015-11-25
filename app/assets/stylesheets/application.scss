@@ -700,14 +700,50 @@ input {
   display: none;
 }
 
+.user-profile-content {
+  height: 100%;
+}
+
 .user-profile-sidebar {
   margin-top: 70px;
   width: 25%;
+  height: 100%;
   float: left;
+  background: white;
+}
+
+.user-profile-index-item {
+  border-bottom: 1px dotted #ccc;
+}
+
+.user-profile-index-item img {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+}
+
+.order-item-info {
+  padding: 5px;
+  float:left;
+}
+
+.user-profile-index-item span, strong {
+  margin: 10px;
 }
 
 .orders-index {
   margin-top: 70px;
   width: 75%;
   float: right;
+  background: white;
+  height: 100%;
+}
+
+.order-item-restaurant-link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #05164C;
 }
