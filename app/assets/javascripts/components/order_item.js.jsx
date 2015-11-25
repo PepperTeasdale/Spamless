@@ -7,7 +7,7 @@ window.OrderItem = React.createClass({
     return (
       <li className="order-item">
         <div className="group">
-          <button onClick={ this.deleteOrderItem }>X</button>
+          <button onClick={ this.deleteOrderItem }>✖</button>
           <span>{ this.props.item.qty }</span>
         </div>
         <dl className="group">
