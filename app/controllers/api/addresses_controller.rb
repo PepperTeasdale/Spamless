@@ -13,6 +13,10 @@ class Api::AddressesController < ApplicationController
     end
   end
 
+  def index
+    @addresses = Address.where(user_id: params[:user_id])
+  end
+
   private
 
   def address_params
