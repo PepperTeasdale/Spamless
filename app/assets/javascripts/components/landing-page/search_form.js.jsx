@@ -2,8 +2,10 @@ SearchForm = React.createClass({
   mixins: [ReactRouter.History],
 
   getInitialState: function () {
+    var address = AddressStore.first();
+
     return {
-      address: CurrentAddressStore.currentAddress(),
+      address: address,
       orderMethod: RestaurantStore.orderMethod()
     };
   },
@@ -26,7 +28,7 @@ SearchForm = React.createClass({
 
   submitSearch: function (e) {
     e.preventDefault();
-    
+
     if (this.state.address) {
       var searchParams = {
         address: this.state.address,
@@ -43,6 +45,18 @@ SearchForm = React.createClass({
   },
 
   render: function () {
+    var addressOptions;
+    if (CurrentUserStore.isSignedIn()) {
+      addressOptions = AddressStore.all().map(function (address) {
+        return (
+          <option
+            key={ address.id }
+            value={ address.full_street_address }
+          />
+        );
+      });
+    }
+
     return (
       <form className="search-form group" onSubmit={ this.submitSearch }>
         <h2>Check Out Restaurants Near You!</h2>
@@ -72,9 +86,13 @@ SearchForm = React.createClass({
         <input
           type="text"
           className="address-input"
+          list="address-datalist"
           placeholder="Where are you? (e.g. 598 Broadway, NY)"
           onChange={ this.changeAddress }
         />
+        <datalist id="address-datalist">
+          { addressOptions }
+        </datalist>
         <button onClick={ this.submitSearch }>
           Search
         </button>

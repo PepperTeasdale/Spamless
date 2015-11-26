@@ -11,6 +11,7 @@ window.SessionsApiUtil = {
           currentUser: currentUser
         });
         UiActions.toggleAuthModal();
+        AddressApiUtil.fetchAddresses(currentUser.id);
       },
       error: function (data) {
         UiActions.setFlash($.parseJSON(data.responseText).errors);

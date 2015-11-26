@@ -9,6 +9,14 @@
       return _addresses.slice(0);
     },
 
+    first: function () {
+      if (_addresses.length > 0) {
+        return _addresses[0].full_street_address;
+      } else {
+        return "";
+      }
+    },
+
     addChangeHandler: function (callback) {
       this.on(CHANGE_EVENT, callback);
     },
