@@ -1,4 +1,6 @@
 SearchForm = React.createClass({
+  mixins: [ReactRouter.History],
+
   getInitialState: function () {
     return {
       address: "",
@@ -17,7 +19,8 @@ SearchForm = React.createClass({
         orderMethod: this.state.orderMethod
       };
 
-      ApiUtil.fetchRestaurants(searchParams, this.props.redirect);
+      ApiUtil.fetchRestaurants(searchParams);
+      this.history.pushState(null, '/restaurants')
     }
   },
 
@@ -27,7 +30,7 @@ SearchForm = React.createClass({
 
   render: function () {
     return (
-      <div className="search-form group">
+      <form className="search-form group" onSubmit={ this.submitSearch }>
         <h2>Check Out Restaurants Near You!</h2>
         <fieldset className="group">
           <label className="radio-label">
@@ -61,7 +64,7 @@ SearchForm = React.createClass({
         <button onClick={ this.submitSearch }>
           Search
         </button>
-      </div>
+      </form>
     );
   }
 });

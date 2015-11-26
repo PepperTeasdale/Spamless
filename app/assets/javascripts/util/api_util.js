@@ -1,5 +1,5 @@
 ApiUtil = {
-  fetchRestaurants: function (searchParams, callback) {
+  fetchRestaurants: function (searchParams) {
     $.ajax({
       url: "/api/restaurants",
       type: "GET",
@@ -7,7 +7,7 @@ ApiUtil = {
       data: searchParams,
       success: function (data) {
         ApiActions.receiveAllRestaurants(data.restaurants);
-        callback && callback({ address: data.address});
+        CurrentAddressActions.receiveCurrentAddress(data.address);
       },
       error: function (data) {
         UiActions.setFlash($.parseJSON(data.responseText).errors);

@@ -1,4 +1,6 @@
 NavbarSearchForm = React.createClass({
+  mixins: [ReactRouter.History],
+
   getInitialState: function () {
     return {
       address: CurrentAddressStore.currentAddress(),
@@ -28,7 +30,8 @@ NavbarSearchForm = React.createClass({
         address: this.state.address,
         orderMethod: this.state.orderMethod
       };
-      ApiUtil.fetchRestaurants(searchParams, this.props.redirect);
+      ApiUtil.fetchRestaurants(searchParams);
+      this.history.pushState(null, '/restaurants')
     }
   },
 
@@ -38,7 +41,7 @@ NavbarSearchForm = React.createClass({
 
   render: function () {
     return (
-      <div className="navbar-search-form group">
+      <form className="navbar-search-form group" onSubmit={ this.submitSearch }>
         <fieldset className="navbar-radios group">
           <label className="navbar-radio-label">
             <input
@@ -71,7 +74,7 @@ NavbarSearchForm = React.createClass({
         <button onClick={ this.submitSearch }>
           Search
         </button>
-      </div>
+      </form>
     );
   }
 });
