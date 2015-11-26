@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :orders, only: :index
       resources :addresses, only: [:index]
     end
-    resources :addresses, only: [:create, :destroy]
+    resources :addresses, only: [:create, :destroy, :update]
     resource :session, only: [:create, :destroy, :show]
     resources :menu_items, only: :show
     resources :orders, only: [:create, :show]

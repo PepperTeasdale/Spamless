@@ -5,17 +5,11 @@ $(function () {
   var IndexRoute = ReactRouter.IndexRoute;
 
   var App = React.createClass({
-    getInitialState: function () {
-      return ({
-        cartHidden: true,
-      });
-    },
-
     render: function () {
       return (
         <div>
           <Flash />
-          <ShoppingCart hidden={ this.state.cartHidden } />
+          <ShoppingCart />
           <div className="modal-wrapper">
             <AuthModal />
           </div>
@@ -43,8 +37,13 @@ $(function () {
           path="/users/:userId/addresses"
           component={ AddressesIndex }
         />
+        <Route
+          path="/addresses/:addressId/edit"
+          component={ AddressEditForm }
+        />
+        </Route>
     </Route>
   );
 
-  React.render(<Router>{routes}</Router>, root);
+  React.render(<Router>{ routes }</Router>, root);
 });
