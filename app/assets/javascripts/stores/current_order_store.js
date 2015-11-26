@@ -68,6 +68,11 @@
           CurrentOrderStore.removeFromCart(payload.orderItem);
           CurrentOrderStore.emit(CHANGE_EVENT);
           break;
+
+        case CurrentOrderConstants.CLEAR_ORDER:
+          _currentOrder = [];
+          CurrentOrderStore.emit(CHANGE_EVENT);
+          break;
       }
     })
   });

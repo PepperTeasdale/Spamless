@@ -36,6 +36,7 @@ window.Checkout = React.createClass({
   },
 
   redirect: function () {
+    OrderItemActions.clearOrder();
     this.history.pushState(null, "/");
   },
 

@@ -11,5 +11,11 @@ var OrderItemActions = {
       actionType: CurrentOrderConstants.ORDER_ITEM_REMOVED,
       orderItem: orderItem
     })
+  },
+
+  clearOrder: function () {
+    AppDispatcher.dispatch({
+      actionType: CurrentOrderConstants.CLEAR_ORDER
+    })
   }
 }
