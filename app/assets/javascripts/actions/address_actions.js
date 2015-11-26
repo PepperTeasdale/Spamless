@@ -18,5 +18,12 @@ window.AddressActions = {
       actionType: AddressConstants.ADDRESS_DELETED,
       address: address
     });
+  },
+
+  updateAddress: function (address) {
+    AppDispatcher.dispatch({
+      actionType: AddressConstants.ADDRESS_UPDATED,
+      address: address
+    });
   }
 };

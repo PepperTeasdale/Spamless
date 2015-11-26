@@ -33,11 +33,26 @@ window.AddressApiUtil = {
       url: '/api/addresses/' + id,
       type: 'DELETE',
       dataType: 'json',
-      success: function (data) {
-        AddressActions.removeAddress(data);
+      success: function (address) {
+        AddressActions.removeAddress(address);
       },
       error: function () {
         UiActions.setFlash(["Something went wrong"]);
+      }
+    });
+  },
+
+  updateAddress: function (address, callback) {
+    $.ajax({
+      url: '/api/addresses/' + address.id,
+      type: 'PATCH',
+      data: { address: address },
+      dataType: 'json',
+      success: function (data) {
+        AddressActions.updateAddress(address);
+        callback();
+      },
+      error: function (errors) {
       }
     });
   }

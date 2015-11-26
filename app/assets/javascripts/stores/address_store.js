@@ -40,6 +40,13 @@
         case AddressConstants.ADDRESS_DELETED:
           _addresses.splice(_addresses.indexOf(payload.address), 1);
           AddressStore.emit(CHANGE_EVENT);
+          break;
+
+        case AddressConstants.ADDRESS_UPDATED:
+          var target = AddressStore.find(payload.address.id);
+          _addresses[_addresses.indexOf(target)] = payload.address;
+          AddressStore.emit(CHANGE_EVENT);
+          break;
       }
     })
   });

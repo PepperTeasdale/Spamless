@@ -27,6 +27,16 @@ class Api::AddressesController < ApplicationController
     end
   end
 
+  def update
+    @address = Address.find(params[:id])
+
+    if @address.update(address_params)
+      render :show
+    else
+      render json: @address.errors.full_messages, status: 400
+    end
+  end
+
   private
 
   def address_params

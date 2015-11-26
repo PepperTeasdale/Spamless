@@ -12,21 +12,28 @@ window.AddressEditForm = React.createClass({
     });
   },
 
-  updateAddress: function () {
+  updateAddress: function (e) {
+    e.preventDefault();
+
     AddressApiUtil.updateAddress({
-      address: {
-        street_address: this.state.streetAddress,
-        city: this.state.city,
-        state: this.state.state,
-        zipcode: this.state.zipcode
-      }
-    });
+      street_address: this.state.streetAddress,
+      city: this.state.city,
+      state: this.state.state,
+      zipcode: this.state.zipcode,
+      id: parseInt(this.props.params.addressId)
+    }, this.redirect);
+  },
+
+  redirect: function () {
+    this.history.pushState(
+      null, "/users/" + CurrentUserStore.currentUser().id + "/addresses"
+    );
   },
 
   render: function () {
     return (
       <div>
-        <form className="address-form">
+        <form className="address-form" onSubmit={ this.updateAddress }>
           <label>
             Address
             <input
