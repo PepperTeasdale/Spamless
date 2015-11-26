@@ -8,6 +8,7 @@
 }
 
 .auth-modal-wrapper {
+  z-index: 9999;
   display: block;
   position: fixed;
   background-color: rgba(51, 51, 51, 0.78);
