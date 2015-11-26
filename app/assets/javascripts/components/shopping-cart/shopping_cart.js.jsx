@@ -51,6 +51,8 @@ window.ShoppingCart = React.createClass({
     var orderItems = this.state.orderItems.map(function (item) {
       return <OrderItem item={ item } key={ item.id } />;
     });
+    var total = CurrentOrderStore.currentTotal();
+    var tax = CurrentOrderStore.currentTax();
 
     return (
       <div className={"shopping-cart" + hiddenClass}>
@@ -63,15 +65,15 @@ window.ShoppingCart = React.createClass({
           </ul>
           <dl className="group">
             <dt>Items subtotal:</dt>
-            <dd>{ "$" + (CurrentOrderStore.currentTotal()).toFixed(2) }</dd>
+            <dd>{ "$" + total.toFixed(2) }</dd>
           </dl>
           <dl className="group">
             <dt>Sales tax:</dt>
-            <dd>{ "$" + (CurrentOrderStore.currentTotal() * 0.08875).toFixed(2) }</dd>
+            <dd>{ "$" + tax.toFixed(2) }</dd>
           </dl>
           <dl className="shopping-cart-total group">
             <dt>Total:</dt>
-            <dd>{ "$" + (CurrentOrderStore.currentTotal() * 1.08875).toFixed(2) }</dd>
+            <dd>{ "$" + (tax + total).toFixed(2) }</dd>
           </dl>
         </section>
       </div>

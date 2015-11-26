@@ -1,6 +1,7 @@
 (function(root) {
   'use strict';
 
+  var _TAX = 0.08875;
   var _currentOrder = [];
   var _orderRestaurant;
   var CHANGE_EVENT = "change";
@@ -16,6 +17,10 @@
 
     currentOrder: function () {
       return _currentOrder.slice(0);
+    },
+
+    currentTax: function () {
+      return this.currentTotal() * _TAX;
     },
 
     orderRestaurant: function () {

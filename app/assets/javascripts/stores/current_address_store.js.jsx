@@ -23,6 +23,10 @@
     },
 
     parseAddress: function () {
+      if (typeof _currentAddress === "undefined") {
+        return "";
+      }
+
       var splitAddress = _currentAddress.split(", ");
       return ({
         streetAddress: splitAddress[0],
