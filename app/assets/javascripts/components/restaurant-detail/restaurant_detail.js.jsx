@@ -8,7 +8,7 @@ RestaurantDetail = React.createClass({
 
   componentDidMount: function () {
     UiActions.openShoppingCart();
-    RestaurantStore.addChangeListener(this._onChange);
+    RestaurantStore.addChangeHandler(this._onChange);
     ApiUtil.fetchSingleRestaurant(this.props.params.restaurantId);
   },
 

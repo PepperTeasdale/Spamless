@@ -29,7 +29,7 @@
       return _restaurants.slice(0);
     },
 
-    addChangeListener: function (callback) {
+    addChangeHandler: function (callback) {
       this.on(CHANGE_EVENT, callback);
     },
 

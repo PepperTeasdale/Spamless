@@ -7,7 +7,7 @@ var FilterForm = React.createClass({
   },
 
   componentDidMount: function () {
-    RestaurantStore.addChangeListener(this._onChange);
+    RestaurantStore.addChangeHandler(this._onChange);
   },
 
   componentWillUnmount: function () {

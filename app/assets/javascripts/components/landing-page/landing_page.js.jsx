@@ -1,8 +1,4 @@
 LandingPage = React.createClass({
-  redirect: function (address) {
-    this.props.history.pushState(null, "/restaurants", address);
-  },
-
   render: function () {
     return (
       <div className="landing-page group">
@@ -10,7 +6,7 @@ LandingPage = React.createClass({
           Order delivery from 100% Spam-free local restaurants
         </h1>
         <Navbar landingPage={ true } />
-        <SearchForm redirect={ this.redirect } />
+        <SearchForm />
       </div>
     );
   }

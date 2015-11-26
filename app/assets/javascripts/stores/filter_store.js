@@ -11,7 +11,7 @@
       return $.extend({}, _filters);
     },
 
-    addChangeListener: function (callback) {
+    addChangeHandler: function (callback) {
       this.on(CHANGE_EVENT, callback);
     },
 

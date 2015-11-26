@@ -1389,7 +1389,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 	  }
 
-	  function addChangeListener(listener) {
+	  function addChangeHandler(listener) {
 	    changeListeners.push(listener);
 	  }
 
@@ -1400,7 +1400,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  function listen(listener) {
-	    addChangeListener(listener);
+	    addChangeHandler(listener);
 
 	    if (location) {
 	      listener(location);

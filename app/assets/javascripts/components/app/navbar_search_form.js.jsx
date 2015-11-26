@@ -10,7 +10,7 @@ NavbarSearchForm = React.createClass({
 
   componentDidMount: function () {
     CurrentAddressStore.addChangeHandler(this._onChange);
-    RestaurantStore.addChangeListener(this._onChange);
+    RestaurantStore.addChangeHandler(this._onChange);
   },
 
   componentWillUnmount: function () {

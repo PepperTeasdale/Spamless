@@ -26,20 +26,23 @@ $(function () {
   });
 
   var routes = (
-    <Route path="/" component={App}>
-      <IndexRoute component={LandingPage} />
-      <Route path="/restaurants" component={SearchIndex} />
+    <Route path="/" component={ App }>
+      <IndexRoute component={ LandingPage } />
+      <Route path="/restaurants" component={ SearchIndex } />
       <Route
         path="/restaurants/:restaurantId"
-        component={RestaurantDetail}
+        component={ RestaurantDetail }
       />
       <Route path="/orders/new" component={Checkout} />
       <Route path="/users/:userId" component={ UserProfile }>
         <Route
           path="/users/:userId/orders"
-          component={OrdersIndex}
+          component={ OrdersIndex }
         />
-      </Route>
+        <Route
+          path="/users/:userId/addresses"
+          component={ AddressesIndex }
+        />
     </Route>
   );
 

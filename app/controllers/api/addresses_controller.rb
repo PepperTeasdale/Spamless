@@ -17,6 +17,16 @@ class Api::AddressesController < ApplicationController
     @addresses = Address.where(user_id: params[:user_id])
   end
 
+  def destroy
+    @address = Address.find(params[:id])
+
+    if @address.destroy
+      render :show
+    else
+      render json: @address.errors.full_messages, status: 400
+    end
+  end
+
   private
 
   def address_params

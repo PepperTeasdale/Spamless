@@ -7,7 +7,7 @@
   var CHANGE_EVENT = "change";
 
   var CurrentOrderStore = root.CurrentOrderStore = $.extend({},EventEmitter.prototype, {
-    addChangeListener: function (callback) {
+    addChangeHandler: function (callback) {
       this.on(CHANGE_EVENT, callback);
     },
 

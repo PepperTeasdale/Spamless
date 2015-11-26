@@ -7,6 +7,10 @@ Navbar = React.createClass({
     $(window).on("scroll", this.handleScroll);
   },
 
+  componentWillUnmount: function () {
+    $(window).off("scroll", this.handleScroll);
+  },
+
   handleScroll: function () {
     if (this.props.landingPage) {
       if ($(window).scrollTop() > 25) {
@@ -15,10 +19,6 @@ Navbar = React.createClass({
         this.setState({ visible: false });
       }
     }
-  },
-
-  componentWillUnmount: function () {
-    $(window).off("scroll", this.handleScroll);
   },
 
   render: function () {

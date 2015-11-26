@@ -7,8 +7,8 @@ RestaurantIndex = React.createClass({
   },
 
   componentDidMount: function () {
-    RestaurantStore.addChangeListener(this._onChange);
-    FilterStore.addChangeListener(this._onChange);
+    RestaurantStore.addChangeHandler(this._onChange);
+    FilterStore.addChangeHandler(this._onChange);
   },
 
   componentWillUnmount: function () {
@@ -24,7 +24,6 @@ RestaurantIndex = React.createClass({
   },
 
   render: function () {
-    debugger
     var restaurants = this.state.restaurants.map(function (restaurant) {
       var cuisine = restaurant.restaurant_detail.cuisine_type;
       if (this.state.filters.cuisines.length === 0 ||

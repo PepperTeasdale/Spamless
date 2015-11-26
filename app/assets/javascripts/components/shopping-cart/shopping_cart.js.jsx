@@ -9,8 +9,13 @@ window.ShoppingCart = React.createClass({
   },
 
   componentDidMount: function () {
-    CurrentOrderStore.addChangeListener(this._onChange);
+    CurrentOrderStore.addChangeHandler(this._onChange);
     UiStore.addChangeHandler(this._onChange);
+  },
+  
+  componentWillUnmount: function () {
+    CurrentOrderStore.removeChangeListener(this._onChange);
+    UiStore.removeChangeListener(this._onChange);
   },
 
   _onChange: function () {
@@ -20,11 +25,6 @@ window.ShoppingCart = React.createClass({
       restaurant: CurrentOrderStore.orderRestaurant(),
       hidden: UiStore.shoppingCartHidden()
     });
-  },
-
-  componentWillUnmount: function () {
-    CurrentOrderStore.removeChangeListener(this._onChange);
-    UiStore.removeChangeListener(this._onChange);
   },
 
   render: function () {
