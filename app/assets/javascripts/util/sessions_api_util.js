@@ -10,7 +10,7 @@ window.SessionsApiUtil = {
           actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
           currentUser: currentUser
         });
-        UiActions.toggleAuthModal();
+        UiActions.closeAuthModal();
         AddressApiUtil.fetchAddresses(currentUser.id);
       },
       error: function (data) {

@@ -81,21 +81,22 @@
 .logo {
   display: block;
   float: left;
-  margin: 20px 20px 15px;
+  margin: 20px 20px 10px;
   background-image: image-url("logo.png");
-  height: 20px;
+  background-repeat: no-repeat;
+  height: 80px;
   width: 150px;
   font-family: Corben;
   font-weight: bold;
   color: #FBEF02;
   font-size: 24px;
   background-size: contain;
-  transition: background-size 0.9s;
+  transition: width .5s;
 }
 
 .small-logo {
   background-size: contain;
-  height: 10px;
+  height: 35px;
   width: 115px;
 }
 

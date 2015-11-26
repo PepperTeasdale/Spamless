@@ -5,6 +5,12 @@ window.UiActions = {
     });
   },
 
+  closeAuthModal: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.CLOSE_AUTH_MODAL
+    });
+  },
+
   setFlash: function (messages) {
     AppDispatcher.dispatch({
       actionType: UiConstants.SET_FLASH,

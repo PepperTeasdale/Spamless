@@ -50,6 +50,11 @@
           UiStore.emit(CHANGE_EVENT);
           break;
 
+        case UiConstants.CLOSE_AUTH_MODAL:
+          _uiStates.authModalHidden = true;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
         case UiConstants.TOGGLE_PROFILE_DROP_DOWN:
           _uiStates.profileDropDownHidden = !_uiStates.profileDropDownHidden;
           UiStore.emit(CHANGE_EVENT);

@@ -19,7 +19,7 @@ window.AuthModal = React.createClass({
   },
 
   hide: function () {
-    UiActions.toggleAuthModal();
+    UiActions.closeAuthModal();
   },
 
   formTypeChanged: function () {
