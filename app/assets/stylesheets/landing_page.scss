@@ -5,13 +5,13 @@
 }
 
 .search-form {
+  position: relative;
   color: white;
   height: 200px;
   width: 450px;
-  margin: 175px 200px;
+  left: 60%;
   background-color: rgba(51, 51, 51, 0.78);
   border-radius: 5px;
-  float: right;
 }
 
 input[type="radio"] {
@@ -45,4 +45,14 @@ input[type="radio"] {
   border-bottom-right-radius: 5px;
   padding: 10px;
   background: #05164C;
+}
+
+.landing-page-header {
+  position: relative;
+  font-size: 48px;
+  color: #FAF13D;
+  width: 500px;
+  top: 200px;
+  left: 375px;
+  text-shadow: -2px 2px 3px black;
 }
