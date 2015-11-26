@@ -18,6 +18,12 @@ window.UiActions = {
     });
   },
 
+  closeProfileDropdown: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.CLOSE_PROFILE_DROP_DOWN
+    });
+  },
+
   closeShoppingCart: function () {
     AppDispatcher.dispatch({
       actionType: UiConstants.CLOSE_SHOPPING_CART

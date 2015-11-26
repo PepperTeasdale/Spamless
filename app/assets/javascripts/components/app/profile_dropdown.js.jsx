@@ -7,14 +7,25 @@ window.ProfileDropDown = React.createClass({
 
   componentDidMount: function () {
     UiStore.addChangeHandler(this._onChange);
+    $("body").on("click", UiActions.closeProfileDropdown);
   },
 
   componentWillUnmount: function () {
     UiStore.removeChangeHandler(this._onChange);
+    $("body").off("click", UiActions.closeProfileDropdown);
   },
 
   _onChange: function () {
     this.setState({ hidden: UiStore.profileDropDownHidden() });
+  },
+
+  signOut: function () {
+    SessionsApiUtil.signOut();
+    UiActions.closeProfileDropdown();
+  },
+
+  stopPropagation: function (e) {
+    e.stopPropagation();
   },
 
   render: function () {
@@ -22,12 +33,15 @@ window.ProfileDropDown = React.createClass({
     var Link = ReactRouter.Link;
 
     return (
-      <ul className={ "profile-drop-down" + hidden }>
+      <ul
+        className={ "profile-drop-down" + hidden }
+        onClick={ this.stopPropagation }
+      >
         <li>
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id }
             className="drop-down-link"
-            onClick={ UiActions.toggleProfileDropdown }
+            onClick={ UiActions.closeProfileDropdown }
           >
             Profile
           </Link>
@@ -36,7 +50,7 @@ window.ProfileDropDown = React.createClass({
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id + "/addresses" }
             className="drop-down-link"
-            onClick={ UiActions.toggleProfileDropdown }
+            onClick={ UiActions.closeProfileDropdown }
           >
             Addresses
           </Link>
@@ -45,13 +59,18 @@ window.ProfileDropDown = React.createClass({
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id + "/orders" }
             className="drop-down-link"
-            onClick={ UiActions.toggleProfileDropdown }
+            onClick={ UiActions.closeProfileDropdown }
           >
             Order History
           </Link>
         </li>
         <li>
-          <button onClick={ SessionsApiUtil.signOut }>Sign Out</button>
+          <button
+            className="drop-down-link"
+            onClick={ this.signOut }
+          >
+            Sign Out
+          </button>
         </li>
       </ul>
     );

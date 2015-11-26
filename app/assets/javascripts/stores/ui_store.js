@@ -55,6 +55,11 @@
           UiStore.emit(CHANGE_EVENT);
           break;
 
+        case UiConstants.CLOSE_PROFILE_DROP_DOWN:
+          _uiStates.profileDropDownHidden = true;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
         case UiConstants.SET_FLASH:
           _uiStates.flash = payload.messages;
           UiStore.emit(FLASH);
