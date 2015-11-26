@@ -81,7 +81,7 @@
 .navbar a {
   display: block;
   padding: 10px 5px;
-  color: white;
+  color: black;
 }
 
 .logo {
@@ -105,11 +105,18 @@
   width: 115px;
 }
 
-.drop-down-link {
-  color: black;
+.profile-drop-down {
+  position: absolute;
+  background: white;
+  white-space: nowrap;
+  margin: 5px;
 }
 
-.profile-drop-down a button {
+.profile-drop-down li {
+  display: block;
+}
+
+.drop-down-link {
   display: block;
   background: white;
   border-bottom: 1px solid #ccc;

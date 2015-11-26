@@ -18,16 +18,11 @@ window.ProfileDropDown = React.createClass({
   },
 
   render: function () {
-    var hidden;
+    var hidden = (this.state.hidden ? " hidden" : "");
     var Link = ReactRouter.Link;
 
-    if (this.state.hidden) {
-      hidden = " hidden";
-    }
-
-
     return (
-      <ul className={ "profile-drop-down group" + hidden }>
+      <ul className={ "profile-drop-down" + hidden }>
         <li>
           <Link
             to={"/users/" + CurrentUserStore.currentUser().id }

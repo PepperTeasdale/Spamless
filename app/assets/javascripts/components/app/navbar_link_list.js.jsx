@@ -1,6 +1,6 @@
 NavBarLinkList = React.createClass({
   getInitialState: function () {
-    return ({ signOutButton: CurrentUserStore.isSignedIn() });
+    return ({ profileButton: CurrentUserStore.isSignedIn() });
   },
 
   componentDidMount: function () {
@@ -12,18 +12,14 @@ NavBarLinkList = React.createClass({
   },
 
   _onChange: function () {
-    this.setState({ signOutButton: CurrentUserStore.isSignedIn() });
-  },
-
-  showAuth: function (e) {
-    UiActions.toggleAuthModal();
+    this.setState({ profileButton: CurrentUserStore.isSignedIn() });
   },
 
   render: function () {
     var Link = ReactRouter.Link;
     var authLink;
 
-    if (this.state.signOutButton) {
+    if (this.state.profileButton) {
       authButtons = (
           <li className="navbar-button">
             <button onClick={ UiActions.toggleProfileDropdown }>
@@ -35,7 +31,7 @@ NavBarLinkList = React.createClass({
     } else {
       authButtons = (
         <li className="navbar-button">
-          <button onClick={ this.showAuth }>Sign In</button>
+          <button onClick={ UiActions.toggleAuthModal }>Sign In</button>
         </li>
       );
     }
