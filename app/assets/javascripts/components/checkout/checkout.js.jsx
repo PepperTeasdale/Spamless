@@ -26,13 +26,9 @@ window.Checkout = React.createClass({
   },
 
   address: function () {
-    return ({
-      street_address: this.state.streetAddress,
-      city: this.state.city,
-      state: this.state.state,
-      zipcode: this.state.zipcode,
-      user_id: CurrentUserStore.currentUser().id
-    });
+    var address = this.state.streetAddress + ", " + this.state.city;
+    address += ", " + this.state.state + " " + this.state.zipcode;
+    return address;
   },
 
   redirect: function () {

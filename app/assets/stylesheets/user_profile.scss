@@ -9,10 +9,23 @@
   height: 100%;
   float: left;
   background: white;
+  border-right: 1px solid black;
+}
+
+.user-profile-sidebar a {
+  display: block;
+  font-size: 20px;
+  color: #150680;
+  padding: 20px;
+  border-bottom: 1px dotted black;
 }
 
 .user-profile-index-item {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted black;
+}
+
+.user-profile-index-item:first-child {
+  border-top: 1px dotted black;
 }
 
 .user-profile-index-item img {
@@ -20,6 +33,48 @@
   margin: 5px;
   padding: 10px;
   float: left;
+  box-shadow: none;
+}
+
+.user-profile-index-header {
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.order-item-info {
+  width: 75%;
+}
+
+.orders-index-order li {
+  padding: 10px;
+}
+
+.order-item-restaurant-link {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.user-profile-index-item a {
+  display: block;
+  font-weight: bold;
+  color: #150680;
+  text-shadow: 1px, 1px, 1px, black;
+  padding: 10px 10px 5px;
+  margin-left: 100px;
+}
+
+.user-profile-index-item small {
+  margin-left: 20px;
+  display: block;
+}
+
+.delete-address-button {
+  float: left;
+  padding: 20px;
 }
 
 .user-profile-index-item span, strong {

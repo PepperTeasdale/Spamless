@@ -25,9 +25,10 @@ window.AddressesIndex = React.createClass({
 
     var addresses = AddressStore.all().map(function (address) {
       return (
-        <li className="user-profile-index-item" key={ address.id }>
+        <li className="user-profile-index-item group" key={ address.id }>
           <button
             name={ address.id }
+            className="delete-address-button"
             onClick={ this.deleteAddress }>✖</button>
           <ul>
             <li>
@@ -47,7 +48,7 @@ window.AddressesIndex = React.createClass({
 
     return (
       <div className="orders-index">
-        <h1>ADDRESSES</h1>
+        <h1 className="user-profile-index-header">ADDRESSES</h1>
         <ul>
           { addresses }
         </ul>

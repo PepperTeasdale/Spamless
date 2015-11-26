@@ -3,13 +3,14 @@ json.extract! order,
   :user_id,
   :restaurant_id,
   :order_items,
-  :address
+  :address,
+  :created_at
 
-if :view_type == "index"
+if view_type == "index"
   json.restaurant do
     json.extract! order.restaurant, :name
   end
-elsif :view_type == "show"
+elsif view_type == "show"
   json.restaurant do
     json.extract! order.restaurant, :name, :address
   end

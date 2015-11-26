@@ -12,7 +12,7 @@ window.UserProfileSidebar = React.createClass({
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to={"/users/" + CurrentUserStore.currentUser().id + "/addresses"}>
                 Addresses
               </Link>
             </li>

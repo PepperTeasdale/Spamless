@@ -19,6 +19,7 @@ window.OrdersIndex = React.createClass({
   render: function () {
     var orders = OrdersStore.all().map(function (order) {
       var orderItems = mapOrderItems(order.order_items);
+      var orderDate = new Date(order.created_at);
 
       return (
         <li className="user-profile-index-item group" key={order.id}>
@@ -28,11 +29,13 @@ window.OrdersIndex = React.createClass({
           />
           <div className="order-item-info">
             <ReactRouter.Link
-              to={"/restaurants/" + order.restaurant_id}
+              to={ "/restaurants/" + order.restaurant_id }
               className="order-item-restaurant-link"
             >
               {order.restaurant.name}
             </ReactRouter.Link>
+            <small>{ "Ordered on " + orderDate.toString() }</small>
+            <small>{ "Delivered to " + order.address }</small>
             <ul className="orders-index-order">
               { orderItems }
             </ul>
@@ -43,7 +46,7 @@ window.OrdersIndex = React.createClass({
 
     return (
     <div className="orders-index">
-      <h1>ORDERS</h1>
+      <h1 className="user-profile-index-header">ORDERS</h1>
       <ul>
         { orders }
       </ul>
