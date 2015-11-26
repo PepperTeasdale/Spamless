@@ -3,8 +3,8 @@ SearchForm = React.createClass({
 
   getInitialState: function () {
     return {
-      address: "",
-      orderMethod: "delivery"
+      address: CurrentAddressStore.currentAddress(),
+      orderMethod: RestaurantStore.orderMethod()
     };
   },
 
@@ -12,7 +12,21 @@ SearchForm = React.createClass({
     return this.setState({ address: e.target.value });
   },
 
-  submitSearch: function () {
+  componentDidMount: function () {
+    RestaurantStore.addChangeListener(this._onChange);
+  },
+
+  componentWilUnmount: function () {
+    RestaurantStore.removeChangeListener(this._onChange);
+  },
+
+  _onChange: function () {
+    this.setState({ orderMethod: RestaurantStore.orderMethod() });
+  },
+
+  submitSearch: function (e) {
+    e.preventDefault();
+    
     if (this.state.address) {
       var searchParams = {
         address: this.state.address,
@@ -20,12 +34,12 @@ SearchForm = React.createClass({
       };
 
       ApiUtil.fetchRestaurants(searchParams);
-      this.history.pushState(null, '/restaurants')
+      this.history.pushState(null, '/restaurants');
     }
   },
 
   orderMethodChanged: function (e) {
-    this.setState({ orderMethod: e.target.name });
+    RestaurantActions.orderMethodChanged(e.target.name);
   },
 
   render: function () {

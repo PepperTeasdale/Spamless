@@ -1,6 +1,5 @@
 class Api::RestaurantsController < ApplicationController
   def index
-
     if Geocoder.coordinates(params[:address]).nil?
       render json: { errors: ["Address not valid"] }, status: 400
     else

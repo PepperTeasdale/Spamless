@@ -1,7 +1,7 @@
 (function(root) {
   'use strict';
 
-  var _currentAddress;
+  var _currentAddress = "";
   var CHANGE_EVENT = "change";
 
   var updateCurrentAddress = function (currentAddress) {

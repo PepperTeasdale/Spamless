@@ -3,6 +3,6 @@ window.CurrentAddressActions = {
     AppDispatcher.dispatch({
       actionType: CurrentAddressConstants.RECEIVE_CURRENT_ADDRESS,
       currentAddress: currentAddress
-    })
+    });
   }
-}
+};

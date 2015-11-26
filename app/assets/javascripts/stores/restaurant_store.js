@@ -5,6 +5,7 @@
 
   var _restaurants = [];
   var _currentRestaurant;
+  var _orderMethod = "delivery";
 
   var resetRestaurants = function (restaurants) {
     _restaurants = restaurants;
@@ -34,6 +35,10 @@
 
     removeChangeListener: function (callback) {
       this.removeListener(CHANGE_EVENT, callback);
+    },
+
+    orderMethod: function () {
+      return _orderMethod;
     },
 
     currentRestaurant: function () {
@@ -93,6 +98,9 @@
           RestaurantStore.emit(CHANGE_EVENT);
           break;
 
+        case RestaurantConstants.ORDER_METHOD_CHANGED:
+          _orderMethod = payload.orderMethod;
+          RestaurantStore.emit(CHANGE_EVENT);
       }
     })
   });

@@ -4,39 +4,46 @@ NavbarSearchForm = React.createClass({
   getInitialState: function () {
     return {
       address: CurrentAddressStore.currentAddress(),
-      orderMethod: "delivery"
+      orderMethod: RestaurantStore.orderMethod()
     };
   },
 
   componentDidMount: function () {
     CurrentAddressStore.addChangeHandler(this._onChange);
+    RestaurantStore.addChangeListener(this._onChange);
   },
 
   componentWillUnmount: function () {
     CurrentAddressStore.removeChangeHandler(this._onChange);
+    RestaurantStore.removeChangeListener(this._onChange);
   },
 
   _onChange: function () {
-    this.setState({ address: CurrentAddressStore.currentAddress() });
+    this.setState({
+      address: CurrentAddressStore.currentAddress(),
+      orderMethod: RestaurantStore.orderMethod()
+    });
   },
 
   changeAddress: function (e) {
     return this.setState({ address: e.target.value });
   },
 
-  submitSearch: function () {
+  submitSearch: function (e) {
+    e.preventDefault();
+
     if (this.state.address) {
       var searchParams = {
         address: this.state.address,
         orderMethod: this.state.orderMethod
       };
       ApiUtil.fetchRestaurants(searchParams);
-      this.history.pushState(null, '/restaurants')
+      this.history.pushState(null, '/restaurants');
     }
   },
 
   orderMethodChanged: function (e) {
-    this.setState({ orderMethod: e.target.name });
+    RestaurantActions.orderMethodChanged(e.target.name);
   },
 
   render: function () {

@@ -11,6 +11,11 @@ RestaurantIndex = React.createClass({
     FilterStore.addChangeListener(this._onChange);
   },
 
+  componentWillUnmount: function () {
+    RestaurantStore.removeChangeListener(this._onChange);
+    FilterStore.removeChangeListener(this._onChange);
+  },
+
   _onChange: function () {
     this.setState({
       restaurants: RestaurantStore.all(),
@@ -18,12 +23,8 @@ RestaurantIndex = React.createClass({
     });
   },
 
-  componentWillUnmount: function () {
-    RestaurantStore.removeChangeListener(this._onChange);
-    FilterStore.removeChangeListener(this._onChange);
-  },
-
   render: function () {
+    debugger
     var restaurants = this.state.restaurants.map(function (restaurant) {
       var cuisine = restaurant.restaurant_detail.cuisine_type;
       if (this.state.filters.cuisines.length === 0 ||
