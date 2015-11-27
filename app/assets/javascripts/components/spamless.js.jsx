@@ -5,6 +5,16 @@ $(function () {
   var IndexRoute = ReactRouter.IndexRoute;
 
   var App = React.createClass({
+    componentDidMount: function () {
+      // Fetch nearby restaurants
+      navigator.geolocation.getCurrentPosition(function(location) {
+        ApiUtil.fetchRestaurants({
+          address: [location.coords.latitude, location.coords.longitude],
+          orderMethod: "pickup"
+        });
+      });
+    },
+    
     render: function () {
       return (
         <div>

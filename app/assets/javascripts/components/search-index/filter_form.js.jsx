@@ -11,7 +11,7 @@ var FilterForm = React.createClass({
   },
 
   componentWillUnmount: function () {
-    RestaurantStore.removeChangeListener(this._onChange);
+    RestaurantStore.removeChangeHandler(this._onChange);
   },
 
   _onChange: function () {
@@ -34,7 +34,11 @@ var FilterForm = React.createClass({
     var cuisineTypes = this.state.filterOptions.map(function (cuisine) {
       return (
         <li key={cuisine}>
-          <CuisineFilter toggleFilter={ this.toggleFilter } value={ cuisine } />
+          <CuisineFilter
+            toggleFilter={ this.toggleFilter }
+            value={ cuisine }
+            qty={ RestaurantStore.countByCuisine(cuisine) }
+          />
         </li>
       );
     }.bind(this));

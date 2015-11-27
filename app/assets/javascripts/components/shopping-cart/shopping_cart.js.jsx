@@ -14,8 +14,8 @@ window.ShoppingCart = React.createClass({
   },
   
   componentWillUnmount: function () {
-    CurrentOrderStore.removeChangeListener(this._onChange);
-    UiStore.removeChangeListener(this._onChange);
+    CurrentOrderStore.removeChangeHandler(this._onChange);
+    UiStore.removeChangeHandler(this._onChange);
   },
 
   _onChange: function () {

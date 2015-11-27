@@ -15,7 +15,7 @@ NavbarSearchForm = React.createClass({
 
   componentWillUnmount: function () {
     CurrentAddressStore.removeChangeHandler(this._onChange);
-    RestaurantStore.removeChangeListener(this._onChange);
+    RestaurantStore.removeChangeHandler(this._onChange);
   },
 
   _onChange: function () {

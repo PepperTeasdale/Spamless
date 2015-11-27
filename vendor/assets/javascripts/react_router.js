@@ -1393,7 +1393,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    changeListeners.push(listener);
 	  }
 
-	  function removeChangeListener(listener) {
+	  function removeChangeHandler(listener) {
 	    changeListeners = changeListeners.filter(function (item) {
 	      return item !== listener;
 	    });
@@ -1411,7 +1411,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    return function () {
-	      removeChangeListener(listener);
+	      removeChangeHandler(listener);
 	    };
 	  }
 

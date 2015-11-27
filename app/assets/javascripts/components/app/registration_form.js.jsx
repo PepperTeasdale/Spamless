@@ -86,7 +86,14 @@ RegistrationForm = React.createClass({
               onChange={ this.passwordChanged }
             />
 
-        <button onClick={ this.submit }>Create Your Account</button>
+          <div className="signin-button-wrapper">
+            <button
+              className="signin-button"
+              onClick={ this.submit }
+            >
+              Create Your Account
+            </button>
+          </div>
         </form>
       </div>
     );

@@ -12,8 +12,8 @@ RestaurantIndex = React.createClass({
   },
 
   componentWillUnmount: function () {
-    RestaurantStore.removeChangeListener(this._onChange);
-    FilterStore.removeChangeListener(this._onChange);
+    RestaurantStore.removeChangeHandler(this._onChange);
+    FilterStore.removeChangeHandler(this._onChange);
   },
 
   _onChange: function () {

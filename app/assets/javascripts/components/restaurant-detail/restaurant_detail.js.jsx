@@ -13,7 +13,7 @@ RestaurantDetail = React.createClass({
   },
 
   componentWillUnmount: function () {
-    RestaurantStore.removeChangeListener(this._onChange);
+    RestaurantStore.removeChangeHandler(this._onChange);
     UiActions.closeShoppingCart();
   },
 

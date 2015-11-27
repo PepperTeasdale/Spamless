@@ -18,8 +18,8 @@ SearchForm = React.createClass({
     RestaurantStore.addChangeHandler(this._onChange);
   },
 
-  componentWilUnmount: function () {
-    RestaurantStore.removeChangeListener(this._onChange);
+  componentWillUnmount: function () {
+    RestaurantStore.removeChangeHandler(this._onChange);
   },
 
   _onChange: function () {

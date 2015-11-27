@@ -29,11 +29,19 @@
       return _restaurants.slice(0);
     },
 
+    currentRestaurant: function () {
+      return $.extend({}, _currentRestaurant);
+    },
+
+    featuredRestaurants: function (num) {
+      return _restaurants.slice(0, num);
+    },
+
     addChangeHandler: function (callback) {
       this.on(CHANGE_EVENT, callback);
     },
 
-    removeChangeListener: function (callback) {
+    removeChangeHandler: function (callback) {
       this.removeListener(CHANGE_EVENT, callback);
     },
 
@@ -41,8 +49,16 @@
       return _orderMethod;
     },
 
-    currentRestaurant: function () {
-      return $.extend({}, _currentRestaurant);
+    countByCuisine: function (cuisine) {
+      var count = 0;
+
+      _restaurants.forEach(function (restaurant) {
+        if (restaurant.restaurant_detail.cuisine_type === cuisine) {
+          count++;
+        }
+      });
+
+      return count;
     },
 
     cuisineTypes: function () {

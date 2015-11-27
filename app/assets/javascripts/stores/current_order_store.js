@@ -11,8 +11,8 @@
       this.on(CHANGE_EVENT, callback);
     },
 
-    removeChangeListener: function (callback) {
-      this.removeChangeListener(callback);
+    removeChangeHandler: function (callback) {
+      this.removeChangeHandler(callback);
     },
 
     currentOrder: function () {

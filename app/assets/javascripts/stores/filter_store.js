@@ -15,7 +15,7 @@
       this.on(CHANGE_EVENT, callback);
     },
 
-    removeChangeListener: function (callback) {
+    removeChangeHandler: function (callback) {
       this.removeListener(CHANGE_EVENT, callback);
     },
 

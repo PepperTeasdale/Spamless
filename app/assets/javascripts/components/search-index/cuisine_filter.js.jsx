@@ -10,14 +10,16 @@ CuisineFilter = React.createClass({
 
   render: function () {
     return (
-      <input
-        type="checkbox"
-        checked={ this.state.checked }
-        value={this.props.value}
-        onChange={ this.handleChange }
-      >
-        {this.props.value}
-      </input>
-  );
+      <div className="filter-container">
+        <input
+          type="checkbox"
+          checked={ this.state.checked }
+          value={ this.props.value }
+          onChange={ this.handleChange }
+        />
+        <span>{ this.props.value }</span>
+        <small>{ this.props.qty }</small>
+      </div>
+    );
   }
 });
