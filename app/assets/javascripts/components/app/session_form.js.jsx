@@ -45,8 +45,18 @@ window.SessionForm = React.createClass({
             <input type="password" onChange={ this.passwordChanged } />
           </label>
 
-          <button onClick={ this.signIn }>Sign In</button>
-          <button onClick={ this.guestSignIn }>Sign In As Guest</button>
+          <button
+            onClick={ this.signIn }
+            className="signin-button"
+          >
+            Sign In
+          </button>
+          <button
+            onClick={ this.guestSignIn }
+            className="signin-button"
+          >
+            Sign In As Guest
+          </button>
         </form>
       </div>
     );

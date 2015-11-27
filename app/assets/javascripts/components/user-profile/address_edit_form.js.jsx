@@ -32,34 +32,36 @@ window.AddressEditForm = React.createClass({
 
   render: function () {
     return (
-      <div>
+      <section className="edit-address">
+        <h1 className="user-profile-index-header">Edit Address</h1>
         <form className="address-form" onSubmit={ this.updateAddress }>
-          <label>
-            Address
+            <div>Address</div>
             <input
               type="text"
               valueLink={ this.linkState('streetAddress') }
               placeholder="Street Address"
             />
+            <div>City</div>
             <input
               type="text"
               valueLink={ this.linkState('city') }
               placeholder="City"
             />
+            <div>State</div>
             <input
               type="text"
               valueLink={ this.linkState('state') }
               placeholder="State"
             />
+            <div>Zipcode</div>
             <input
               type="text"
               valueLink={ this.linkState('zipcode') }
               placeholder="Zipcode"
             />
-          </label>
           <button onClick={ this.updateAddress }>Update Address</button>
         </form>
-      </div>
+      </section>
     );
   }
 

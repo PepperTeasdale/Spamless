@@ -9,7 +9,6 @@ window.AddressApiUtil = {
         AddressActions.receiveSingleAddress(address);
       },
       failure: function (errors) {
-
       }
     });
   },

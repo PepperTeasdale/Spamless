@@ -14,11 +14,24 @@ window.Checkout = React.createClass({
   },
 
   componentDidMount: function () {
+    if (!CurrentUserStore.isSignedIn()) {
+      UiActions.toggleAuthModal();
+    }
+
+    CurrentUserStore.addChangeHandler(this._onChange);
     UiActions.openShoppingCart();
   },
 
   componentWillUnmount: function () {
+    CurrentUserStore.removeChangeHandler(this._onChange);
     UiActions.closeShoppingCart();
+  },
+
+  _onChange: function () {
+    this.setState({
+      fname: CurrentUserStore.currentUser().fname,
+      lname: CurrentUserStore.currentUser().lname
+    });
   },
 
   handleCheckbox: function () {
@@ -53,7 +66,13 @@ window.Checkout = React.createClass({
     }, this.redirect);
 
     if (this.state.saveAddress) {
-      AddressApiUtil.saveAddress(this.address());
+      AddressApiUtil.saveAddress({
+        street_address: this.state.streetAddress,
+        city: this.state.city,
+        state: this.state.state,
+        zipcode: this.state.zipcode,
+        user_id: CurrentUserStore.currentUser().id
+      });
     }
   },
 

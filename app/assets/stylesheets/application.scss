@@ -50,6 +50,10 @@ button, a {
   cursor: pointer;
 }
 
+button:focus {
+  outline:0;
+}
+
 h2 {
   margin-top: 20px;
   padding: 10px;

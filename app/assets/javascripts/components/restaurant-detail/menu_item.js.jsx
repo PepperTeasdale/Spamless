@@ -21,7 +21,7 @@ window.MenuItem = React.createClass({
       >
         <h4>{ this.props.item.name }</h4>
         <div className="item-price">{ "$" + this.props.item.price }</div>
-        <p>{ this.props.item.description }</p>
+        <small>{ this.props.item.description }</small>
       </div>
     );
   }

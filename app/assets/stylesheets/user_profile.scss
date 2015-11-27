@@ -81,7 +81,32 @@
   margin: 10px;
 }
 
-.address-form {
-  margin-top: 70px;
-  float: right;
+.edit-address {
+  height: 450px;
+  width: 500px;
+  margin: 100px 900px;
+  background: white;
+  float: left;
+}
+
+.address-form input {
+  padding: 10px;
+  margin: 5px 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.address-form div {
+  margin: 5px 40px;
+}
+
+.address-form button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: bold;
+  background: #05164C;
+  color: #FAF13D;
+  border-radius: 5px;
 }

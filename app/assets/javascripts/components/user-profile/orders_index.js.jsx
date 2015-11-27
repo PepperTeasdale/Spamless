@@ -46,7 +46,7 @@ window.OrdersIndex = React.createClass({
 
     return (
     <div className="orders-index">
-      <h1 className="user-profile-index-header">ORDERS</h1>
+      <h1 className="user-profile-index-header">PREVIOUS ORDERS</h1>
       <ul>
         { orders }
       </ul>

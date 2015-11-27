@@ -29,13 +29,15 @@
   font-size: 24px;
   padding: 10px;
 }
+
 .hide-modal {
   float: right;
-  padding: 5px;
+  margin: 10px;
 }
 
 .toggle-form {
   float: left;
+  margin: 10px;
 }
 
 .auth-form {
@@ -54,8 +56,9 @@
 .auth-modal input {
   display: block;
   box-sizing: content-box;
-  margin: 5px auto;
+  margin: 5px 40px;
   padding: 5px;
+  width: 300px;
   border: 1px solid black;
   border-radius: 5px;
   width: auto;
@@ -64,21 +67,24 @@
   color: inherit;
 }
 
-.name-field {
-  margin: 10px;
-}
-
 .auth-form span {
   display: block;
-  margin: 10px;
+  margin: 10px 40px 5px;
 }
 
 .auth-form button {
   display: block;
-  margin: 20px auto;
+  margin: 20px 0 20px 80px;
   padding: 10px;
+  font-size: 18px;
   font-weight: bold;
   background: #05164C;
   color: #FAF13D;
   border-radius: 5px;
+}
+
+.signin-button {
+  display: block;
+  float:left;
+  margin: 100px;
 }
