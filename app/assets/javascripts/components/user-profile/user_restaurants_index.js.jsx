@@ -29,7 +29,7 @@ window.UserRestaurantsIndex = React.createClass({
             to={ "/restaurants/" + restaurant.id }
             className="order-item-restaurant-link"
           >
-            {order.restaurant.name}
+            { order.restaurant.name }
           </Link>
         </li>
       );

@@ -2,6 +2,9 @@ class Restaurant < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   validates :address_id, presence: true
 
+  has_attached_file :image, default_url: "missing.png"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
   geocoded_by :full_street_address
   after_validation :geocode
 

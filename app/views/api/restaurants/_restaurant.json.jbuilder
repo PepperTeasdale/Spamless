@@ -1,4 +1,5 @@
 json.extract! restaurant, :id, :name
+json.image_url asset_path(restaurant.image.url)
 
 
 if restaurant_show_page
