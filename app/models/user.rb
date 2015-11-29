@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
 
   has_many :orders
 
+  has_many :restaurants
+
   has_many :ordered_restaurants,
     through: :orders,
     source: :restaurant

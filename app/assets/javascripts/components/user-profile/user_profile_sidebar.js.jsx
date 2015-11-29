@@ -21,6 +21,11 @@ window.UserProfileSidebar = React.createClass({
                 Orders
               </Link>
             </li>
+            <li>
+              <Link to={"/users/" + CurrentUserStore.currentUser().id + "/restaurants"}>
+                Manage Restaurants
+              </Link>
+            </li>
           </ul>
         </section>
       </div>

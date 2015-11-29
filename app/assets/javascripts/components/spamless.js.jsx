@@ -14,7 +14,7 @@ $(function () {
         });
       });
     },
-    
+
     render: function () {
       return (
         <div>
@@ -51,7 +51,15 @@ $(function () {
           path="/addresses/:addressId/edit"
           component={ AddressEditForm }
         />
-        </Route>
+        <Route
+          path="/users/:userId/restaurants"
+          component={ UserRestaurantsIndex }
+        />
+        <Route
+          path="/restaurants/new"
+          component={ NewRestaurantForm }
+        />
+      </Route>
     </Route>
   );
 
