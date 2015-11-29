@@ -22,6 +22,8 @@ gem 'flux-rails-assets'
 gem 'react-router-rails', '~>0.13.3.1'
 gem 'geocoder'
 gem 'figaro'
+gem "paperclip", "~> 4.3"
+gem 'aws-sdk', '~>1.6'
 gem 'bcrypt-ruby', require: 'bcrypt'
 
 group :production do
