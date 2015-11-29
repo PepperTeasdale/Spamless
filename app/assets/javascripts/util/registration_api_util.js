@@ -10,7 +10,7 @@ RegistrationApiUtil = {
           actionType: CurrentUserConstants.RECEIVE_CURRENT_USER,
           currentUser: currentUser
         });
-        UiActions.toggleAuthModal();
+        UiActions.closeAuthModal();
       },
       error: function (data) {
         UiActions.setFlash($.parseJSON(data.responseText).errors);

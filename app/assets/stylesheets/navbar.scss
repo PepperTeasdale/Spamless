@@ -85,11 +85,12 @@
 .logo {
   display: block;
   float: left;
-  margin: 20px 20px 10px;
+  margin: 20px 20px 0;
+  padding-bottom: 0px;
   background-image: image-url("logo.png");
   background-repeat: no-repeat;
-  height: 80px;
-  width: 150px;
+  height: 40px;
+  width: 170px;
   font-family: Corben;
   font-weight: bold;
   color: #FBEF02;
@@ -100,6 +101,7 @@
 
 .small-logo {
   background-size: contain;
+  margin: 20px 20px 10px;
   height: 35px;
   width: 115px;
 }
