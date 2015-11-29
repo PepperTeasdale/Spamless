@@ -1,6 +1,8 @@
 (function(root) {
   'use strict';
+
   var _currentUser = {};
+  var _userRestaurants = [];
   var CHANGE_EVENT = "change";
 
   var CurrentUserStore = root.CurrentUserStore = $.extend({}, EventEmitter.prototype, {
@@ -20,6 +22,10 @@
       return (typeof _currentUser.id !== "undefined");
     },
 
+    allRestaurants: function () {
+      return _userRestaurants.slice(0);
+    },
+
     dispatcherId: AppDispatcher.register(function (payload) {
       switch (payload.actionType) {
         case CurrentUserConstants.RECEIVE_CURRENT_USER:
@@ -27,7 +33,9 @@
           CurrentUserStore.emit(CHANGE_EVENT);
           break;
         default:
-
+        case RestaurantConstants.USER_RESTAURANTS_RECEIVED:
+          // _userRestaurants = payload.restaurants;
+          CurrentUserStore.emit(CHANGE_EVENT);
       }
     })
   });

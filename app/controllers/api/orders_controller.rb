@@ -1,6 +1,4 @@
 class Api::OrdersController < ApplicationController
-  skip_before_filter :verify_authenticity_token
-
   def show
     @order = Order.find(params[:id])
   end

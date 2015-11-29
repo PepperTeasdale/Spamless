@@ -6,6 +6,9 @@ Rails.application.routes.draw do
     resources :users, only: [:create, :show] do
       resources :orders, only: :index
       resources :addresses, only: [:index]
+      member do
+        get 'managed_restaurants'
+      end
     end
     resources :addresses, only: [:create, :destroy, :update]
     resource :session, only: [:create, :destroy, :show]

@@ -10,6 +10,12 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def managed_restaurants
+    user = User.find(params[:id])
+    @restaurants = user.restaurants
+    render :managed_restaurants
+  end
+
   private
 
   def user_params
