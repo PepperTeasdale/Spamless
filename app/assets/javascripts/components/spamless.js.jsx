@@ -56,7 +56,7 @@ $(function () {
           component={ UserRestaurantsIndex }
         />
         <Route
-          path="/restaurants/new"
+          path="/users/:userId/restaurants/new"
           component={ NewRestaurantForm }
         />
       </Route>

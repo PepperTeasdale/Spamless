@@ -7,7 +7,22 @@ window.RestaurantsApiUtil = {
       success: function (restaurants) {
         RestaurantActions.userRestaurantsReceived(restaurants);
       },
-      failure: function (errors) {
+      error: function (errors) {
+        debugger
+      }
+    });
+  },
+
+  createRestaurant: function (params, callback) {
+    $.ajax({
+      url: "api/restaurants",
+      type: "POST",
+      dataType: "json",
+      data: params,
+      success: function (restaurant) {
+        callback && callback(restaurant.id);
+      },
+      error: function (errors) {
         debugger
       }
     });

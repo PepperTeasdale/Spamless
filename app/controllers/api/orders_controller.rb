@@ -17,6 +17,8 @@ class Api::OrdersController < ApplicationController
     @orders = Order.where(user_id: params[:user_id])
   end
 
+  private
+
   def order_params
     order_items = {
       order_items: [:id, :restaurant_id, :name, :menu_category, :price, :qty, :description]

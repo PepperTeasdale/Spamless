@@ -38,7 +38,9 @@ window.UserRestaurantsIndex = React.createClass({
     return (
       <div className="managed-restaurants-index">
         <h1 className="user-profile-index-header">YOUR RESTAURANTS</h1>
-        <Link to="/restaurants/new">Create New Restaurant</Link>
+        <Link to={"users/" + CurrentUserStore.currentUser().id + "/restaurants/new"}>
+          Create New Restaurant
+        </Link>
         <ul>
           { restaurants }
         </ul>

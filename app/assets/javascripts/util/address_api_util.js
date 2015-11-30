@@ -1,5 +1,5 @@
 window.AddressApiUtil = {
-  saveAddress: function (address) {
+  saveAddress: function (address, callback) {
     $.ajax({
       url: "/api/addresses",
       type: "POST",
@@ -7,8 +7,10 @@ window.AddressApiUtil = {
       dataType: "json",
       success: function (address) {
         AddressActions.receiveSingleAddress(address);
+        callback && callback(address.id);
       },
       failure: function (errors) {
+        debugger
       }
     });
   },
