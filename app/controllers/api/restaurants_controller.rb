@@ -4,7 +4,7 @@ class Api::RestaurantsController < ApplicationController
       render json: { errors: ["Address not valid"] }, status: 400
     else
       distance = (params[:orderMethod] == "delivery" ? 2 : 4)
-      @restaurants = Restaurant.near(params[:address], distance)
+      @restaurants = Restaurant.near(params[:address], distance).includes(:address)
       @address = Geocoder.address(params[:address])
     end
   end

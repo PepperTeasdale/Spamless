@@ -2,7 +2,6 @@ window.FeaturedRestaurantCard = React.createClass({
   mixins: [ReactRouter.History],
 
   getInitialState: function () {
-    debugger
     return ({
       restaurantName: this.props.restaurant.name,
       restaurantId: this.props.restaurant.id,
