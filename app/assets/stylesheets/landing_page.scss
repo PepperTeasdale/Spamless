@@ -11,7 +11,6 @@
   width: 450px;
   left: 60%;
   background-color: rgba(51, 51, 51, 0.78);
-  border-radius: 5px;
 }
 
 input[type="radio"] {
@@ -33,18 +32,14 @@ input[type="radio"] {
   width: 310px;
   margin: 20px 0 0 20px;
   padding: 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .search-form button {
   color: white;
   float: left;
   margin: 20px 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   padding: 10px;
-  background: #05164C;
+  background: #19284F;
 }
 
 .landing-page-header {
@@ -55,7 +50,7 @@ input[type="radio"] {
   color: white;
   width: 500px;
   top: 170px;
-  left: 275px;
+  margin-left: 10%;
 }
 
 .filler-light {
@@ -76,9 +71,8 @@ input[type="radio"] {
 }
 
  .filler-light button {
-  margin: 50px;
+  margin: 40px;
   display: inline-block;
-  background: white;
   text-align: center;
 }
 
@@ -87,13 +81,14 @@ input[type="radio"] {
 }
 
 .filler-light h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #05164C
+  font-family: 'Corben';
+  font-size: 36px;
+  color: #FFD400;
+  font-weight: normal;
 }
 
 .filler-light h3 {
-  font-weight: bold;
+  font-family: 'Corben';
   text-align: center;
   display: block;
   margin: 5px;
@@ -109,4 +104,13 @@ input[type="radio"] {
 .address-input option {
   padding: 5px;
   border-bottom: 1px dotted #aaa;
+}
+
+button.featured-restaurant-card {
+  background: #19284F;
+}
+
+.featured-restaurant-card * {
+  background: #19284F;
+  color: white;
 }
