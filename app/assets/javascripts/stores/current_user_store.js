@@ -32,9 +32,9 @@
           _currentUser = payload.currentUser;
           CurrentUserStore.emit(CHANGE_EVENT);
           break;
-        default:
+
         case RestaurantConstants.USER_RESTAURANTS_RECEIVED:
-          // _userRestaurants = payload.restaurants;
+          _userRestaurants = payload.restaurants;
           CurrentUserStore.emit(CHANGE_EVENT);
       }
     })

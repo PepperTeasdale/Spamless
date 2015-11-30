@@ -29,7 +29,7 @@ window.FeaturedRestaurantCard = React.createClass({
       >
         <img
           className="featured-card-img"
-          src="http://lorempixel.com/300/149/food"
+          src={ this.props.restaurant.image_url }
         />
       <h3>{ this.state.restaurantName }</h3>
       <small>{ this.state.restaurantCuisine }</small>

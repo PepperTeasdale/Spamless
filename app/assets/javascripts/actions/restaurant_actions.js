@@ -6,10 +6,10 @@ window.RestaurantActions = {
     });
   },
 
-  userRestaurantsReceived: function (restaurants) {
+  userRestaurantsReceived: function (data) {
     AppDispatcher.dispatch({
       actionType: RestaurantConstants.USER_RESTAURANTS_RECEIVED,
-      restaurants: restaurants
+      restaurants: data.restaurants
     });
   }
 };
