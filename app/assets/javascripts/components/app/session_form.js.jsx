@@ -35,15 +35,19 @@ window.SessionForm = React.createClass({
       <div>
         <h1>Sign In</h1>
         <form className="auth-form group">
-          <label className="input-label">
-            Email
-            <input type="text" onChange={ this.emailChanged } />
-          </label>
+          <span>Email</span>
+          <input
+            type="text"
+            onChange={ this.emailChanged }
+            placeholder="Your email"
+          />
 
-          <label className="input-label">
-            Password
-            <input type="password" onChange={ this.passwordChanged } />
-          </label>
+          <span>Password</span>
+          <input
+            type="password"
+            onChange={ this.passwordChanged }
+            placeholder="Your password"
+          />
           <div className="signin-button-wrapper">
             <button
               onClick={ this.signIn }

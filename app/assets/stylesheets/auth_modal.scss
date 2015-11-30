@@ -3,7 +3,7 @@
   top: calc(50% - 200px);
   left: calc(50% - 250px);
   width: 500px;
-  background: white;
+  background: #D97537;
   border: 1px solid black;
 }
 
@@ -25,47 +25,62 @@
 }
 
 .auth-modal button {
-  font-weight: bold;
   font-size: 24px;
-  padding: 10px;
 }
 
 .hide-modal {
+  font-family: 'Corben';
   display: block;
   float: right;
-  padding: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.hide-modal:hover {
+  color: #FFD400;
 }
 
 .toggle-form {
+  font-family: 'Corben';
   display: block;
   float: left;
-  padding: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.toggle-form:hover {
+  color: #FFD400;
 }
 
 .auth-form {
   display: block;
 }
 
+.auth-modal span {
+  color: white;
+  font-family: 'Corben'
+}
+
 .auth-modal h1 {
   display: block;
   text-align: center;
-  color: black;
+  font-family: Corben;
   font-weight: bold;
+  color: #FFD400;
   font-size: 36px;
   margin: 15px auto;
 }
 
 .auth-modal input {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
   display: block;
   box-sizing: content-box;
   margin: 5px 90px;
   padding: 5px;
   width: 300px;
-  border: 1px solid black;
-  border-radius: 5px;
   font: inherit;
   background: white;
-  color: inherit;
 }
 
 .auth-form span {
@@ -74,12 +89,12 @@
 }
 
 .auth-form button {
+  font-family: 'Source Sans Pro';
   padding: 10px 20px;
   font-size: 18px;
-  font-weight: bold;
-  background: #05164C;
-  color: #FAF13D;
-  border-radius: 5px;
+  background: #D97537;
+  color: #FFD400;
+  border: 1px solid white;
 }
 
 .signin-button-wrapper {

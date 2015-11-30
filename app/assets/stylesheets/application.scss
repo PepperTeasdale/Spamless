@@ -42,7 +42,7 @@ ul {
 }
 
 input:focus {
-  outline: 2px solid #FAF13D;
+  outline: 2px solid #FFD400;
   -moz-outline-radius: 5px;
 }
 
@@ -82,7 +82,7 @@ html {
 
 
 [type="radio"]:checked + span::before {
-  background: #FAF13D;
+  background: #FFD400;
   box-shadow: 0 0 0 0.25em #000;
 }
 
