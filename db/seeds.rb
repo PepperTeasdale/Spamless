@@ -50,13 +50,13 @@ restaurants = [
   ["Not Another Spam Restaurant", "American", "Really, just another spam restaurant"],
   ["Impastable", "Italian", "Barely edible, highly recommended!"],
   ["Spam Por Favor!", "Spanish", "Guess what they sell here?"],
-  ["Spam für dich!", "German", "Einmal spam, bitte!"]
+  ["Spam Für Dich!", "German", "Einmal spam, bitte!"]
 ]
 
 restaurants.each_with_index do |restaurant, idx|
-  Restaurant.create!(name: restaurant[0], address_id: idx + 1)
-  RestaurantDetail.create!(
-    restaurant_id: Restaurant.last.id,
+  Restaurant.create!(
+    name: restaurant[0],
+    address_id: idx + 1,
     cuisine_type: restaurant[1],
     description: restaurant[2]
   )
@@ -66,9 +66,9 @@ end
 
 
 restaurants.each_with_index do |restaurant, idx|
-  Restaurant.create!(name: restaurant[0] + " 2", address_id: idx + 9)
-  RestaurantDetail.create!(
-    restaurant_id: Restaurant.last.id,
+  Restaurant.create!(
+    name: restaurant[0] + "2",
+    address_id: idx + 11,
     cuisine_type: restaurant[1],
     description: restaurant[2]
   )

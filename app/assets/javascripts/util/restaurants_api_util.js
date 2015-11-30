@@ -17,9 +17,12 @@ window.RestaurantsApiUtil = {
     $.ajax({
       url: "api/restaurants",
       type: "POST",
+      processData: false,
+      contentType: false,
       dataType: "json",
       data: params,
       success: function (restaurant) {
+        debugger
         callback && callback(restaurant.id);
       },
       error: function (errors) {

@@ -41,7 +41,7 @@ window.NewRestaurantForm = React.createClass({
 
   createRestaurant: function (addressId) {
     var name = this.state.name;
-    var addressId = this.state.addressId;
+    var addressId = addressId;
     var imageFile = this.state.imageFile;
 
     var formData = new FormData();
@@ -104,7 +104,7 @@ window.NewRestaurantForm = React.createClass({
         <span>Zipcode</span>
           <input
             type="text"
-            valueLink={ this.linkState('name') }
+            valueLink={ this.linkState('zipcode') }
             placeholder="Zipcode"
           />
         <button>Submit</button>

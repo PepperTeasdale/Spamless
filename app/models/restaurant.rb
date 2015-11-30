@@ -9,7 +9,6 @@ class Restaurant < ActiveRecord::Base
   after_validation :geocode
 
   has_many :menu_items
-  has_one :restaurant_detail
 
   belongs_to :address
   belongs_to :user
