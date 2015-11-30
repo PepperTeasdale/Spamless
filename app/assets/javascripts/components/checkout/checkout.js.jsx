@@ -58,6 +58,7 @@ window.Checkout = React.createClass({
     };
 
     OrdersApiUtil.submitOrder({
+      order_method: RestaurantStore.orderMethod(),
       address: this.address(),
       contact: contactInfo,
       order_items: CurrentOrderStore.currentOrder(),

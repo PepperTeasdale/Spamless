@@ -24,6 +24,7 @@ class Api::OrdersController < ApplicationController
     contact = {contact: [:fname, :lname]}
     params
       .require(:order)
-      .permit(:user_id, :restaurant_id, :address, order_items, contact)
+      .permit(:user_id, :restaurant_id, :address, :order_method,
+              order_items, contact)
   end
 end
