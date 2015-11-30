@@ -23,7 +23,7 @@ window.UserRestaurantsIndex = React.createClass({
         <li className="user-profile-index-item group" key={restaurant.id}>
           <img
             className="restaurant-photo"
-            src="http://lorempixel.com/150/150/food"
+            src={ restaurant.image_url }
           />
           <Link
             to={ "/restaurants/" + restaurant.id }

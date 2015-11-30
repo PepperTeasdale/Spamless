@@ -83,7 +83,7 @@ window.NewRestaurantForm = React.createClass({
           <span>Street Address</span>
           <input
             type="text"
-            valueLink={ this.linkState('address') }
+            valueLink={ this.linkState('streetAddress') }
             placeholder="Address"
           />
 
