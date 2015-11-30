@@ -10,7 +10,6 @@ window.AddressApiUtil = {
         callback && callback(address.id);
       },
       failure: function (errors) {
-        debugger
       }
     });
   },

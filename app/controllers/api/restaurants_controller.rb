@@ -15,6 +15,7 @@ class Api::RestaurantsController < ApplicationController
 
   def create
     @restaurant = Restaurant.new(restaurant_params)
+    byebug
     @restaurant.user_id = current_user.id
 
     if @restaurant.save

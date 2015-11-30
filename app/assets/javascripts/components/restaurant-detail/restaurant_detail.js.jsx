@@ -48,7 +48,7 @@ RestaurantDetail = React.createClass({
             <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
               <img
                 className="restaurant-photo"
-                src="http://lorempixel.com/175/125/food"
+                src={ this.state.restaurant.image_url }
               />
             <div className="restaurant-info">
               <h2>{this.state.restaurant.name}</h2>

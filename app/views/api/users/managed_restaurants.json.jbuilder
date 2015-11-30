@@ -1,9 +1,9 @@
 json.restaurants do
   json.array!(@restaurants) do |restaurant|
-    byebug
     json.partial!(
       'api/restaurants/restaurant',
-      restaurant: restaurant
+      restaurant: restaurant,
+      restaurant_show_page: false
     )
   end
 end

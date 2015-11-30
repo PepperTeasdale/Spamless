@@ -8,7 +8,6 @@ window.RestaurantsApiUtil = {
         RestaurantActions.userRestaurantsReceived(restaurants);
       },
       error: function (errors) {
-        debugger
       }
     });
   },
@@ -22,11 +21,9 @@ window.RestaurantsApiUtil = {
       dataType: "json",
       data: params,
       success: function (restaurant) {
-        debugger
         callback && callback(restaurant.id);
       },
       error: function (errors) {
-        debugger
       }
     });
   }
