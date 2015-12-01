@@ -2,7 +2,8 @@ RestaurantDetail = React.createClass({
   getInitialState: function () {
     return {
       restaurant: RestaurantStore.find(parseInt(this.props.params.restaurantId)),
-      menuCategories: []
+      menuCategories: [],
+      formType: "new"
     };
   },
 
@@ -29,6 +30,9 @@ RestaurantDetail = React.createClass({
   },
 
   render: function () {
+    var newItemButton;
+    var menuItemModal;
+
     if (this.state.restaurant === undefined) { return <div></div>; }
 
     var categories = this.state.menuCategories.map(function (category) {
@@ -40,10 +44,23 @@ RestaurantDetail = React.createClass({
       );
     });
 
+    if (CurrentUserStore.currentUser().id === RestaurantStore.currentRestaurant().user_id) {
+      newItemButton = <button onClick={ this.openNewItemForm }>Add Menu Item</button>;
+      menuItemModal = (
+        <MenuItemModal
+          restaurant={ this.state.restaurant }
+          formType={ this.state.formType }
+       />
+      )
+    }
+
+    debugger
+
     return (
       <div>
         <Navbar redirect={ this.redirect } />
         <section className="restaurant-detail">
+          { MenuItemModal }
           <header className="restaurant-header group">
             <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
               <img
@@ -52,6 +69,7 @@ RestaurantDetail = React.createClass({
               />
             <div className="restaurant-info">
               <h2>{this.state.restaurant.name}</h2>
+              { newItemButton }
               <h3>{this.state.restaurant.restaurant_detail.cuisine_type}</h3>
               <p>{this.state.restaurant.restaurant_detail.description}</p>
               <p>{this.state.restaurant.address.full_street_address}</p>

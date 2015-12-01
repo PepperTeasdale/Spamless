@@ -13,7 +13,26 @@ window.MenuItem = React.createClass({
     }
   },
 
+  openEditForm: function () {
+
+  },
+
+  openDeleteConfirmation: function () {
+
+  },
+
   render: function () {
+    var buttons;
+
+    if (CurrentUserStore.currentUser().id === RestaurantStore.currentRestaurant().user_id) {
+      buttons = (
+        <div className="menu-item-button-container">
+          <button onClick={ this.openEditForm }>Edit</button>
+          <button onClick={ this.openDeleteConfirmation }>Delete</button>
+        </div>
+      );
+    }
+
     return (
       <div
         className="menu-item"

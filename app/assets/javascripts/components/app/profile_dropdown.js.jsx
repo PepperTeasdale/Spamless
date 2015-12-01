@@ -65,6 +65,15 @@ window.ProfileDropDown = React.createClass({
           </Link>
         </li>
         <li>
+          <Link
+            to={"/users/" + CurrentUserStore.currentUser().id + "/restaurants" }
+            className="drop-down-link"
+            onClick={ UiActions.closeProfileDropdown }
+          >
+            Manage Restaurants
+          </Link>
+        </li>
+        <li>
           <button
             className="drop-down-link"
             onClick={ this.signOut }

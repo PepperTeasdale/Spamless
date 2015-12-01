@@ -1,4 +1,4 @@
-json.extract! restaurant, :id, :name
+json.extract! restaurant, :id, :name, :user_id
 json.image_url asset_path(restaurant.image.url)
 
 

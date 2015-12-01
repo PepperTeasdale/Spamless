@@ -7,7 +7,8 @@
     shoppingCartHidden: true,
     authModalHidden: true,
     flash: [],
-    profileDropDownHidden: true
+    profileDropDownHidden: true,
+    menuItemModalHidden: true
   };
 
   var UiStore = window.UiStore = $.extend({}, EventEmitter.prototype, {
