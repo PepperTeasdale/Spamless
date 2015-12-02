@@ -54,8 +54,6 @@ RestaurantDetail = React.createClass({
       )
     }
 
-    debugger
-
     return (
       <div>
         <Navbar redirect={ this.redirect } />
