@@ -118,7 +118,57 @@
 }
 
 .new-restaurant-form-wrapper {
-  height: 600px;
-  width: 400px;
+  float:right;
+  width: 75%;
+  height: 100%;
   margin: 100px auto;
+}
+
+.new-restaurant-form-wrapper h1 {
+  color: #FFD400;
+  text-align: center;
+  font-size: 36px;
+  font-family: "Corben";
+  padding-top: 20px;
+}
+
+.new-restaurant-form {
+  color: white;
+  height: 780px;
+  width: 700px;
+  margin: auto;
+  background: #D97537;
+}
+
+.preview-image {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin: 0 100px;
+}
+
+.new-restaurant-form input {
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  color: black;
+}
+
+.new-restaurant-form span {
+  margin: 0 100px;
+  font-family: 'Corben';
+}
+
+.submit-wrapper {
+  text-align: center;
+}
+
+.new-restaurant-form button {
+  font-family: 'Source Sans Pro';
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #D97537;
+  color: #FFD400;
+  border: 1px solid white;
 }

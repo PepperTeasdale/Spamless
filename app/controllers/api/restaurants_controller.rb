@@ -27,6 +27,8 @@ class Api::RestaurantsController < ApplicationController
   private
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :image, :address_id)
+    params
+      .require(:restaurant)
+      .permit(:name, :image, :address_id, :cuisine_type, :description)
   end
 end

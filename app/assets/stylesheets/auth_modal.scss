@@ -65,10 +65,9 @@
   display: block;
   text-align: center;
   font-family: Corben;
-  font-weight: bold;
   color: #FFD400;
   font-size: 36px;
-  margin: 15px auto;
+  margin: 0 auto 15px;
 }
 
 .auth-modal input {
@@ -99,6 +98,7 @@
 
 .signin-button-wrapper {
   text-align: center;
+  margin: 20px 0;
 }
 
 .signin-button {

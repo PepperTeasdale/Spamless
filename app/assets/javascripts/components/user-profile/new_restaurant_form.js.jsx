@@ -8,6 +8,8 @@ window.NewRestaurantForm = React.createClass({
   clearForm: function () {
     return ({
       name: "",
+      cuisineType: "",
+      description: "",
       streetAddress: "",
       city: "",
       state: "",
@@ -43,11 +45,15 @@ window.NewRestaurantForm = React.createClass({
     var name = this.state.name;
     var addressId = addressId;
     var imageFile = this.state.imageFile;
+    var description = this.state.description;
+    var cuisineType = this.state.cuisineType;
 
     var formData = new FormData();
     formData.append("restaurant[name]", name);
     formData.append("restaurant[image]", imageFile);
     formData.append("restaurant[address_id]", addressId);
+    formData.append("restaurant[description]", description);
+    formData.append("restaurant[cuisine_type]", cuisineType);
 
     RestaurantsApiUtil.createRestaurant(formData, this.redirect)
   },
@@ -64,10 +70,20 @@ window.NewRestaurantForm = React.createClass({
   },
 
   render: function () {
+    var previewImage;
+    if (this.state.imageUrl !== "") {
+      previewImage = (
+        <img
+          className="preview-image"
+          src={this.state.imageUrl}
+        />
+      )
+    }
+
     return (
       <div className="new-restaurant-form-wrapper">
-        <h1>Create Restaurant</h1>
-        <form className="new=restaurant-form" onSubmit={ this.handleSubmit }>
+        <form className="new-restaurant-form" onSubmit={ this.handleSubmit }>
+          <h1>Create Restaurant</h1>
           <span>Restaurant Name</span>
           <input
             type="text"
@@ -78,7 +94,21 @@ window.NewRestaurantForm = React.createClass({
           <span>Image</span>
           <input type="file" onChange={ this.changeFile } />
 
-          <img className="preview-image" src={this.state.imageUrl} />
+          { previewImage }
+
+          <span>Cuisine Type</span>
+          <input
+            type="text"
+            valueLink={ this.linkState('cuisineType') }
+            placeholder="eg 'Thai'"
+          />
+
+        <span>Description</span>
+          <input
+            type="text"
+            valueLink={ this.linkState('description') }
+            placeholder="Short description of your restaurant"
+          />
 
           <span>Street Address</span>
           <input
@@ -107,7 +137,9 @@ window.NewRestaurantForm = React.createClass({
             valueLink={ this.linkState('zipcode') }
             placeholder="Zipcode"
           />
-        <button>Submit</button>
+        <div className="submit-wrapper">
+          <button>Submit</button>
+        </div>
         </form>
       </div>
     )

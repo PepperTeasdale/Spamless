@@ -71,7 +71,7 @@ input[type="radio"] {
 }
 
  .filler-light button {
-  margin: 40px;
+  margin: 25px 50px;
   display: inline-block;
   text-align: center;
 }
@@ -115,8 +115,13 @@ button.featured-restaurant-card {
   color: white;
 }
 
+.featured-restaurant-card {
+  width: 179px;
+  height: 250px;
+}
+
 .featured-card-img {
   display: block;
   height: 170px;
-  width: auto;
+  width: 179px;
 }
