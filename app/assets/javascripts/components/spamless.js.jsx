@@ -20,7 +20,7 @@ $(function () {
         <div>
           <Flash />
           <ShoppingCart />
-          <div className="modal-wrapper">
+          <div className="auth-auth-modal-wrapper">
             <AuthModal />
           </div>
           {this.props.children}
@@ -37,6 +37,7 @@ $(function () {
         path="/restaurants/:restaurantId"
         component={ RestaurantDetail }
       />
+    <Route path="/menu_items/new" component={ NewMenuItemForm} />
       <Route path="/orders/new" component={Checkout} />
       <Route path="/users/:userId" component={ UserProfile }>
         <Route

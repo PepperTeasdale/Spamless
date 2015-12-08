@@ -36,6 +36,10 @@
       return _uiStates.shoppingCartHidden;
     },
 
+    menuItemModalHidden: function () {
+      return _uiStates.menuItemModalHidden;
+    },
+
     flash: function () {
       return _uiStates.flash;
     },
@@ -83,6 +87,16 @@
 
         case UiConstants.TOGGLE_SHOPPING_CART:
           _uiStates.shoppingCartHidden = !_uiStates.shoppingCartHidden;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
+        case UiConstants.OPEN_MENU_ITEM_MODAL:
+          _uiStates.menuItemModalHidden = false;
+          UiStore.emit(CHANGE_EVENT);
+          break;
+
+        case UiConstants.CLOSE_MENU_ITEM_MODAL:
+          _uiStates.menuItemModalHidden = true;
           UiStore.emit(CHANGE_EVENT);
           break;
       }

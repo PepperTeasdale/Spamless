@@ -32,7 +32,7 @@ window.FeaturedRestaurantCard = React.createClass({
           src={ this.props.restaurant.image_url }
         />
       <h3>{ this.state.restaurantName }</h3>
-      <small>{ this.state.restaurantCuisine }</small>
+      <small>{ this.state.restaurantCuisine || "Restaurant" }</small>
     </button>
     );
   }

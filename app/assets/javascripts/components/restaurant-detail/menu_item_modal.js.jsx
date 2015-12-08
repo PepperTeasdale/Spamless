@@ -8,7 +8,7 @@ window.MenuItemModal = React.createClass({
     });
   },
 
-  componentWillUnmount: function () {
+  componentDidMount: function () {
     UiStore.addChangeHandler(this._onChange);
   },
 
@@ -26,6 +26,8 @@ window.MenuItemModal = React.createClass({
       restaurant: nextProps.restaurant,
       menuItem: nextProps.menuItem
     });
+
+    debugger
   },
 
   render: function () {

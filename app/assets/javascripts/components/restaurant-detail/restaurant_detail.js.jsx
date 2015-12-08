@@ -45,20 +45,22 @@ RestaurantDetail = React.createClass({
     });
 
     if (CurrentUserStore.currentUser().id === RestaurantStore.currentRestaurant().user_id) {
-      newItemButton = <button onClick={ this.openNewItemForm }>Add Menu Item</button>;
+      newItemButton = <button onClick={ UiActions.openNewItemForm }>Add Menu Item</button>;
       menuItemModal = (
         <MenuItemModal
           restaurant={ this.state.restaurant }
           formType={ this.state.formType }
-       />
-      )
+        />
+      );
     }
+
+    debugger
 
     return (
       <div>
         <Navbar redirect={ this.redirect } />
         <section className="restaurant-detail">
-          { MenuItemModal }
+          { menuItemModal }
           <header className="restaurant-header group">
             <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
               <img

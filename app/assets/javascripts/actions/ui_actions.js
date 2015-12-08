@@ -46,5 +46,17 @@ window.UiActions = {
     AppDispatcher.dispatch({
       actionType: UiConstants.TOGGLE_SHOPPING_CART
     });
+  },
+
+  openMenuItemModal: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.OPEN_MENU_ITEM_MODAL
+    })
+  },
+
+  closeMenuItemModal: function () {
+    AppDispatcher.dispatch({
+      actionType: UiConstants.CLOSE_MENU_ITEM_MODAL
+    })
   }
 };
