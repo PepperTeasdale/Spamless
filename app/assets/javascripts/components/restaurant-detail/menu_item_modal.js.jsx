@@ -3,7 +3,6 @@ window.MenuItemModal = React.createClass({
     return ({
       formType: this.props.formType,
       restaurant: this.props.restaurant,
-      menuItem: this.props.menuItem,
       hidden: UiStore.menuItemModalHidden()
     });
   },
@@ -23,17 +22,16 @@ window.MenuItemModal = React.createClass({
   componentWillReceiveProps: function (nextProps) {
     this.setState({
       formType: nextProps.formType,
-      restaurant: nextProps.restaurant,
-      menuItem: nextProps.menuItem
+      restaurant: nextProps.restaurant
     });
-
-    debugger
   },
 
   render: function () {
-    var form;
+    var form, hidden;
+
+    hidden = (this.state.hidden ? " hidden" : "")
     if (this.state.formType === "new") {
-      form = <NewItemForm restaurant={ this.state.restaurant } />
+      form = <NewMenuItemForm restaurant={ this.state.restaurant } />
     } else if (this.state.formType === "edit") {
       form = <EditItemForm menuItem={ this.state.menuItem } />
     } else {
@@ -42,7 +40,7 @@ window.MenuItemModal = React.createClass({
 
     return (
       <div className="menu-item-modal-wrapper">
-        <section className="menu-item-modal">
+        <section className={"menu-item-modal" + hidden}>
           { form }
         </section>
       </div>

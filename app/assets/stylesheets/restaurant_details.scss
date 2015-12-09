@@ -3,6 +3,8 @@
   width: 75%;
 }
 
+/* Restaurant Header */
+
 .restaurant-header {
   display: block;
   background-image: image-url("blurred_background.jpg");
@@ -20,10 +22,10 @@
   width: 35px;
   margin: 50px;
   padding: 10px;
-  background: white;
+  background: #D97537;
+  color: #FFD400;
   text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid white;
 }
 
 .restaurant-info {
@@ -49,6 +51,15 @@
   display: block;
   padding: 10px;
 }
+
+.new-item-button {
+  margin: 0 auto;
+  border: 1px solid white;
+  background: #D97537;
+  color: #FFD400;
+}
+
+/* Menu Section */
 
 .menu-section {
   border-top: 20px solid black;
@@ -94,8 +105,13 @@
   margin-bottom: 20px;
 }
 
+/* Menu Item Modal */
+
 .menu-item-modal {
   position: absolute;
   top: 100px;
-  left: 50%;
+}
+
+.menu-item-modal.hidden {
+  display: none;
 }

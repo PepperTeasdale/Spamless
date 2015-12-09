@@ -37,7 +37,6 @@ $(function () {
         path="/restaurants/:restaurantId"
         component={ RestaurantDetail }
       />
-    <Route path="/menu_items/new" component={ NewMenuItemForm} />
       <Route path="/orders/new" component={Checkout} />
       <Route path="/users/:userId" component={ UserProfile }>
         <Route

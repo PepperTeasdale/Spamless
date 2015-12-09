@@ -29,9 +29,13 @@ RestaurantDetail = React.createClass({
     this.props.history.pushState(null, "/restaurants", address);
   },
 
+  openMenuItemModal: function () {
+    this.setState({ formType: "new" });
+    UiActions.openMenuItemModal()
+  },
+
   render: function () {
-    var newItemButton;
-    var menuItemModal;
+    var newItemButton, menuItemModal;
 
     if (this.state.restaurant === undefined) { return <div></div>; }
 
@@ -45,7 +49,14 @@ RestaurantDetail = React.createClass({
     });
 
     if (CurrentUserStore.currentUser().id === RestaurantStore.currentRestaurant().user_id) {
-      newItemButton = <button onClick={ UiActions.openNewItemForm }>Add Menu Item</button>;
+      newItemButton = (
+        <button
+          onClick={ this.openMenuItemModal }
+          className="new-item-button"
+        >
+          Add Menu Item
+        </button>
+      );
       menuItemModal = (
         <MenuItemModal
           restaurant={ this.state.restaurant }
@@ -54,13 +65,12 @@ RestaurantDetail = React.createClass({
       );
     }
 
-    debugger
 
     return (
       <div>
         <Navbar redirect={ this.redirect } />
+        { menuItemModal }
         <section className="restaurant-detail">
-          { menuItemModal }
           <header className="restaurant-header group">
             <ReactRouter.Link to="/restaurants">Back</ReactRouter.Link>
               <img

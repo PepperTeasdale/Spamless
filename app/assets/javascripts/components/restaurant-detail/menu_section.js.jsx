@@ -9,12 +9,12 @@ var MenuSection = React.createClass({
     }.bind(this));
 
     if (categoryItems.length % 2 !== 0) {
-      categoryItems.push(<div className="menu-item"></div>);
+      categoryItems.push(<div className="menu-item" key="placeholder"></div>);
     }
 
     return (
       <div className="menu-category-section">
-        <h3>{this.props.category}</h3>
+        <h3>{ this.props.category }</h3>
         <div className="menu-items-container group">
           { categoryItems }
         </div>
