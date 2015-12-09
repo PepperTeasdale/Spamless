@@ -1,4 +1,4 @@
-ApiUtil = {
+window.ApiUtil = {
   fetchRestaurants: function (searchParams) {
     $.ajax({
       url: "/api/restaurants",

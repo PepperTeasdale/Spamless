@@ -1,6 +1,22 @@
 var MenuSection = React.createClass({
   getInitialState: function () {
-    return ({ menuItems: RestaurantStore.itemsByCategory(this.props.category) });
+    return ({
+      menuItems: RestaurantStore.itemsByCategory(this.props.category)
+    });
+  },
+
+  componentDidMount: function () {
+    RestaurantStore.addChangeHandler(this._onChange);
+  },
+
+  componentWillUnmount: function () {
+    RestaurantStore.removeChangeHandler(this._onChange);
+  },
+
+  _onChange: function () {
+    this.setState({
+      menuItems: RestaurantStore.itemsByCategory(this.props.category)
+    });
   },
 
   render: function () {
