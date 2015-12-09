@@ -1,9 +1,9 @@
 Spamless
 ========
 
-[Heroku link][heroku] Live Demo
+[Live Demo][live-site]
 
-[heroku]: http://www.spam-less.com
+[live-site]: http://www.spam-less.com/
 
 Minimum Viable Product
 ----------------------
