@@ -75,6 +75,7 @@
 
     menuCategories: function () {
       var categories = [];
+      if (!_currentRestaurant) { return []; }
       _currentRestaurant.menu_items.forEach(function(menuItem) {
         if (categories.indexOf(menuItem.menu_category) == -1) {
           categories.push(menuItem.menu_category);
