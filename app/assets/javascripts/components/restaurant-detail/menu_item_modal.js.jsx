@@ -39,8 +39,8 @@ window.MenuItemModal = React.createClass({
     }
 
     return (
-      <div className="menu-item-modal-wrapper">
-        <section className={"menu-item-modal" + hidden}>
+      <div className={ "menu-item-modal-wrapper" + hidden }>
+        <section className={ "menu-item-modal" + hidden }>
           { form }
         </section>
       </div>

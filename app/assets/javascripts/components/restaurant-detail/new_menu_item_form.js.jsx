@@ -18,7 +18,18 @@ window.NewMenuItemForm = React.createClass({
       price: parseFloat(this.state.price),
       menu_category: this.state.menuCategory,
       restaurant_id: RestaurantStore.currentRestaurant().id
-    })
+    }, this.clearForm);
+  },
+
+  clearForm: function (e) {
+    e && e.preventDefault();
+    UiActions.closeMenuItemModal();
+    this.setState({
+      name: "",
+      description: "",
+      price: "",
+      menuCategory: "",
+    });
   },
 
   render: function () {
@@ -33,6 +44,15 @@ window.NewMenuItemForm = React.createClass({
 
     return (
       <form onSubmit={ this.createMenuItem }>
+        <div className="modal-button-wrapper group">
+          <button
+            className="hide-modal"
+            onClick={ this.clearForm }
+          >
+            ✖
+          </button>
+      </div>
+        <h1>Create New Menu Item</h1>
         <span>Name</span>
         <input
           type="text"

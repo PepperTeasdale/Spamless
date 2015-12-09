@@ -109,9 +109,70 @@
 
 .menu-item-modal {
   position: absolute;
-  top: 100px;
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
+  width: 500px;
+  background: #D97537;
+  border: 1px solid black;
+}
+
+.menu-item-modal-wrapper {
+  z-index: 9999;
+  display: block;
+  position: fixed;
+  background-color: rgba(51, 51, 51, 0.78);
+  height: 100%;
+  width: 100%;
+}
+
+.menu-item-modal-wrapper.hidden {
+  display: none;
 }
 
 .menu-item-modal.hidden {
   display: none;
+}
+
+.menu-item-modal h1 {
+  display: block;
+  text-align: center;
+  font-family: Corben;
+  color: #FFD400;
+  font-size: 36px;
+  margin: 0 auto 15px;
+}
+
+.menu-item-modal input {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  box-sizing: content-box;
+  margin: 5px 90px;
+  padding: 5px;
+  width: 300px;
+  font: inherit;
+  background: white;
+}
+
+.menu-item-modal span {
+  color: white;
+  display: block;
+  margin: 10px 90px 5px;
+}
+
+.menu-item-modal button {
+  display: block;
+  font-family: 'Source Sans Pro';
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: 18px;
+  background: #D97537;
+  color: #FFD400;
+  border: 1px solid white;
+}
+
+.modal-button-wrapper button {
+  border: none;
+  color: white;
+  background: transparent;
 }

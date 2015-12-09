@@ -41,7 +41,7 @@ window.AuthModal = React.createClass({
     return (
       <div className={ "auth-modal-wrapper" + hidden }>
         <section className={ "auth-modal" + hidden }>
-          <div className="auth-modal-button-wrapper group">
+          <div className="modal-button-wrapper group">
             <button
               className="toggle-form"
               onClick={ this.formTypeChanged }
