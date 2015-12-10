@@ -107,7 +107,7 @@
 }
 
 .profile-drop-down {
-  right: 100px;
+  right: 85px;
   top: 55px;
   position: absolute;
   background: white;
@@ -117,12 +117,16 @@
 
 .profile-drop-down li {
   display: block;
+  border-bottom: 1px solid #ccc;
 }
 
+.profile-drop-down button {
+  display: block;
+  padding-right: 90px;
+}
 .drop-down-link {
   display: block;
   background: white;
-  border-bottom: 1px solid #ccc;
   padding: 10px 20px;
   margin: 0;
   color: black;

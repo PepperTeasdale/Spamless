@@ -39,15 +39,6 @@ window.ProfileDropDown = React.createClass({
       >
         <li>
           <Link
-            to={"/users/" + CurrentUserStore.currentUser().id }
-            className="drop-down-link"
-            onClick={ UiActions.closeProfileDropdown }
-          >
-            Profile
-          </Link>
-        </li>
-        <li>
-          <Link
             to={"/users/" + CurrentUserStore.currentUser().id + "/addresses" }
             className="drop-down-link"
             onClick={ UiActions.closeProfileDropdown }

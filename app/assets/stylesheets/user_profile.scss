@@ -107,14 +107,23 @@
   padding: 10px;
   font-weight: bold;
   background: #19284F;
-  color: #FFD400;
-  border-radius: 5px;
+  color: #D97537;
 }
 
 .managed-restaurants-index {
   float: right;
   width: 75%;
   background: white;
+  text-align: center;
+}
+
+.new-restaurant-link {
+  display: inline-block;
+  text-align: center;
+  background: #D97537;
+  color: #FFD400;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .new-restaurant-form-wrapper {

@@ -32,14 +32,14 @@ RestaurantIndex = React.createClass({
 
         var Link = ReactRouter.Link;
         return (
-          <li className="restaurant-card" key={restaurant.id}>
-            <Link to={"/restaurants/" + restaurant.id} className="group">
+          <li className="restaurant-card" key={ restaurant.id }>
+            <Link to={ "/restaurants/" + restaurant.id } className="group">
               <img
                 className="restaurant-card-img"
                 src={ restaurant.image_url }
               />
               <h3>{ restaurant.name }</h3>
-              <p>{cuisine}</p>
+              <p>{ cuisine }</p>
             </Link>
           </li>
         );
@@ -49,7 +49,7 @@ RestaurantIndex = React.createClass({
     return (
       <div>
         <ul className="restaurant-list">
-          {restaurants}
+          { restaurants }
         </ul>
       </div>
     );
