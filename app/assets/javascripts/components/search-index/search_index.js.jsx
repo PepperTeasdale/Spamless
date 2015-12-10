@@ -3,8 +3,12 @@ SearchIndex = React.createClass({
     return (
       <div className="search-index group">
         <Navbar />
-        <FilterForm />
-        <RestaurantIndex />
+        <section className="search-index-sidebar">
+          <FilterForm />
+        </section>
+        <section className="seach-results">
+          <RestaurantIndex />
+        </section>
       </div>
     );
   }

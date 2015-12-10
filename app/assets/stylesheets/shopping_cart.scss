@@ -15,11 +15,10 @@
   display: block;
   font-weight: bold;
   color: #FFD400;
-  background: #19284F;
+  background: #D97537;
   padding: 10px 80px;
   text-align: center;
   box-shadow: -3px 3px 10px black;
-  border-radius: 5px;
 }
 
 .shopping-cart-total {
@@ -77,6 +76,9 @@
   cursor: pointer;
 }
 
+.order-item button:hover {
+  color: #FFD400;
+}
 .order-item dt {
   float: left;
   padding: 5px;
