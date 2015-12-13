@@ -4,7 +4,8 @@ NavbarSearchForm = React.createClass({
   getInitialState: function () {
     return {
       address: CurrentAddressStore.currentAddress(),
-      orderMethod: RestaurantStore.orderMethod()
+      orderMethod: RestaurantStore.orderMethod(),
+      query: ""
     };
   },
 
@@ -26,7 +27,11 @@ NavbarSearchForm = React.createClass({
   },
 
   changeAddress: function (e) {
-    return this.setState({ address: e.target.value });
+    this.setState({ address: e.target.value });
+  },
+
+  changeQuery: function (e) {
+    this.setState({ query: e.target.value });
   },
 
   submitSearch: function (e) {
@@ -37,6 +42,9 @@ NavbarSearchForm = React.createClass({
         address: this.state.address,
         orderMethod: this.state.orderMethod
       };
+
+      if (this.state.query) { searchParams.query = this.state.query; }
+
       ApiUtil.fetchRestaurants(searchParams);
       this.history.pushState(null, '/restaurants');
     }
@@ -77,6 +85,14 @@ NavbarSearchForm = React.createClass({
           className="nav-bar-address-input"
           value={ this.state.address }
           onChange={ this.changeAddress }
+          placeholder="Address"
+        />
+        <input
+          type="text"
+          className="nav-bar-query-input"
+          value={ this.state.query }
+          onChange={ this.changeQuery }
+          placeholder="What do you want? (optional)"
         />
         <button onClick={ this.submitSearch }>
           Search

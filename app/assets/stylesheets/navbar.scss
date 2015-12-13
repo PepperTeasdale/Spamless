@@ -21,7 +21,7 @@
 .navbar-search-form {
   float: left;
   padding: 10px;
-  width: 600px;
+  width: 760px;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
@@ -35,10 +35,14 @@
 .navbar-search-form input {
   color: black;
   float: left;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 2px;
   padding: 5px;
   height: 100%;
-  width: 240px;
+  width: 200px;
+}
+
+.navbar-search-form input.nav-bar-address-input {
+  margin-left: 10px;
 }
 
 .navbar-search-form button {

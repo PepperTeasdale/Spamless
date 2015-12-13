@@ -7,8 +7,8 @@
 .search-form {
   position: relative;
   color: white;
-  height: 200px;
-  width: 640px;
+  height: 180px;
+  width: 660px;
   left: 50%;
   background-color: rgba(51, 51, 51, 0.78);
 }
@@ -29,14 +29,14 @@ input[type="radio"] {
 .search-form input {
   float: left;
   color: black;
-  width: 200px;
+  width: 240px;
   margin: 20px 0 0 2px;
   padding: 10px;
 }
 
 .search-form input.address-input {
-  margin-left: 40px;
-  width: 250px;
+  margin-left: 20px;
+  width: 270px;
 }
 
 .search-form button {
