@@ -4,7 +4,8 @@ window.ShoppingCart = React.createClass({
       orderItems: CurrentOrderStore.currentOrder(),
       total: CurrentOrderStore.currentTotal(),
       restaurant: CurrentOrderStore.orderRestaurant(),
-      hidden: UiStore.shoppingCartHidden()
+      hidden: UiStore.shoppingCartHidden(),
+      checkout: false
     });
   },
 
@@ -12,10 +13,14 @@ window.ShoppingCart = React.createClass({
     CurrentOrderStore.addChangeHandler(this._onChange);
     UiStore.addChangeHandler(this._onChange);
   },
-  
+
   componentWillUnmount: function () {
     CurrentOrderStore.removeChangeHandler(this._onChange);
     UiStore.removeChangeHandler(this._onChange);
+  },
+
+  componentWillReceiveProps: function (nextProps) {
+    this.setState({ checkout: nextProps.checkout })
   },
 
   _onChange: function () {
@@ -39,6 +44,13 @@ window.ShoppingCart = React.createClass({
           <span>Why not fill it with delicious spam?</span>
         </div>
       );
+    } else if (this.state.checkout) {
+      orderHeader = (
+        <header>
+          <h2>Checkout</h2>
+          <h3>{ "Order From " + this.state.restaurant.name }</h3>
+        </header>
+      )
     } else {
       orderHeader = (
         <header>
@@ -53,16 +65,17 @@ window.ShoppingCart = React.createClass({
     });
     var total = CurrentOrderStore.currentTotal();
     var tax = CurrentOrderStore.currentTax();
-
     return (
-      <div className={"shopping-cart" + hiddenClass}>
+      <div className={ "shopping-cart" + hiddenClass }>
         <header className="panel-heading">
           {orderHeader}
         </header>
-        <section className={"cart"}>
-          <ul className="order-items-list">
-            {orderItems}
-          </ul>
+        <section className={ "cart" }>
+          <div className="order-items-list-container">
+            <ul className="order-items-list">
+              {orderItems}
+            </ul>
+          </div>
           <dl className="group">
             <dt>Items subtotal:</dt>
             <dd>{ "$" + total.toFixed(2) }</dd>

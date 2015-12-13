@@ -16,10 +16,16 @@ $(function () {
     },
 
     render: function () {
+      var checkout = false;
+
+      if (this.props.location.pathname === "/orders/new") {
+        var checkout = true;
+      }
+
       return (
         <div>
           <Flash />
-          <ShoppingCart />
+          <ShoppingCart checkout={ checkout } />
           <div className="auth-auth-modal-wrapper">
             <AuthModal />
           </div>

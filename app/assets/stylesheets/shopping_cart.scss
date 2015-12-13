@@ -60,8 +60,19 @@
   font-weight: bold;
 }
 
+.panel-heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .cart {
   height: 100%;
+}
+
+.order-items-list-container {
+  height: 400px;
+  width: 100%;
+  overflow: auto;
 }
 
 .order-item button {
