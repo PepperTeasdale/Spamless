@@ -6,12 +6,13 @@ SearchForm = React.createClass({
 
     return {
       address: address,
-      orderMethod: RestaurantStore.orderMethod()
+      orderMethod: RestaurantStore.orderMethod(),
+      query: ""
     };
   },
 
   changeAddress: function (e) {
-    return this.setState({ address: e.target.value });
+    this.setState({ address: e.target.value });
   },
 
   componentDidMount: function () {
@@ -32,12 +33,18 @@ SearchForm = React.createClass({
     if (this.state.address) {
       var searchParams = {
         address: this.state.address,
-        orderMethod: this.state.orderMethod
+        orderMethod: this.state.orderMethod,
       };
+
+      if (this.state.query) { searchParams.query = this.state.query; }
 
       ApiUtil.fetchRestaurants(searchParams);
       this.history.pushState(null, '/restaurants');
     }
+  },
+
+  changeQuery: function (e) {
+    this.setState({ query: e.target.value });
   },
 
   orderMethodChanged: function (e) {
@@ -93,6 +100,12 @@ SearchForm = React.createClass({
         <datalist id="address-datalist">
           { addressOptions }
         </datalist>
+        <input
+          type="text"
+          className="query-input"
+          placeholder="What are you looking for? (optional)"
+          onChange={ this.changeQuery }
+        />
         <button onClick={ this.submitSearch }>
           Search
         </button>

@@ -118,6 +118,7 @@
         case RestaurantConstants.ORDER_METHOD_CHANGED:
           _orderMethod = payload.orderMethod;
           RestaurantStore.emit(CHANGE_EVENT);
+          break;
       }
     })
   });

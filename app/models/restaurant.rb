@@ -1,4 +1,11 @@
 class Restaurant < ActiveRecord::Base
+  include PgSearch
+  pg_search_scope :restaurant_search,
+    against: [:name, :cuisine_type],
+    associated_against: {
+      menu_items: [:name, :description]
+    }
+
   validates :name, presence: true, uniqueness: true
   validates :address_id, presence: true
 

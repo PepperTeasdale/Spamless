@@ -25,6 +25,7 @@ gem 'figaro'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '~>1.6'
 gem 'bcrypt-ruby', require: 'bcrypt'
+gem 'pg_search'
 
 group :production do
   gem 'rails_12factor'
