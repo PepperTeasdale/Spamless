@@ -11,5 +11,12 @@ window.RestaurantActions = {
       actionType: RestaurantConstants.USER_RESTAURANTS_RECEIVED,
       restaurants: data.restaurants
     });
+  },
+
+  changePage: function (val) {
+    AppDispatcher.dispatch({
+      actionType: RestaurantConstants.PAGE_CHANGED,
+      val: val
+    });
   }
 };

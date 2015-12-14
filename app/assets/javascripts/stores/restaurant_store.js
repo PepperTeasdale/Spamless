@@ -149,6 +149,11 @@
           RestaurantStore.emit(CHANGE_EVENT);
           break;
 
+        case RestaurantConstants.PAGE_CHANGED:
+          _page += payload.val;
+          RestaurantStore.emit(CHANGE_EVENT);
+          break;
+
         case FilterConstants.UPDATE_CUISINES:
           RestaurantStore.emit(CHANGE_EVENT);
           break;

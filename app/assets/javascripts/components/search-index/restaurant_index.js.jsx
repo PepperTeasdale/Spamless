@@ -26,7 +26,17 @@ RestaurantIndex = React.createClass({
     });
   },
 
+  changePage: function (e) {
+    if (e.target.innerText == "Next") {
+      RestaurantActions.changePage(1);
+    } else {
+      RestaurantActions.changePage(-1);
+    }
+  },
+
   render: function () {
+    var previous, next;
+
     var restaurants = this.state.restaurants.map(function (restaurant) {
       var Link = ReactRouter.Link;
 
@@ -46,6 +56,13 @@ RestaurantIndex = React.createClass({
 
     var numPages = Math.ceil(RestaurantStore.filteredRestaurants().length / 10);
 
+    if (this.state.page > 1) {
+      previous = <button onClick={ this.changePage }>Previous</button>;
+    }
+    if (this.state.page < numPages) {
+      next = <button onClick={ this.changePage }>Next</button>
+    }
+
     return (
       <div>
         <ul className="restaurant-list">
@@ -53,6 +70,8 @@ RestaurantIndex = React.createClass({
             <small>
               { "Displaying page " + this.state.page + " of " + numPages }
             </small>
+            { previous }
+            { next }
           </li>
           { restaurants }
         </ul>
