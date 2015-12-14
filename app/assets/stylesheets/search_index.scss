@@ -36,6 +36,16 @@
   background: white;
 }
 
+.restaurant-list-header button {
+  margin: 10px;
+  color: #19284F;
+  text-decoration: underline;
+}
+
+.restaurant-list-header button:hover {
+  color: #FFD400;
+}
+
 .restaurant-card a {
   display: block;
   font-weight: bold;

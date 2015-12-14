@@ -155,6 +155,7 @@
           break;
 
         case FilterConstants.UPDATE_CUISINES:
+          _page = 1;
           RestaurantStore.emit(CHANGE_EVENT);
           break;
       }

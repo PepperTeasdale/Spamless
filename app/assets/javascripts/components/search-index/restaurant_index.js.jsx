@@ -48,7 +48,7 @@ RestaurantIndex = React.createClass({
               src={ restaurant.image_url }
             />
             <h3>{ restaurant.name }</h3>
-            <p>{ restaurant.cuisine_type }</p>
+            <p>{ restaurant.restaurant_detail.cuisine_type }</p>
           </Link>
         </li>
       );
@@ -60,13 +60,13 @@ RestaurantIndex = React.createClass({
       previous = <button onClick={ this.changePage }>Previous</button>;
     }
     if (this.state.page < numPages) {
-      next = <button onClick={ this.changePage }>Next</button>
+      next = <button onClick={ this.changePage }>Next</button>;
     }
 
     return (
       <div>
         <ul className="restaurant-list">
-          <li>
+          <li className="restaurant-list-header">
             <small>
               { "Displaying page " + this.state.page + " of " + numPages }
             </small>
