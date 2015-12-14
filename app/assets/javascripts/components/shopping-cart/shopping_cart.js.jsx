@@ -68,12 +68,12 @@ window.ShoppingCart = React.createClass({
     return (
       <div className={ "shopping-cart" + hiddenClass }>
         <header className="panel-heading">
-          {orderHeader}
+          { orderHeader }
         </header>
         <section className={ "cart" }>
           <div className="order-items-list-container">
             <ul className="order-items-list">
-              {orderItems}
+              { orderItems }
             </ul>
           </div>
           <dl className="group">

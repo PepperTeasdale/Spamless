@@ -6,6 +6,7 @@
   var _restaurants = [];
   var _currentRestaurant;
   var _orderMethod = "delivery";
+  var _page = 1;
 
   var resetRestaurants = function (restaurants) {
     _restaurants = restaurants;
@@ -29,8 +30,36 @@
       return _restaurants.slice(0);
     },
 
+    paginate: function (n) {
+      var start = (_page - 1) * n;
+      return this.filteredRestaurants().slice(start, start + n);
+    },
+
+    count: function () {
+      return _restaurants.length;
+    },
+
     currentRestaurant: function () {
       return $.extend({}, _currentRestaurant);
+    },
+
+    filteredRestaurants: function () {
+      var filters = FilterStore.all();
+      var filtered = [];
+      _restaurants.forEach(function (restaurant) {
+        var cuisine = restaurant.restaurant_detail.cuisine_type;
+
+        if (filters.cuisines.length === 0 ||
+            filters.cuisines.indexOf(cuisine) !== -1) {
+          filtered.push(restaurant);
+        }
+      });
+
+      return filtered;
+    },
+
+    page: function () {
+      return _page;
     },
 
     featuredRestaurants: function (num) {
@@ -117,6 +146,10 @@
 
         case RestaurantConstants.ORDER_METHOD_CHANGED:
           _orderMethod = payload.orderMethod;
+          RestaurantStore.emit(CHANGE_EVENT);
+          break;
+
+        case FilterConstants.UPDATE_CUISINES:
           RestaurantStore.emit(CHANGE_EVENT);
           break;
       }
