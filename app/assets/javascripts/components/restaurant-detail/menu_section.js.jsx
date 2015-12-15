@@ -20,13 +20,37 @@ var MenuSection = React.createClass({
   },
 
   render: function () {
-    var categoryItems = this.state.menuItems.map(function (item) {
-      return <MenuItem item={ item } key={ item.id } />;
+    var itemPairs = [];
+    var menuItems = this.state.menuItems
+
+    for (var i = 0; i < menuItems.length; i += 2) {
+      itemPairs.push([menuItems[i], menuItems[i + 1]]);
+    }
+
+    var categoryItems = itemPairs.map(function (pair, i) {
+      var componentPair = pair.map(function (item, j) {
+        if (item) {
+          return <MenuItem item={ item } key={ item.id } column={ j + 1 } />;
+        } else {
+          return  (
+            <div
+              key="placeholder"
+              className={ "menu-item column-" + (j + 1) }
+            >
+            </div>
+          );
+        }
+      });
+
+      return (
+        <div className="outer-row-container" key={ i }>
+          <div className="inner-row-container">
+            { componentPair }
+          </div>
+        </div>
+      )
     }.bind(this));
 
-    if (categoryItems.length % 2 !== 0) {
-      categoryItems.push(<div className="menu-item" key="placeholder"></div>);
-    }
 
     return (
       <div className="menu-category-section">

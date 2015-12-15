@@ -15,7 +15,7 @@ window.NewMenuItemForm = React.createClass({
     MenuItemApiUtil.createMenuItem({
       name: this.state.name,
       description: this.state.description,
-      price: parseFloat(this.state.price),
+      price: this.state.price,
       menu_category: this.state.menuCategory,
       restaurant_id: RestaurantStore.currentRestaurant().id
     }, this.clearForm);
