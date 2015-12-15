@@ -43,8 +43,8 @@ var MenuSection = React.createClass({
       });
 
       return (
-        <div className="outer-row-container" key={ i }>
-          <div className="inner-row-container">
+        <div className="outer-row-container group" key={ i }>
+          <div className="inner-row-container group">
             { componentPair }
           </div>
         </div>

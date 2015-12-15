@@ -62,6 +62,18 @@
 
 /* Menu Section */
 
+.outer-row-container {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.inner-row-container {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
 .menu-section {
   border-top: 20px solid black;
   background: #ccc;
@@ -70,7 +82,7 @@
 
 .menu-category-section {
   display: block;
-  width: 700px;
+  width: 800px;
   margin: auto;
   padding-top: 20px;
 }
@@ -84,7 +96,7 @@
   clear: both;
   border: 1px solid black;
   background: #3C3636;
-  border-bottom: 2px dotted black;
+  border-bottom: 1px dotted black;
 }
 
 .menu-item:hover {
@@ -93,16 +105,17 @@
 }
 
 .menu-item {
-  width: calc(44% - 1px);
+  height: 100%;
+  width: 360px;
+  display: table-cell;
   padding: 20px;
-  float: left;
   background: white;
-  border-bottom: 2px dotted black;
-  border-right: 2px dotted black;
+  border-bottom: 1px dotted black;
+  border-right: 1px dotted black;
 }
 
 .menu-items-container {
-  border-left: 2px dotted black;
+  border-left: 1px dotted black;
   margin-bottom: 20px;
 }
 

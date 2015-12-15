@@ -35,7 +35,7 @@ window.MenuItem = React.createClass({
 
     return (
       <div
-        className="menu-item"
+        className={"menu-item column-" + this.props.column }
         onClick={ this.handleItemClick }
       >
         <h4>{ this.props.item.name }</h4>
