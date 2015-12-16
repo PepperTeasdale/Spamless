@@ -39,6 +39,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'annotate'
   gem 'pry-rails'
+  gem 'letter_opener'
 end
 
 group :development do

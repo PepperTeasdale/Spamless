@@ -49,4 +49,6 @@ Rails.application.configure do
       :secret_access_key => ENV["s3_secret_access_key"]
     }
   }
+
+  config.action_mailer.delivery_method = :letter_opener
 end

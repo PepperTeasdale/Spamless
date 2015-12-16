@@ -7,6 +7,10 @@ class Api::OrdersController < ApplicationController
     @order = Order.new(order_params)
 
     if @order.save
+      @user = User.find(params[:order][:user_id])
+      @restaurant = Restaurant.find(params[:order][:restaurant_id])
+      OrderConfirmationMailer.confirm_order(@user, @restaurant).deliver
+
       render :show
     else
       render json: @order.errors.full_messages, status: 422
