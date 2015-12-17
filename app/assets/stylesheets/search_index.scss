@@ -36,6 +36,11 @@
   background: white;
 }
 
+.restaurant-list-header {
+  margin: 5px;
+  border-bottom: 1px dotted #19284F;
+}
+
 .restaurant-list-header button {
   margin: 10px;
   color: #19284F;
@@ -80,7 +85,7 @@
   margin: 0 auto;
   display: block;
   padding: 10px 10px 0;
-  border-bottom: 2px dotted #19284F;
+  border-bottom: 1px dotted #19284F;
 }
 
 .filter-container * {

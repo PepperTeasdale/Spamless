@@ -12,7 +12,7 @@ if Rails.env.production?
     :authentication => :plain,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'heroku.com',
+    :domain         => 'spam-less.com',
     :enable_starttls_auto => true
   }
   ActionMailer::Base.delivery_method ||= :smtp

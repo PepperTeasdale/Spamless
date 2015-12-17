@@ -27,10 +27,12 @@ window.FeaturedRestaurantCard = React.createClass({
         className="featured-restaurant-card"
         onClick={ this.redirect }
       >
+      <div className="restaurant-card-image-wrapper">
         <img
           className="featured-card-img"
           src={ this.props.restaurant.image_url }
         />
+      </div>
       <h3>{ this.state.restaurantName }</h3>
       <small>{ this.state.restaurantCuisine || "Restaurant" }</small>
     </button>
