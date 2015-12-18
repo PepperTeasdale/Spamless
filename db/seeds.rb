@@ -84,7 +84,7 @@ menu_items = [
   ["Spam soda", 1.5, "Beverage", "Refreshing and bubbly"],
   ["Just a can of spam", 3.0, "Lunch", "How can you improve on perfection?"],
   ["Spam fried rice", 8.0, "Dinner", "This one actually does taste good"],
-  ["Musubi", 6.0, "Appetizer", "Like sushi, but better"],
+  ["Musubi", 6.0, "Appetizer", "Like sushi, but better (spam)"],
   ["Small can of spam", 2.0, "Lunch", "If you don't want that much spam"],
   ["Teriyaki Spam", 9.0, "Dinner", "Served with side of regular spam"],
   ["Spamburger", 10.0, "Dinner", "Where's the beef? Not here!"],
